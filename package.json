@@ -14,9 +14,24 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@emotion/core": "^10.1.1",
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-emotion": "^4.5.0",
+    "gatsby-plugin-image": "^0.2.0",
+    "gatsby-plugin-manifest": "^2.7.0",
+    "gatsby-plugin-sharp": "^2.9.0",
+    "gatsby-plugin-typography": "^2.7.0",
+    "gatsby-remark-copy-linked-files": "^2.5.0",
+    "gatsby-remark-images": "^3.6.0",
+    "gatsby-source-filesystem": "^2.6.1",
+    "gatsby-transformer-remark": "^2.11.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-kirkham": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "2.1.2"
