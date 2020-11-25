@@ -11,7 +11,7 @@ export default function About({ data }) {
       <p>
        I'm a product designer with 3+ years of doing remote research and design for developer tools.</p>
 
-       <StaticImage src="../pages/images/profile-2019.jpg" width={500} alt="empathy map for plugin library" />
+       <StaticImage src="../pages/images/profile-2019.JPG" width={500} alt="empathy map for plugin library" />
 <br></br>
         <h2>Apps:</h2>
         <div>
