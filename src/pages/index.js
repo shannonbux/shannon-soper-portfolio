@@ -11,6 +11,7 @@ export default function Home({ data }) {
         <h1
           css={css`
             display: inline-block;
+            margin-bottom: 1em;
           `}
         >
           Welcome to my portfolio!
@@ -34,24 +35,39 @@ export default function Home({ data }) {
                   css={css`
                     color: #555;
                   `}
-                >
-                </span>
+                ></span>
               </h3>
               <p>{node.excerpt}</p>
             </Link>
           </div>
         ))}
-         <br></br>
-         <br></br>
-         <h4
-         css={css`
-         display: inline-block;
-         border-bottom: 1px solid;
-       `}
-       >Side Projects</h4>
-        <div><a href="https://thenopegame.gtsb.io/">The Nope Game v0.1</a></div>
-        <div><a href="https://www.instagram.com/peptodismaldesigns/">Peptodismal Designs</a></div>
-        <div><a href="http://watson.surge.sh/">Cute dog</a></div>
+        <br></br>
+        <br></br>
+        <h3>Talks</h3>
+        <div className="videoWrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Hp_cJGwT1Jc?start=211"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <br></br>
+        <br></br>
+        <h3>Side projects</h3>
+        <div>
+          <a href="https://thenopegame.gtsb.io/">The Nope Game v0.1</a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/peptodismaldesigns/">
+            Peptodismal Designs
+          </a>
+        </div>
+        <div>
+          <a href="http://watson.surge.sh/">Cute dog</a>
+        </div>
       </div>
     </Layout>
   )

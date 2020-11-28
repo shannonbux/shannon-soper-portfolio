@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby"
+import "./layout.css"
 
 import { rhythm } from "../utils/typography"
 export default function Layout({ children }) {
@@ -27,7 +28,6 @@ export default function Layout({ children }) {
       <Link to={`/`}>
         <h3
           css={css`
-            margin-bottom: ${rhythm(2)};
             display: inline-block;
             font-style: normal;
           `}
@@ -43,6 +43,7 @@ export default function Layout({ children }) {
       >
         About
       </Link>
+      <div css={{ marginBottom: rhythm(2) }} />
       {children}
     </div>
   )
