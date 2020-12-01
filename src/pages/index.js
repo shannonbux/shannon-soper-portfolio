@@ -28,14 +28,11 @@ export default function Home({ data }) {
               <h3
                 css={css`
                   margin-bottom: ${rhythm(1 / 4)};
+                  text-decoration: underline;
+                  color: #000000;
                 `}
               >
-                {node.frontmatter.title}{" "}
-                <span
-                  css={css`
-                    color: #555;
-                  `}
-                ></span>
+                {node.frontmatter.title}
               </h3>
               <p>{node.excerpt}</p>
             </Link>

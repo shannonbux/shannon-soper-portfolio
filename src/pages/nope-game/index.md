@@ -3,7 +3,7 @@ title: "The Nope Game"
 date: "2019-11-07"
 ---
 
-For 6 months I was the Product Designer for this solo project called [the Nope Game v0.1](https://thenopegame.gtsb.io/).
+For 6 months, I was the Product Designer for this solo project called [the Nope Game v0.1](https://thenopegame.gtsb.io/). This project has been enormously fulfilling because it connects to my passion for clear communication.
 
 ![The Nope Game home screen](home-screen.jpeg)
 
@@ -19,7 +19,7 @@ To train my ability to say no (or yes) with confidence, I use something called T
 
 ## Why I care
 
-This project has been enormously fulfilling because I care about clear communication. This game acts like a friend who helps you not only decide _whether_ to say yes or no to a particular request, but also _why_ you answered the way you did. It imbues people with confidence when they're prepared to justify why they're saying yes or no.
+This game acts like a friend who helps you not only decide _whether_ to say yes or no to a particular request, but also _why_ you answered the way you did. It imbues people with confidence when they're prepared to justify why they're saying yes or no.
 
 ## Gaining empathy
 
@@ -60,6 +60,8 @@ Even though it's possible to say yes to a request, I wanted a memorable name. An
 ## Evoking a Magic 8 Ball
 
 In my brainstorm, saying yes, no, and maybe conjured memories of Magic 8 Balls and watching the triangle floating to the top with the answer appearing as white text with blue liquid around it.
+
+![dflkj](magic-eight-ball.jpeg)
 
 **Abstracting the Magic 8 Ball image** led me to a rounded equilateral triangle shape, the purplish blue color, a font that recalls 80's game shows. Here's a first draft of the **abstract combination logo**.
 
@@ -119,5 +121,6 @@ To that end, I'd like to make results shareable and make it easy for viewers to 
 
 I'd like to thank Marsha M. Linehan, the author of the worksheet, and Doug Benson, the person who introduced me to it.
 
-> “People have not caused all their own problems; They have to solve them anyway.”  
-> —Marsha M. Linehan, author of _DBT Skills Training_, includes the Dime Game worksheet
+> “People have not caused all their own problems; They have to solve them anyway.”
+
+<small>—Marsha M. Linehan, author of _DBT Skills Training_, includes the Dime Game worksheet</small>
