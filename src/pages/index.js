@@ -58,9 +58,6 @@ export default function Home({ data }) {
         <br></br>
         <h3>Side projects</h3>
         <div>
-          <a href="https://thenopegame.gtsb.io/">The Nope Game v0.1</a>
-        </div>
-        <div>
           <a href="https://www.instagram.com/peptodismaldesigns/">
             Peptodismal Designs
           </a>
