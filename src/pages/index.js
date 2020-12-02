@@ -3,6 +3,7 @@ import { css } from "@emotion/react"
 import { Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Home({ data }) {
   return (
@@ -16,6 +17,33 @@ export default function Home({ data }) {
         >
           Welcome to my portfolio!
         </h1>
+        <StaticImage
+          src="../pages/images/therapy.jpg"
+          maxHeight={400}
+          layout="constrained"
+          alt="UX therapy"
+          css={{
+            left: `50%`,
+            transform: `translateX(-50%)`,
+            marginBottom: rhythm(1),
+          }}
+        />
+        <div
+          css={css`
+            text-align: center;
+            display: block;
+            font-style: italic;
+            margin-bottom: 5.5rem;
+
+            @media (min-width: 720px) {
+              font-size: 20px;
+            }
+            font-size: 16px;
+          `}
+        >
+          “So tell me, how does this landing page make you feel?”
+        </div>
+        <h2>Projects</h2>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
@@ -40,7 +68,7 @@ export default function Home({ data }) {
         ))}
         <br></br>
         <br></br>
-        <h3>Talks</h3>
+        <h2>Talks</h2>
         <div className="videoWrapper">
           <iframe
             width="560"
@@ -53,7 +81,7 @@ export default function Home({ data }) {
         </div>
         <br></br>
         <br></br>
-        <h3>Side projects</h3>
+        <h2>Side projects</h2>
         <div>
           <a href="https://www.instagram.com/peptodismaldesigns/">
             Peptodismal Designs
