@@ -41,7 +41,7 @@ export default function Home({ data }) {
             font-size: 16px;
           `}
         >
-          “So tell me, how does this landing page make you feel?”
+          “So tell me, how does the landing page make you feel?”
         </div>
         <h2>Projects</h2>
         {data.allMarkdownRemark.edges.map(({ node }) => (
