@@ -1,35 +1,33 @@
 ---
-title: "The Nope Game"
+title: "The Nope Game App"
 date: "2019-11-07"
 ---
 
-For 6 months, I was the Product Designer for this solo project called [the Nope Game v0.1](https://thenopegame.gtsb.io/). This project has been enormously fulfilling because it connects to my passion for clear communication.
+For 6 months, I've worked on a passion project called The Nope Game. [Play v0.1 of the game here](https://thenopegame.gtsb.io/). This game acts like a friend who helps me not only decide _whether_ to say yes or no to a particular request, but also _why_ I answered the way I did. It imbues me with confidence because I'm prepared to justify why I'm saying yes or no, which is something I've struggled with.
 
 ![The Nope Game home screen](home-screen.jpeg)
 
 ## The Dilemma
 
-It's hard for many people, including me, to evaluate people's requests on my time and abilities. If say yes now, will I regret it later?
+It's hard for many people, especially me, to evaluate the impact of people's requests on my time. If I say yes now, will I regret it later? If I say no, will I lose my resolve if the other person pushes back?
 
-To train my ability to say no (or yes) with confidence, I use something called The Dime Game (the basis for The Nope Game). It leads the user through a series of questions and, based on the answers to those questions, calculates a recommendation. Let's say your dog wants you to take it on a walk at midnight. You could use the game to evaluate whether to say yes or no to your dog's request and how strongly to say yes or no.
+To train my ability to say no (or yes) with confidence, I use something called The Dime Game (the basis for The Nope Game App). It leads the user through a series of questions and, based on the answers to those questions, calculates a recommendation. Let's say your dog wants you to take it on a walk at midnight. You could use the game to evaluate whether to say yes or no to your dog's request and how strongly to say yes or no.
+
+<small>The worksheet for the original Dime Game</small>
 
 ![The Dime Game worksheet](dime-game-worksheet-one.jpeg)
 
 ![The Dime Game second page](dime-game-worksheet-two.jpeg)
 
-## Why I care
-
-This game acts like a friend who helps you not only decide _whether_ to say yes or no to a particular request, but also _why_ you answered the way you did. It imbues people with confidence when they're prepared to justify why they're saying yes or no.
-
 ## Gaining empathy
 
-Through **using this game over 100 times and recommending it to friends, family, and coworkers, I gathered the insights necessary** to create an empathy map.
+Through **using this game 100+ times and recommending it to dozens of people,** I gathered the insights necessary to create an empathy map.
 
 ![An empathy map depicting the experience of people receiving a request](empathy-map.jpeg)
 
 ## Lowering the barrier to entry
 
-I often avoided using the worksheet because I didn't want to print a new one every time I needed to use it. Printing it was a minor tedium that created enough difficulty to justify avoiding the task.
+I often avoided using the worksheet because I didn't want to print a new one every time I needed to use it. Printing it was a minor tedium that created enough friction to justify avoiding the task.
 
 I'd even look at the worksheet and, without writing on it, try to memorize my answers. Just to avoid reprinting it.
 
@@ -39,17 +37,17 @@ So, for a while I'd print stacks of worksheets to delay time between printing jo
 
 ## Signifying the fork in the road
 
-The left and right side of the worksheet, though they don't look like it, present a fork in the road of decision making. The left side of the worksheet is useful if you want to decide how strongly to _ask_ for something. The right side of the worksheet is useful when you need to decide how strongly to say _no_ to a request.
+The content of the worksheet itself had problems.
 
-Even though most folks just want to use one side of the worksheet, it looks like you're supposed to fill out both sides. The confusion arises because **both sides of the worksheet have the same level of hierarchy**.
+For example, the left and right side of the worksheet, though they don't look like it, present a fork in the road of decision making. The left side of the worksheet is useful if you want to decide how strongly to _ask_ for something. The right side of the worksheet is useful when you need to decide how strongly to say _no_ to a request.
+
+Even though most folks just want to use one side of the worksheet, it looks like you're supposed to fill out both sides. The confusion arises because **both sides of the worksheet are at the same level of hierarchy**.
 
 ![Which side of the worksheet should I start on?](two-column-worksheet.jpeg)
 
-The question that actually deserves the highest level of visual priority is “are you asking for something or responding to a request?”
-
 I decided to **create experiences custom-fit to each path** in the fork.
 
-## Paving the path
+## Designing the app
 
 The first path I focused on is _decide how strongly to say no_ to a request. The name "The Dime Game" doesn't offer clarity about what users can expect from the game. After some brainstorming, I renamed it "The Nope Game."
 
@@ -57,7 +55,7 @@ Even though it's possible to say yes to a request, I wanted a memorable name. An
 
 ![A screenshot showing that I'm focusing on the right side of the worksheet](right-side-worksheet.jpeg)
 
-## Evoking a Magic 8 Ball
+## Branding the app
 
 In my brainstorm, saying yes, no, and maybe conjured memories of Magic 8 Balls and watching the triangle floating to the top with the answer appearing as white text with blue liquid around it.
 
@@ -69,7 +67,7 @@ In my brainstorm, saying yes, no, and maybe conjured memories of Magic 8 Balls a
 
 The layered triangles are intended to mimic motion, like shaking the Magic 8 Ball or playing a card game and splaying the cards out in your hands.
 
-This is the first logo I've designed, and it was fun to experiment.
+This was the first logo I'd designed, and it was fun to experiment.
 
 ## Changing the genre
 
@@ -77,7 +75,7 @@ At the heart of The Nope Game are a series of yes or no questions. If you look a
 
 ![There isn't an official place to mark yes or no on the worksheet](rosie-request.jpeg)
 
-In addition, there's some tricky math involved in adding up the responses. To save the user from doing the math, and **to reduce the amount of work it takes for them to track their answers** to each question, I put the game into a survey format on a website.
+In addition, there's some tricky math involved in adding up the responses. To save the user from doing the math, and **to reduce the amount of work it takes for them to track their answers** to each question, I put the game into a survey format on the app.
 
 ![A survey makes yes or no answers easier for the user to mark](can-i-give.jpeg)
 
@@ -109,7 +107,7 @@ One survey question is a deal breaker. If you answer “no” to “Can I give t
 
 ## Evolving the game
 
-The pure visual design of the online survey doesn't match my vision yet; I haven't spent any time on font, alignment, color, etc. So that's one next step.
+The project now exists on the web in early form! [Play v0.1 of the game here](https://thenopegame.gtsb.io/). I'm currently testing it with users before investing in the visual design.
 
 Another structural change will be to let users save notes under each survey question so they can remember their reasoning, and to make the details viewable and editable at a later time if they want to revisit the decision.
 
