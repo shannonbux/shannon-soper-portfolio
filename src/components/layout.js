@@ -34,6 +34,7 @@ export default function Layout({ children }) {
           css={css`
             display: inline-block;
             font-style: normal;
+            padding-right: ${rhythm(2)};
           `}
         >
           {data.site.siteMetadata.title}
