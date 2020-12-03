@@ -18,7 +18,6 @@ export default function About({ data }) {
         src="../pages/images/profile-2019.JPG"
         maxWidth={700}
         layout="constrained"
-        placeholder="dominantColor"
         alt="empathy map for plugin library"
         css={{ marginBottom: rhythm(1) }}
       />
