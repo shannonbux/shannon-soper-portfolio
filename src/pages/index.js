@@ -15,6 +15,7 @@ export default function Home({ data }) {
             maxHeight={400}
             layout="constrained"
             alt="UX therapy"
+            placeholder="dominantColor"
             css={{
               left: `50%`,
               transform: `translateX(-50%)`,

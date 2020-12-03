@@ -5,6 +5,9 @@
  */
 
 module.exports = {
+  flags: {
+    FAST_DEV: true,
+  },
   siteMetadata: {
     title: `Shannon Soper — Product Designer`,
   },
@@ -45,7 +48,7 @@ module.exports = {
               maxWidth: 600,
             },
           },
-          `gatsby-remark-copy-linked-files`
+          `gatsby-remark-copy-linked-files`,
         ],
       },
     },
