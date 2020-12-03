@@ -11,9 +11,8 @@ export default function About({ data }) {
       <h1>Nice to meet you :)</h1>
       <p>
         I'm a product designer with 3+ years of doing remote research and design
-        for developer tools.
+        for developer tools and 6+ years of doing instructional design.
       </p>
-
       <StaticImage
         src="../pages/images/profile-2019.JPG"
         maxWidth={700}
@@ -46,14 +45,17 @@ export default function About({ data }) {
             Instructional designer for online and face-to-face classes for 6
             years
           </li>
-          <li>
-            After years of discussing, with anyone willing to listen, the
-            particular failings of poorly designed things, Shannon discovered
-            she could get paid for this strange hobby. Other hobbies: joking w/
-            family and friends, asking her cute dog "how did you get so cute?",
-            and hiking w/ hubs.
-          </li>
         </ul>
+      </div>
+      <div>
+        <h2>How I became a designer</h2>
+        <p>
+          After years of discussing, with anyone willing to listen, the
+          particular failings of poorly designed things, I discovered I could
+          get paid for this hobby. Other hobbies: joking w/ family and friends,
+          asking my cute baby and dog "how did you get so cute?", and hiking w/
+          hubs.
+        </p>
       </div>
     </Layout>
   )

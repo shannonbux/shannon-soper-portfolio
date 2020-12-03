@@ -11,7 +11,7 @@ export default function Home({ data }) {
       <div>
         <div css={{ paddingLeft: rhythm(1 / 2), paddingRight: rhythm(1 / 2) }}>
           <StaticImage
-            src="../pages/images/therapy.jpg"
+            src="../pages/images/therapy-two.jpg"
             maxHeight={400}
             layout="constrained"
             alt="UX therapy"
