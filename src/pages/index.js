@@ -17,17 +17,19 @@ export default function Home({ data }) {
         >
           Welcome to my portfolio!
         </h1>
-        <StaticImage
-          src="../pages/images/therapy.jpg"
-          maxHeight={400}
-          layout="constrained"
-          alt="UX therapy"
-          css={{
-            left: `50%`,
-            transform: `translateX(-50%)`,
-            marginBottom: rhythm(1),
-          }}
-        />
+        <div css={{ paddingLeft: rhythm(1 / 2), paddingRight: rhythm(1 / 2) }}>
+          <StaticImage
+            src="../pages/images/therapy.jpg"
+            maxHeight={400}
+            layout="constrained"
+            alt="UX therapy"
+            css={{
+              left: `50%`,
+              transform: `translateX(-50%)`,
+              marginBottom: rhythm(1),
+            }}
+          />
+        </div>
         <div
           css={css`
             text-align: center;
