@@ -21,8 +21,12 @@ export default function Layout({ children }) {
       css={css`
         margin: 0 auto;
         max-width: 700px;
-        padding: ${rhythm(2)};
-        padding-top: ${rhythm(1.5)};
+        padding: ${rhythm(3 / 4)};
+        padding-top: ${rhythm(1 / 2)};
+        @media (min-width: 720px) {
+          padding: ${rhythm(2)};
+          padding-top: ${rhythm(1.5)};
+        }
       `}
     >
       <Link to={`/`}>
