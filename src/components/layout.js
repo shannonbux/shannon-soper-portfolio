@@ -42,7 +42,15 @@ export default function Layout({ children }) {
       <Link
         to={`/about/`}
         css={css`
-          float: right;
+          position: absolute;
+          top: ${rhythm(1 / 2)};
+          right: ${rhythm(1 / 2)};
+          @media (min-width: 720px) {
+            float: right;
+            position: relative;
+            top: 0;
+            right: 0;
+          }
         `}
       >
         About
