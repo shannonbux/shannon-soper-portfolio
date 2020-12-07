@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
-import SEO from "../components/seo"
 
 export default function Home({ data }) {
   return (
