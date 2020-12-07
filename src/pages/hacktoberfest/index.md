@@ -3,45 +3,45 @@ title: "Hacktoberfest Docs Contributions"
 date: "2018-10-12"
 ---
 
-I ran a [Hacktoberfest docs contribution project](https://www.gatsbyjs.com/blog/2018-10-12-uptick-docs-contributions-hacktoberfest) to merge over 30 docs contributions to the Gatsby open source project.
+If you haven't participated in [Hacktoberfest](https://hacktoberfest.digitalocean.com/) before, a quick introduction. It's a celebration of open source projects every year during October. To participate, you sign up at [this website](https://hacktoberfest.digitalocean.com/), get a number of PR's merged to a participating open source project, and then get a t-shirt!
+
+Gatsby was a participating open source project for Hacktoberfest in 2018, and I was part of doubling our number of new contributors over that month.
 
 ## The challenge
 
-I'd heard of Hacktoberfest before and had this idea. There was a long list of TODO's to improve the docs and some of them could be accomplished by newcomers, I thought.
+Initially, Hacktoberfest wasn't on my radar. However, after interviewing Gatsby users and creating a long list of TODO's to improve the docs, I hypothesized that some of the TODO's could be accomplished by newcomers during Hacktoberfest.
 
-To scope out the competition and empathize, I looked at Hacktoberfest's list of projects to contribute to. It took three hours to find a project that had a beginner-friendly issue that I could resolve (side note: I did find one and got a t-shirt!).
-
-Conclusion: it was very difficult to find issues that didn't require deep expertise in the project.
+From a year of trying other methods to increase docs contribution, I guessed that Hacktoberfest wouldn't be a silver bullet. It already wasn't easy to attract new contributors and help them successfully contribute to Gatsby; why would Hacktoberfest change those facts?
 
 ## The opportunity
 
-It seemed we had a low risk, high impact opportunity to help newcomers have a good experience getting a contribution merged. Also, we had issues that really needed to get done, so it was a win-win situation.
+To get ideas on how we could stand out from the crowd, I looked at Hacktoberfest's list of projects to contribute to. It took three hours to find a project that had a beginner-friendly issue that I could resolve (side note: I did find one and got a t-shirt!).
 
-This “Hacktoberfest” welcome issue is the first thing they saw.
+My conclusion was that we could **differentiate ourselves** with our Hacktoberfest onboarding. If newcomers could spend less than 3 hours finding a Gatsby issue to resolve, we'd have a leg up.
+
+## Giving a welcoming first impression
+
+I started out by creating a clear, welcoming first impression. This “Hacktoberfest” welcome issue is the first thing any new contributors saw.
 
 ![Hacktoberfest landing page](hacktoberfest-landing-page.png)
 
-<small>This landing page welcomed folks to our Hacktoberfest project.</small>
-
 ## Creating a pit of success
 
-One of the challenges of open source work is responding to contributions that need a lot of reworking before they can be merged. To learn what **friction my coworkers experienced in merging PR's**, I asked them questions. I knew they had good intentions, and yet they often didn't know what to say and/or didn't have the time to help a newcomer clean up their PR.
+To make sure folks continued to have a good experience beyond their first impression, we designed [issues that set contributors up for success](https://github.com/gatsbyjs/gatsby/issues/8730).
 
-I tackled this problem in two ways.
-
-First, I set out to **create a pit of success**. Myself and a developer, Amberley Romo, created a template for docs issues to make them nearly fool proof. The issues included excruciatingly specific instructions to nearly guarantee that PR submissions would meet our expectations. This meant the PR's could be speedily merged.
+To increase the chance that any given PR would be merged, myself and a developer, Amberley Romo, created a template for docs issues to make them nearly fool proof. The issues included excruciatingly specific instructions to nearly guarantee that PR submissions would meet our expectations. This meant the PR's could be speedily merged.
 
 ![Hacktoberfest issue](hacktoberfest-issue.png)
 
-<small>[This issue](https://github.com/gatsbyjs/gatsby/issues/8730) has enough instructions to ensure speedy merging of PRs and closing of issues.</small>
-
 ## Helping my coworkers succeeed
 
-Second, we **planned for edge cases that could slow down our response time**. For PR's and issues that didn't meet the project's needs. I **created a decision tree**. This helped myself and other maintainers respond appropriately and consistently to each contributor.
+After submitting a PR for review, another pain point for contributors is getting the PR actually merged. Sometimes the open source maintainers don't respond for weeks or leave cryptic responses.
+
+Through chatting with my coworkers, I learned what **friction they experienced in merging PR's**. They had good intentions and yet they often didn't know what to say and/or didn't have the time to help a newcomer clean up their PR.
+
+I tackled this problem by **planning for edge cases that could slow down our response time**. For PR's and issues that didn't meet the project's needs, I **created a decision tree**. This helped myself and other maintainers respond appropriately and consistently to each contributor.
 
 ![Docs Decision Tree](docs-decision-tree.png)
-
-<small>Here's one branch of the decision tree.</small>
 
 ## Systematizing our responses
 
@@ -56,5 +56,7 @@ Gatsby appeared in **Hacktoberfest's top projects** to contribute to in 2018. My
 ## Supporting contributors
 
 The team of Gatsby maintainers gave new contributors a great experience. It was fun to be part of this project and see that it made a difference for folks new to open source projects!
+
+It's also nice to have a break. I'm glad its Hackt_over_fest.
 
 ![Happy contributors](happy-contributors.png)
