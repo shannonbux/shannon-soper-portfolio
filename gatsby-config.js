@@ -9,20 +9,20 @@ module.exports = {
     title: `Shannon Soper — Product Designer`,
   },
   plugins: [
-    /*{
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Shannon Soper`,
+        short_name: `Shannon`,
         start_url: `/`,
-        background_color: `#6b37bf`,
-        theme_color: `#6b37bf`,
+        background_color: `#D82802`,
+        theme_color: `#D82802`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/black-and-white.png`, // This path is relative to the root of the site.
       },
-    },*/
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -45,7 +45,7 @@ module.exports = {
               maxWidth: 600,
             },
           },
-          `gatsby-remark-copy-linked-files`
+          `gatsby-remark-copy-linked-files`,
         ],
       },
     },
