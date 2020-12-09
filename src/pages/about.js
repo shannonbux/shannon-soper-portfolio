@@ -10,8 +10,8 @@ export default function About({ data }) {
     <Layout>
       <h1>Nice to meet you :)</h1>
       <p>
-        I'm a product designer with 3+ years of doing remote research and design
-        for developer tools and 6+ years of doing instructional design.
+        I'm a Product Designer with a UX Research passion with 3+ years
+        designing developer tools and 6+ years designing learning experiences.
       </p>
       <StaticImage
         src="../pages/images/profile-2019.JPG"
