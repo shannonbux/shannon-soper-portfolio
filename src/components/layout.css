@@ -15,6 +15,10 @@ video {
   }
 }
 
+a {
+  color: #ec5800;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */

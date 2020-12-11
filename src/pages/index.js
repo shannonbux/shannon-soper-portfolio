@@ -9,6 +9,32 @@ export default function Home({ data }) {
   return (
     <Layout>
       <div>
+        <div
+          css={css`
+            color: #ec5800;
+            margin-bottom: 4rem;
+          `}
+        >
+          <h1>
+            I'm a{" "}
+            <span
+              css={css`
+                color: #ec5800;
+              `}
+            >
+              Product Designer
+            </span>{" "}
+            with a passion for{" "}
+            <span
+              css={css`
+                color: #ec5800;
+              `}
+            >
+              UX Research
+            </span>
+            .
+          </h1>
+        </div>
         <div css={{ paddingLeft: rhythm(1 / 2), paddingRight: rhythm(1 / 2) }}>
           <StaticImage
             src="../pages/images/therapy-two.jpg"
@@ -27,7 +53,7 @@ export default function Home({ data }) {
             text-align: center;
             display: block;
             font-style: italic;
-            margin-bottom: 5.5rem;
+            margin-bottom: 4rem;
 
             @media (min-width: 720px) {
               font-size: 20px;

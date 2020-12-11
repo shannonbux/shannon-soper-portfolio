@@ -10,7 +10,7 @@ export default function About({ data }) {
     <Layout>
       <h1>Nice to meet you :)</h1>
       <p>
-        I'm a Product Designer with a UX Research passion with 3+ years
+        I'm a Product Designer with a passion for UX Research. I have 3+ years
         designing developer tools and 6+ years designing learning experiences.
       </p>
       <StaticImage
@@ -21,18 +21,26 @@ export default function About({ data }) {
         css={{ marginBottom: rhythm(1) }}
       />
 
-      <h2>Apps:</h2>
+      <h2>Apps</h2>
       <div>
         <ul>
           <li>Zoom</li>
           <li>Usertesting.com</li>
           <li>FullStory</li>
           <li>Figma</li>
+        </ul>
+      </div>
+      <h2>Links</h2>
+      <div>
+        <ul>
           <li>
             <a href="https://github.com/shannonbux">Find me on GitHub</a>
           </li>
           <li>
             <a href="https://twitter.com/shannonb_ux">Follow me on Twitter</a>
+          </li>
+          <li>
+            <a href="/shannon-soper-resume.pdf">Resume</a>
           </li>
         </ul>
       </div>
