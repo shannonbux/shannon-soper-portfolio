@@ -44,8 +44,7 @@ export default function About({ data }) {
           </li>
         </ul>
       </div>
-      <br></br>
-      <h2>Background:</h2>
+      <h2>Background</h2>
       <div>
         <ul>
           <li>MA in English: Rhetoric emphasis</li>

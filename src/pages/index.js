@@ -60,7 +60,7 @@ export default function Home({ data }) {
             font-size: 16px;
           `}
         >
-          “So tell me, how does the landing page
+          “So tell me, how did that landing page
           <br /> make you feel?”
         </div>
         <h2>Projects</h2>
