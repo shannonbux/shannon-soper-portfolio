@@ -35,15 +35,14 @@ export default function Home({ data }) {
             .
           </h1>
         </div>
-        <div css={{ paddingLeft: rhythm(1 / 2), paddingRight: rhythm(1 / 2) }}>
+        <div css={{ textAlign: `center` }}>
           <StaticImage
             src="../pages/images/therapy-two.jpg"
-            maxHeight={400}
+            maxWidth={400}
             layout="constrained"
             alt="UX therapy"
             css={{
-              left: `50%`,
-              transform: `translateX(-50%)`,
+              margin: `0 auto`,
               marginBottom: rhythm(1),
             }}
           />
@@ -92,12 +91,13 @@ export default function Home({ data }) {
         <h2>Talks</h2>
         <div className="videoWrapper">
           <iframe
+            title="Shannon Soper Talk"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/videoseries?list=PLR38WdMdLF9sFCz15rbSQzMQrYYZ-ObiO"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <br></br>
