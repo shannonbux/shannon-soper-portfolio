@@ -1,5 +1,5 @@
 ---
-title: "Creating a motivational learning environment"
+title: "Instructure Sales Training"
 date: "2015-07-31"
 ---
 
@@ -15,7 +15,7 @@ I was fresh out of college and after I sat down to work, I freaked myself out by
 
 I felt **excited to be entrusted with freedom to lead the project** and dove in with quick wins that built on each other.
 
-I pored through materials from _The Challenger Sale_ organization and found an idea that could harness our sales team's competitive style: a pilot program where a small group has to read _The Challenger Sale_ and present what they learned to the whole sales organization with some prizes involved.
+I pored over materials from _The Challenger Sale_ organization and found an idea from another company that we could copy: a pilot program where a small group has to read _The Challenger Sale_ and present what they learned to the whole sales organization with some prizes involved.
 
 ## Building up user motivation
 
