@@ -16,7 +16,7 @@ export default function Home({ data }) {
           `}
         >
           <h1>
-            I'm a{" "}
+            I’m a{" "}
             <span
               css={css`
                 color: #ec5800;

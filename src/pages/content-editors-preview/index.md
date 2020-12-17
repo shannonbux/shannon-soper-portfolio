@@ -5,23 +5,50 @@ date: "2020-01-15"
 
 During the end of 2019, I designed a preview experience for content editors using Gatsby Preview.
 
-## The Dilemma
+The need for Gatsby Preview arises from the decoupling of content services and web frameworks, which means that one page on a website can display content from multiple data sources. Because of this, content creators and editors can’t easily figure out how to edit the content they see on their live site.
 
-The decoupling of content services and web frameworks means that one single page on a website can display content from multiple data sources. Because of this, content creators and editors can’t easily figure out how to edit the content they see in a Gatsby Preview instance or in their live site.
-
-This is a dilemma, because editing content, seeing it displayed, editing it again, and getting feedback before publishing is a main workflow for content creators.
-
-## My role
-
-I found six content creators to interview and presented actionable results to a team of stakeholders.
-
-## Discovering personas and their jobs to be done
+## Volunteering to do research
 
 Since Gatsby is a developer tools company, we had some blind spots when it came to designing our product, Gatsby Preview, for non-developers. Non-developers are _crucial_ to shipping a high quality website or app. They create all the products, words, videos, colors, etc. that appear on the web.
 
-Our question: “who is using Gatsby Preview and why are they using it?”
+I identified our blindspot in a company meeting where I watched my coworkers struggle to create a Wardley Map for their concept of Gatsby Preview. I asked “how much do we know about content creators and their needs?” People had lukewarm answers, so I offered to do some research.
 
-After interviewing six content creators (who did not use Gatsby) and many Gatsby Preview customers, I created a list of personas and their jobs to be done along with an example of what life is like for them.
+I created a plan, got feedback, and got approved for the project. Here's the plan I proposed after I filled it out with answers.
+
+[Marketing Workflow Executive Summary](../marketing-executive-summary.pdf)
+
+## Scrappy recruiting
+
+After contacting developer customers and asking for intros to their content creator coworkers without much success, I felt blocked in the project. It occurred to me I could draw out my own user flow for the steps to a successful research project and identify my own pain points.
+
+After identifying that recruiting was my biggest pain point, I realized I didn't have to rely on customers. I personally know many marketers and writers, so I reached out on Facebook and Twitter and quickly filled up my calendar with meetings. I even met with a few people I didn't know who were just interested in the project!
+
+Another idea to make recruiting easier was to incentivize developers to give me referrals by placing them on a list of people who get to test alpha and beta features. I did this for later projects.
+
+## Discovering user flows
+
+To make sure I didn't ask leading questions, I planned broad, open-ended questions and tested them with a couple content creator coworkers before starting the real interviews (and I also learned from my coworkers :)
+
+1. Where are you located?
+2. What is the name of your company?
+3. What is the name of your role?
+4. How long have you been in that role?
+5. How and when did you start doing what you’re doing?
+6. What are some of the most recent projects you’ve worked on?
+7. What are your main activities?
+8. Do you work at all on your company’s websites? If so, what do you do? How often?
+9. What is the process to get an update onto the website? Who are the people you have to work with to get the update on the website?
+10. How long does it take to get an update on the website?
+11. How do you measure whether you’re successful at working on the company website(s)?
+12. What is hard about measuring success?
+13. What is currently the biggest blocker to success with the company’s website(s)?
+14. What are the other hardest parts of your job?
+
+_If needed, ask more specifically what pain points they experience when trying to be successful at their job and the measures of success they mentioned in answer to question 9._
+
+## Discovering personas and their jobs to be done
+
+After interviewing 8 content creators (who did not use Gatsby) and many Gatsby Preview customers, I created a list of personas and their jobs to be done along with an example of what life is like for them.
 
 **Content creators** expect to see content and edit it so they can improve the content’s impact on its audience - increase leads, clickthroughs, etc.
 
@@ -72,7 +99,38 @@ After interviewing several current customers, I created this user flow to reflec
 
 ## Presenting results to stakeholders
 
-I presented the above findings to stakeholders and identified
+I presented the above findings to stakeholders and identified:
 
 - quick wins to resolve current pain points quickly
 - long term ideas to improve strategy to make a product that delights users as it solves their problems and empowers them to make awesome websites
+
+## Sketching
+
+I looked through many competitor's products and started sketching some ideas. My favorite inspirations are Figma's commenting system (which isn't perfect) and WordPress's Gutenberg editor (which also has its flaws).
+
+### User can see where each part of page comes from
+
+![Sketch of Preview Content Sources](preview-content-source.jpg)
+
+### User can sort and filter comments by type
+
+![Sketch of Preview Comment Styles](preview-content-style.jpg)
+
+### User gets notified of new comments via email
+
+![Sketch of Preview commenting](preview-email-notification.jpg)
+
+## User can track versions of site
+
+![Sketch of Preview Versioning](preview-versioning.jpg)
+
+## MVP
+
+I proposed the following MVP.
+
+- To enable up-to-date feedback between internal stakeholders, user can leave comments and read comments on the site preview. The comment must be anchored in place and time.
+- To get notified about important comments and changes, user can be notified via email and Slack when someone @mentions them in a comment on the site preview.
+
+This was a really light-weight MVP proposal. See this design document for my ideas for phase 2 and phase 3 of the product.
+
+[Gatsby Preview Design Document](../preview-design-document.pdf)
