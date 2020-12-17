@@ -42,22 +42,7 @@ export default function Layout({ children }) {
           {data.site.siteMetadata.title}
         </h3>
       </Link>
-      <Link
-        to={`/about/`}
-        css={css`
-          position: absolute;
-          top: ${rhythm(1 / 2)};
-          right: ${rhythm(1 / 2)};
-          @media (min-width: 720px) {
-            float: right;
-            position: relative;
-            top: 0;
-            right: 0;
-          }
-        `}
-      >
-        About
-      </Link>
+
       <div css={{ marginBottom: rhythm(2) }} />
       {children}
     </div>

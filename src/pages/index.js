@@ -104,12 +104,67 @@ export default function Home({ data }) {
         <br></br>
         <h2>Side projects</h2>
         <div>
-          <a href="https://www.instagram.com/peptodismaldesigns/">
-            Peptodismal Designs
-          </a>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/peptodismaldesigns/">
+                Peptodismal Designs
+              </a>
+            </li>
+            <li>
+              <a href="http://watson.surge.sh/">Cute dog</a>
+            </li>
+          </ul>
+        </div>
+        <h2>Apps</h2>
+        <div>
+          <ul>
+            <li>Zoom</li>
+            <li>Usertesting.com</li>
+            <li>FullStory</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <h2>Background</h2>
+        <div>
+          <ul>
+            <li>
+              <a href="/shannon-soper-resume.pdf">Resume</a>
+            </li>
+            <li>MA in English: Rhetoric emphasis</li>
+            <li>
+              Instructional designer for online and face-to-face classes for 6
+              years
+            </li>
+          </ul>
         </div>
         <div>
-          <a href="http://watson.surge.sh/">Cute dog</a>
+          <h2>Contact Info</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/shannonbux">Find me on GitHub</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/shannonb_ux">Follow me on Twitter</a>
+            </li>
+            <li>shannon.soper@gmail.com</li>
+          </ul>
+          <StaticImage
+            src="../pages/images/profile-2019.JPG"
+            maxWidth={700}
+            layout="fluid"
+            alt="empathy map for plugin library"
+            css={{
+              marginTop: rhythm(1),
+              marginBottom: rhythm(1),
+            }}
+          />
+          <p>
+            After years of discussing, with anyone willing to listen, the
+            particular failings of poorly designed things, I discovered I could
+            get paid for this hobby. Other hobbies: joking w/ family and
+            friends, asking my cute baby and dog "how did you get so cute?", and
+            hiking w/ hubs.
+          </p>
         </div>
       </div>
     </Layout>
