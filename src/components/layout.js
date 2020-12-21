@@ -2,8 +2,6 @@ import React from "react"
 import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import "./layout.css"
-import "typeface-glacial-indifference"
-import "fontsource-league-spartan/latin.css"
 
 import { rhythm } from "../utils/typography"
 export default function Layout({ children }) {
