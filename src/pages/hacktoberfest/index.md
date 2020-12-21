@@ -3,27 +3,27 @@ title: "Hacktoberfest Docs Contributions"
 date: "2018-10-12"
 ---
 
-If you haven't participated in [Hacktoberfest](https://hacktoberfest.digitalocean.com/) before, a quick introduction. It's a celebration of open source projects every year during October. To participate, you sign up at [this website](https://hacktoberfest.digitalocean.com/), get a number of PR's merged to a participating open source project, and then get a t-shirt!
+If you haven't participated in [Hacktoberfest](https://hacktoberfest.digitalocean.com/) before, it's a celebration of open source projects every October. To participate, you sign up at [this website](https://hacktoberfest.digitalocean.com/), get a number of PR's merged to a participating open source project, and get a t-shirt.
 
-Gatsby was a participating open source project for Hacktoberfest in 2018, and I was part of doubling our number of new contributors over that month.
+Gatsby was a participating open source project for Hacktoberfest in 2018, and I helped **double our number of new contributors that month.**
 
 ## The challenge
 
-Initially, Hacktoberfest wasn't on my radar. However, after interviewing Gatsby users and creating a long list of TODO's to improve the docs, I hypothesized that some of the TODO's could be accomplished by newcomers during Hacktoberfest.
-
-From a year of trying other methods to increase docs contribution, I guessed that Hacktoberfest wouldn't be a silver bullet. It already wasn't easy to attract new contributors and help them successfully contribute to Gatsby; why would Hacktoberfest change those facts?
-
-## The opportunity
-
-To get ideas on how we could stand out from the crowd, I looked at Hacktoberfest's list of projects to contribute to. It took three hours to find a project that had a beginner-friendly issue that I could resolve (side note: I did find one and got a t-shirt!).
+To understand the user flow for a Hacktoberfest contributor, I looked at Hacktoberfest's list of projects to contribute to. It took three hours to find a project that had a beginner-friendly issue that I could resolve (side note: I did find one and got a t-shirt!).
 
 My conclusion was that we could **differentiate ourselves** with our Hacktoberfest onboarding. If newcomers could spend less than 3 hours finding a Gatsby issue to resolve, we'd have a leg up.
 
 ## Giving a welcoming first impression
 
-I started out by creating a clear, welcoming first impression. This “Hacktoberfest” welcome issue is the first thing any new contributors saw.
+First, I created a clear, welcoming first impression. This “Hacktoberfest” welcome issue is the first thing any new contributors saw.
 
 ![Hacktoberfest landing page](hacktoberfest-landing-page.png)
+
+## The opportunity
+
+Initially, Hacktoberfest wasn't on my radar. However, after interviewing Gatsby users and creating a long list of TODO's to improve the docs, I hypothesized that some of the TODO's could be accomplished by newcomers during Hacktoberfest.
+
+From a year of trying other methods to increase docs contribution, I guessed that Hacktoberfest wouldn't be a silver bullet. It already wasn't easy to attract new contributors and help them successfully contribute to Gatsby; why would Hacktoberfest change those facts?
 
 ## Creating a pit of success
 
