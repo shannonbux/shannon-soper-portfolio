@@ -3,17 +3,36 @@ title: "Gatsby Preview"
 date: "2020-01-15"
 ---
 
-During the end of 2019, I designed a preview experience for content editors using Gatsby Preview.
+During the end of 2019, I designed a preview experience for content editors working on Gatsby websites.
 
-The need for Gatsby Preview arises from the decoupling of content services and web frameworks, which means that one page on a website can display content from multiple data sources. Because of this, content creators and editors can’t easily figure out how to edit the content they see on their live site.
+Gatsby websites pull content from multiple sources, so content creators can’t easily figure out how to edit the content they see on their live site. This means that though developers love building a Gatsby site, content creators don't love working on the site.
+
+![Decoupling of source and delivery creates a problem for content creators](decoupled-problem.jpg)
+
+Gatsby Preview attempts to make content creators happy. I had these sticky notes by my desk to remind myself of the main goal of Gatsby Preview: make marketers (content creators) happy.
+
+![We need Preview to solve the problem](we-need-preview.jpg)
+
+## Documenting the user flow
+
+After interviewing several current customers, I created this user flow to reflect how they actually used our alpha version of Gatsby Preview and what their emotional state was during their flow.
+
+![Gatsby Preview user flow](gatsby-preview-user-flow.png)
+
+## Quick wins
+
+I proposed the following quick win.
+
+- can we reduce how much time it takes for someone to edit a page, see it in Preview, and edit it again?
+- can we reduce how much time it takes for someone to share a Preview instance?
+
+Main goal: speed up the editing and feedback cycle.
 
 ## Volunteering to do research
 
-Since Gatsby is a developer tools company, we had some blind spots when it came to designing our product, Gatsby Preview, for non-developers. Non-developers are _crucial_ to shipping a high quality website or app. They create all the products, words, videos, colors, etc. that appear on the web.
+After presenting this user flow to my coworkers, I observed that they didn't know much about content creator's needs.
 
-I identified our blindspot in a company meeting where I watched my coworkers struggle to create a Wardley Map for their concept of Gatsby Preview. I asked “how much do we know about content creators and their needs?” People had lukewarm answers, so I offered to do some research.
-
-I created a plan, got feedback, and got approved for the project. Here's the plan I proposed after I filled it out with answers.
+I created a plan to do more research, got feedback from coworkers, and got approved for the project. Here's my proposed research project, filled out with answers.
 
 [Marketing Workflow Executive Summary](../marketing-executive-summary.pdf)
 
@@ -21,13 +40,15 @@ I created a plan, got feedback, and got approved for the project. Here's the pla
 
 After contacting developer customers and asking for intros to their content creator coworkers without much success, I felt blocked in the project. It occurred to me I could draw out my own user flow for the steps to a successful research project and identify my own pain points.
 
-After identifying that recruiting was my biggest pain point, I realized I didn't have to rely on customers. I personally know many marketers and writers, so I reached out on Facebook and Twitter and quickly filled up my calendar with meetings. I even met with a few people I didn't know who were just interested in the project!
+![My own user flow](my-user-flow.jpg)
+
+After identifying that that recruiting customers via Twitter and email wasn't working for content creators as well as did for developer customers, I realized I didn't have to rely on customers. I personally know many marketers and writers, so I reached out on Facebook and Twitter and quickly filled up my calendar with meetings.
 
 Another idea to make recruiting easier was to incentivize developers to give me referrals by placing them on a list of people who get to test alpha and beta features. I did this for later projects.
 
 ## Discovering user flows
 
-To make sure I didn't ask leading questions, I planned broad, open-ended questions and tested them with a couple content creator coworkers before starting the real interviews (and I also learned from my coworkers :)
+To make sure I didn't ask leading questions, I planned broad, open-ended questions and tested them with a couple content creator coworkers.
 
 1. Where are you located?
 2. What is the name of your company?
@@ -68,11 +89,11 @@ After interviewing 8 content creators (who did not use Gatsby) and many Gatsby P
 
 ## Creating a conceptual design
 
-The purpose of Gatsby Preview is to enable collaboration amongst all people working on a website or app. Through my interviews with users and through evaluating competitors, I described the essential problem in collaboration and identified the heart and soul that would animate a good solution:
+To avoid becoming blind to opportunities outside our product's current scope, I interviewed people who didn't use Gatsby so I could see the root problems of website creation, regardless of whether a content creator uses Gatsby.
 
 ## Problem 1 = inefficient feedback cycle
 
-First, website collaboration is often inefficient. Methods like screenshots and/or comments sent via email and Slack are inefficient because the comments are out-of-context, immediately become out-of-date, and are disconnected from tasks/issue workflows.
+First, website creation is often inefficient. Methods like screenshots and/or comments sent via email and Slack are inefficient because the comments are out-of-context, immediately become out-of-date, and are disconnected from tasks/issue workflows.
 
 A solution that **speeds up the feedback cycle** must include:
 
@@ -82,7 +103,7 @@ A solution that **speeds up the feedback cycle** must include:
 
 ## Problem 2 = unhelpful feedback
 
-Second, even if the collaboration method is perfect, the content of what people say can still be imperfect. People often give unwise feedback and struggle with making decisions or coming to consensus when designing or revamping a website.
+Second, even if the website creation method is perfect, the content of what people say can still be imperfect. People often give unwise feedback and struggle with making decisions or coming to consensus when designing or revamping a website.
 
 A solution that **helps teams make better website decisions** must include:
 
@@ -91,20 +112,7 @@ A solution that **helps teams make better website decisions** must include:
 - **Connection to design workflows**, (especially design systems)
 - **SEO and performance measurements** so stakeholders can measure impact of proposed changes
 
-## Documenting the user flow
-
-After interviewing several current customers, I created this user flow to reflect how they actually used Gatsby Preview and what their emotional state was during their flow.
-
-![Gatsby Preview user flow](gatsby-preview-user-flow.png)
-
-## Presenting results to stakeholders
-
-I presented the above findings to stakeholders and identified:
-
-- quick wins to resolve current pain points quickly
-- long term ideas to improve strategy to make a product that delights users as it solves their problems and empowers them to make awesome websites
-
-## Sketching
+## Long term ideas
 
 I looked through many competitor's products and started sketching some ideas. My favorite inspirations are Figma's commenting system (which isn't perfect) and WordPress's Gutenberg editor (which also has its flaws).
 
@@ -126,7 +134,7 @@ I looked through many competitor's products and started sketching some ideas. My
 
 ## MVP
 
-I proposed the following MVP.
+I proposed the following MVP for a next iteration.
 
 - To enable up-to-date feedback between internal stakeholders, user can leave comments and read comments on the site preview. The comment must be anchored in place and time.
 - To get notified about important comments and changes, user can be notified via email and Slack when someone @mentions them in a comment on the site preview.
