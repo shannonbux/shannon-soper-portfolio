@@ -38,6 +38,7 @@ export default function Home({ data }) {
         <div css={{ textAlign: `center` }}>
           <StaticImage
             src="../pages/images/therapy-two.jpg"
+            formats={["auto", "webp", "avif"]}
             maxWidth={400}
             layout="constrained"
             alt="UX therapy"
@@ -151,6 +152,7 @@ export default function Home({ data }) {
           <StaticImage
             src="../pages/images/profile-2019.JPG"
             maxWidth={700}
+            formats={["auto", "webp", "avif"]}
             layout="fluid"
             alt="empathy map for plugin library"
             css={{
