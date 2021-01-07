@@ -1,9 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "shannon-soper-portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "0BSD",
+  "description": "A sweet portfolio",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
