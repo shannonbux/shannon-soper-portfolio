@@ -37,7 +37,7 @@ export default function Home({ data }) {
         </div>
         <div css={{ textAlign: `center` }}>
           <StaticImage
-            src="../pages/images/therapy-two.jpg"
+            src="./images/therapy-two.jpg"
             formats={["auto", "webp", "avif"]}
             maxWidth={400}
             layout="constrained"
@@ -150,10 +150,10 @@ export default function Home({ data }) {
             <li>shannon.soper@gmail.com</li>
           </ul>
           <StaticImage
-            src="../pages/images/profile-2019.JPG"
+            src="./images/profile-2019.JPG"
             maxWidth={700}
             formats={["auto", "webp", "avif"]}
-            layout="fluid"
+            layout="constrained"
             alt="empathy map for plugin library"
             css={{
               marginTop: rhythm(1),
