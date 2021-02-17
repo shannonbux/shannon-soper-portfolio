@@ -12,7 +12,6 @@ export default function Home({ data }) {
         <div
           css={css`
             color: #ec5800;
-            margin-bottom: 4rem;
           `}
         >
           <h1>
@@ -35,34 +34,40 @@ export default function Home({ data }) {
             , looking for my next role.{" "}
           </h1>
         </div>
-        <div css={{ textAlign: `center` }}>
-          <StaticImage
-            src="./images/therapy-two.jpg"
-            formats={["auto", "webp", "avif"]}
-            maxWidth={400}
-            layout="constrained"
-            alt="UX therapy"
-            css={{
-              margin: `0 auto`,
-              marginBottom: rhythm(1),
-            }}
-          />
-        </div>
+        <StaticImage
+          src="./images/profile-2019.JPG"
+          maxWidth={600}
+          formats={["auto", "webp", "avif"]}
+          layout="constrained"
+          alt="a photo of me in an orange jacket in front of brick buildings in Blockley, England."
+          css={{
+            marginTop: rhythm(1),
+            marginBottom: rhythm(1),
+          }}
+        />
         <div
           css={css`
-            text-align: center;
+            text-align: left;
             display: block;
             font-style: italic;
             margin-bottom: 4rem;
 
             @media (min-width: 720px) {
-              font-size: 20px;
+              font-size: 24px;
             }
-            font-size: 16px;
           `}
         >
-          “So tell me, how did that landing page
-          <br /> make you feel?”
+          Me: “So tell me, what are your thoughts about my portfolio?”
+          <br />
+          You: [share your thoughts with me at{" "}
+          <span
+            css={css`
+              color: #ec5800;
+            `}
+          >
+            shannon.soper@gmail.com
+          </span>
+          !]
         </div>
         <h2>Projects</h2>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -149,17 +154,7 @@ export default function Home({ data }) {
             </li>
             <li>shannon.soper@gmail.com</li>
           </ul>
-          <StaticImage
-            src="./images/profile-2019.JPG"
-            maxWidth={700}
-            formats={["auto", "webp", "avif"]}
-            layout="constrained"
-            alt="empathy map for plugin library"
-            css={{
-              marginTop: rhythm(1),
-              marginBottom: rhythm(1),
-            }}
-          />
+
           <p>
             After years of discussing, with anyone willing to listen, the
             particular failings of poorly designed things, I discovered I could
