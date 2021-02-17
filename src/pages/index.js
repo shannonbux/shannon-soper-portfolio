@@ -24,15 +24,15 @@ export default function Home({ data }) {
             >
               Product Designer
             </span>{" "}
-            with a passion for{" "}
+            with 3+ years experience designing{" "}
             <span
               css={css`
                 color: #ec5800;
               `}
             >
-              UX Research
+              developer tools
             </span>
-            .
+            , looking for my next role.{" "}
           </h1>
         </div>
         <div css={{ textAlign: `center` }}>
