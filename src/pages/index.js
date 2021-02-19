@@ -51,7 +51,7 @@ export default function Home({ data }) {
         >
           Me: “So tell me, what are your thoughts about my portfolio?”
           <br />
-          You: [share your thoughts with me at{" "}
+          You: [let me know at{" "}
           <span
             css={css`
               color: #ec5800;
