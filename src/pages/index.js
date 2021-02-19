@@ -23,15 +23,7 @@ export default function Home({ data }) {
             >
               Product Designer
             </span>{" "}
-            with 3+ years experience designing{" "}
-            <span
-              css={css`
-                color: #ec5800;
-              `}
-            >
-              developer tools
-            </span>
-            , looking for my next role.{" "}
+            with 7+ years experience designing, looking for my next role.{" "}
           </h1>
         </div>
         <StaticImage
