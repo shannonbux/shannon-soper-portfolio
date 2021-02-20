@@ -15,8 +15,8 @@ export default function About({ data }) {
       </p>
       <StaticImage
         src="../pages/images/profile-2019.JPG"
-        maxWidth={700}
-        layout="fluid"
+        width={700}
+        layout="constrained"
         formats={["auto", "webp", "avif"]}
         alt="empathy map for plugin library"
         css={{ marginBottom: rhythm(1) }}

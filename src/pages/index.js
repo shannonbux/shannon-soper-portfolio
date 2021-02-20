@@ -28,7 +28,7 @@ export default function Home({ data }) {
         </div>
         <StaticImage
           src="./images/profile-2019.JPG"
-          maxWidth={600}
+          width={600}
           formats={["auto", "webp", "avif"]}
           layout="constrained"
           alt="a photo of me in an orange jacket in front of brick buildings in Blockley, England."
