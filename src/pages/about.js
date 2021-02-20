@@ -17,6 +17,7 @@ export default function About({ data }) {
         src="../pages/images/profile-2019.JPG"
         width={700}
         layout="constrained"
+        placeholder="blurred"
         formats={["auto", "webp", "avif"]}
         alt="empathy map for plugin library"
         css={{ marginBottom: rhythm(1) }}
