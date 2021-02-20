@@ -7,7 +7,17 @@ import { StaticImage } from "gatsby-plugin-image"
 export default function Home({ data }) {
   return (
     <Layout>
-      <div css={{ display: `flex`, paddingLeft: `10%` }}>
+      <div
+        css={{
+          display: `flex`,
+          position: `relative`,
+          marginTop: 128,
+          paddingLeft: 32,
+          "@media (min-width: 1280px)": {
+            paddingLeft: 64,
+          },
+        }}
+      >
         <div css={{ marginTop: 32, flex: 1, paddingRight: 32 }}>
           <h1 css={{ fontWeight: 500, fontSize: 36, marginBottom: 48 }}>
             Hi! I’m Shannon.
@@ -30,7 +40,7 @@ export default function Home({ data }) {
         <div css={{ flex: 1 }}>
           <StaticImage
             src="./images/profile-2019.JPG"
-            aspectRatio={0.8333}
+            aspectRatio={0.8333333}
             width={400}
             placeholder="blurred"
             formats={["auto", "webp", "avif"]}
@@ -39,18 +49,21 @@ export default function Home({ data }) {
             css={{}}
           />
         </div>
+        <div
+          css={{
+            width: `66.6666%`,
+            height: 264,
+            position: `absolute`,
+            background: `#FFF1E9`,
+            top: 88,
+            "z-index": -1,
+            right: 0,
+            "@media (min-width: 1280px)": {
+              right: 64,
+            },
+          }}
+        />
       </div>
-      <div
-        css={{
-          width: `66.6666%`,
-          height: 264,
-          position: `absolute`,
-          background: `#FFF1E9`,
-          top: 216,
-          right: 64,
-          "z-index": -1,
-        }}
-      />
     </Layout>
   )
 }
