@@ -1,6 +1,7 @@
 ---
 title: "Gatsby Preview"
 date: "2020-01-15"
+featuredImage: "gatsby-preview-user-flow.png"
 ---
 
 During the end of 2019, I designed a preview experience for content editors working on Gatsby websites.
@@ -40,7 +41,7 @@ I created a plan to do more research, got feedback from coworkers, and got appro
 
 After contacting developer customers and asking for intros to their content creator coworkers without much success, I felt blocked in the project. It occurred to me I could draw out my own user flow for the steps to a successful research project and identify my own pain points.
 
-![My own user flow](my-user-flow.jpg)
+![My own user flow](./my-user-flow.jpg)
 
 After identifying that that recruiting customers via Twitter and email wasn't working for content creators as well as did for developer customers, I realized I didn't have to rely on customers. I personally know many marketers and writers, so I reached out on Facebook and Twitter and quickly filled up my calendar with meetings.
 
