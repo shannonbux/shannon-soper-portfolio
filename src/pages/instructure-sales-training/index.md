@@ -45,9 +45,7 @@ Everyone opted in!
 
 ## Iterating quickly
 
-In order to move quickly, I didn’t wait to finish the project before releasing it.
-
-Every Friday afternoon, I released a new course with individual challenges and team challenges.
+In order to move quickly, I didn’t wait to finish the project before releasing it. Every Friday afternoon, I released a new course with individual challenges and team challenges.
 
 ## Applying what they learned
 
@@ -75,8 +73,6 @@ _Anyone_ who finished _any_ course also got magnets that I designed to signify w
 
 The top row borrows colors from Canvas for our Canvas Sales Reps and the bottom row borrowed colors from the Bridge product, for Bridge Sales Reps. The panda was Instructure’s mascot.
 
-The **colors appear garish on the web** because they were designed for printed magnets.
-
 The icons were free online (at this point I hadn’t developed Adobe Illustrator skills) and **represented the three Challenger sales skills** a sales rep ought to master:
 
 1. Teaching for Differentiation (the lightbulb icon)
@@ -86,6 +82,7 @@ The icons were free online (at this point I hadn’t developed Adobe Illustrator
 The panda magnet was awarded when a person completed all courses and assignments and meant they were Challenger “certified”.
 
 ![Designs for magnets](badges.png)
+Note: The **colors appear garish on the web** because they were designed for printed magnets.
 
 ## Hosting the summit
 
