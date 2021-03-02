@@ -4,13 +4,13 @@ date: "2015-07-31"
 featuredImage: "badges.png"
 ---
 
-Back in 2015, the VP of Sales at Instructure told me that the 250+ sales people in his organization were not using a [_The Challenger Sale_](https://www.challengerinc.com/) methodology he wanted them to use. **He asked me to help them adopt the new methodology**. As the company's sole instructional designer, I got to work creating a series of learning experiences with effective incentives.
+Back in 2015, the VP of Sales at Instructure told me that the 250+ sales people in his organization were not using a [_The Challenger Sale_](https://www.challengerinc.com/) methodology he wanted them to use. **He asked me to help them adopt the new methodology**. As the company’s sole instructional designer, I got to work creating a series of learning experiences with effective incentives.
 
 ![Screenshot of the homescreen for the course](challenger-course.png)
 
 ## Asking for clarification
 
-I was fresh out of college and after I sat down to work, I freaked myself out by imagining the VP of Sales had some ideal project in mind and just wasn't giving me the details. After worrying for a day or two, I **asked my manager for more details** about the project. She and I set up a meeting with the VP of Sales. He clarified that he didn't care how I reached the goal, as long as I reached it.
+I was fresh out of college and after I sat down to work, I freaked myself out by imagining the VP of Sales had some ideal project in mind and just wasn’t giving me the details. After worrying for a day or two, I **asked my manager for more details** about the project. She and I set up a meeting with the VP of Sales. He clarified that he didn’t care how I reached the goal, as long as I reached it.
 
 ## Not reinventing the wheel
 
@@ -45,7 +45,7 @@ Everyone opted in!
 
 ## Iterating quickly
 
-In order to move quickly, I didn't wait to finish the project before releasing it.
+In order to move quickly, I didn’t wait to finish the project before releasing it.
 
 Every Friday afternoon, I released a new course with individual challenges and team challenges.
 
@@ -57,13 +57,13 @@ Each course focused on a chapter or part of a chapter from _The Challenger Sale_
 - 2 point activities: write about what you learned
 - 5 point activities: use what you learned in a current sales opportunity and report your experience to coworkers and me
 
-Along with each course, I **emailed an updated screenshot of a leaderboard to the pilot teams and their managers**. At first I was nervous that it was too scrappy to make a “dumb google spreadsheet” to track and communicate results, but it turned out that it was a cheap and effective way to get the job done. Here's an example screenshot with fictional names. I regret the too-subtle color contrast.
+Along with each course, I **emailed an updated screenshot of a leaderboard to the pilot teams and their managers**. At first I was nervous that it was too scrappy to make a “dumb google spreadsheet” to track and communicate results, but it turned out that it was a cheap and effective way to get the job done. Here’s an example screenshot with fictional names. **I regret the too-subtle color contrast.**
 
 ![Screenshot of a leaderboard one week](leaderboard.png)
 
 ## It started working...
 
-On Friday afternoons, I started **overhearing a few sales people cajoling each other "c'mon man, you gotta finish the course so we can win!"**, so my plan seemed to be working :)
+On Friday afternoons, I started **overhearing a few sales people cajoling each other "c’mon man, you gotta finish the course so we can win!"**, so my plan seemed to be working :)
 
 ## Providing recognition and rewards
 
@@ -71,13 +71,13 @@ The winning team and winning individual had to (got to :) present what they lear
 
 ## Providing intrinsic motivation
 
-_Anyone_ who finished _any_ course also got magnets that I designed to signify which skill they learned from their course, because I wanted folks to recognize their own progress and mastery of new skills even if they didn't win.
+_Anyone_ who finished _any_ course also got magnets that I designed to signify which skill they learned from their course, because I wanted folks to recognize their own progress and mastery of new skills even if they didn’t win.
 
-The top row borrows colors from Canvas for our Canvas Sales Reps and the bottom row borrowed colors from the Bridge product, for Bridge Sales Reps. The panda was Instructure's mascot.
+The top row borrows colors from Canvas for our Canvas Sales Reps and the bottom row borrowed colors from the Bridge product, for Bridge Sales Reps. The panda was Instructure’s mascot.
 
-The colors appear garish on the web because they were designed for printed magnets.
+The **colors appear garish on the web** because they were designed for printed magnets.
 
-The icons were free online (at this point I hadn't developed any pixel art skills) and **represented the three Challenger sales skills** a sales rep ought to master:
+The icons were free online (at this point I hadn’t developed Adobe Illustrator skills) and **represented the three Challenger sales skills** a sales rep ought to master:
 
 1. Teaching for Differentiation (the lightbulb icon)
 2. Tailoring for Resonance (the scissor + measuring tape icon)
@@ -89,4 +89,4 @@ The panda magnet was awarded when a person completed all courses and assignments
 
 ## Hosting the summit
 
-This pilot program went swimmingly and ended in a fun culminating party where the winning teams and individuals received awards, everyone who completed courses got magnets to show what they completed, and they could keep working beyond the deadline to get any magnets they didn't have yet.
+This pilot program went swimmingly and ended in a fun culminating party where the winning teams and individuals received awards, everyone who completed courses got magnets to show what they completed, and they could keep working beyond the deadline to get any magnets they didn’t have yet.
