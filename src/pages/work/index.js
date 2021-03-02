@@ -9,7 +9,7 @@ export default function Work({ data }) {
   return (
     <Layout>
       <div css={{ maxWidth: 600 }}>
-        <h1>Projects</h1>
+        <h1>Work</h1>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
