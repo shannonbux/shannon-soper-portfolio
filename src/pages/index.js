@@ -23,7 +23,7 @@ export default function Home({ data }) {
             Hi! I’m Shannon.
           </h1>
           <h1 css={{ fontWeight: 500, fontSize: 36, marginBottom: 48 }}>
-            I'm a{" "}
+            I’m a{" "}
             <span
               css={css`
                 color: #ec5800;
