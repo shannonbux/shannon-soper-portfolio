@@ -80,7 +80,7 @@ In addition, there’s some tricky math involved in adding up the responses. To 
 
 ![A survey makes yes or no answers easier for the user to mark](can-i-give.jpeg)
 
-### Emphasizing prerequisites
+## Emphasizing prerequisites
 
 One of the last questions on the worksheet is a sticking point for many people and blocks them from finishing the game. “Do I know what I am saying no to? (Is the other person clear about what is being asked for?)”
 
