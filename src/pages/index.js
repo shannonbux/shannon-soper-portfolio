@@ -33,7 +33,6 @@ export default function Home({ data }) {
             </span>{" "}
             with 7+ years experience, looking for my next role.
           </h1>
-          <h2>shannon.soper@gmail.com</h2>
         </div>
         <div
           css={{
