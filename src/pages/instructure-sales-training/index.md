@@ -39,7 +39,7 @@ Then, I asked sales managers to nominate people for this pilot learning program.
 
 ## Creating thunder
 
-I arranged some brainstorming time with a superb advertiser at the company. After our conversation, I made a [commercial advertising the project](https://www.youtube.com/watch?v=5C8fr5QjoXc) a la [Sarah McLachlin's SPCA commercial](https://www.youtube.com/watch?v=IO9d2PpP7tQ) and emailed it to the nominees to let them know they'd been chosen for this experience and could opt in if they were interested in the potential cash rewards and awards ceremony.
+I arranged some brainstorming time with a superb advertiser at the company. After our conversation, I made a [commercial advertising the project](https://www.youtube.com/watch?v=5C8fr5QjoXc) a la [Sarah McLachlin’s SPCA commercial](https://www.youtube.com/watch?v=IO9d2PpP7tQ) and emailed it to the nominees to let them know they’d been chosen for this experience and could opt in if they were interested in the potential cash rewards and awards ceremony.
 
 Everyone opted in!
 
@@ -63,7 +63,7 @@ Along with each course, I **emailed an updated screenshot of a leaderboard to th
 
 ## It started working...
 
-On Friday afternoons, I started **overhearing a few sales people cajoling each other "c’mon man, you gotta finish the course so we can win!"**, so my plan seemed to be working :)
+On Friday afternoons, I started **overhearing a few sales people cajoling each other “c’mon man, you gotta finish the course so we can win!”**, so my plan seemed to be working :)
 
 ## Providing recognition and rewards
 
