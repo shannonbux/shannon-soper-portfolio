@@ -6,7 +6,7 @@ featuredImage: "gatsby-preview-user-flow.png"
 
 During the end of 2019, I designed a preview experience for content editors working on Gatsby websites.
 
-Gatsby websites pull content from multiple sources, so content creators can’t easily figure out how to edit the content they see on their live site. This means that though developers love building a Gatsby site, content creators don't love working on the site.
+Gatsby websites pull content from multiple sources, so content creators can’t easily figure out how to edit the content they see on their live site. This means that though developers love building a Gatsby site, content creators don’t love working on the site.
 
 ![Decoupling of source and delivery creates a problem for content creators](decoupled-problem.jpg)
 
@@ -31,9 +31,9 @@ Main goal: speed up the editing and feedback cycle.
 
 ## Volunteering to do research
 
-After presenting this user flow to my coworkers, I observed that they didn't know much about content creator's needs.
+After presenting this user flow to my coworkers, I observed that they didn’t know much about content creator’s needs.
 
-I created a plan to do more research, got feedback from coworkers, and got approved for the project. Here's my proposed research project, filled out with answers.
+I created a plan to do more research, got feedback from coworkers, and got approved for the project. Here’s my proposed research project, filled out with answers.
 
 [Marketing Workflow Executive Summary](../marketing-executive-summary.pdf)
 
@@ -43,13 +43,13 @@ After contacting developer customers and asking for intros to their content crea
 
 ![My own user flow](./my-user-flow.jpg)
 
-After identifying that that recruiting customers via Twitter and email wasn't working for content creators as well as did for developer customers, I realized I didn't have to rely on customers. I personally know many marketers and writers, so I reached out on Facebook and Twitter and quickly filled up my calendar with meetings.
+After identifying that that recruiting customers via Twitter and email wasn’t working for content creators as well as did for developer customers, I realized I didn’t have to rely on customers. I personally know many marketers and writers, so I reached out on Facebook and Twitter and quickly filled up my calendar with meetings.
 
 Another idea to make recruiting easier was to incentivize developers to give me referrals by placing them on a list of people who get to test alpha and beta features. I did this for later projects.
 
 ## Discovering user flows
 
-To make sure I didn't ask leading questions, I planned broad, open-ended questions and tested them with a couple content creator coworkers.
+To make sure I didn’t ask leading questions, I planned broad, open-ended questions and tested them with a couple content creator coworkers.
 
 1. Where are you located?
 2. What is the name of your company?
@@ -74,25 +74,7 @@ After interviewing 8 content creators (who did not use Gatsby) and many Gatsby P
 
 **Content creators** expect to see content and edit it so they can improve the content’s impact on its audience - increase leads, clickthroughs, etc.
 
-> Jane is a content creator who is helping launch a new version of an women's shaving supplies site. She sees a sub-header she wants to edit to make it more SEO-friendly, and has to go hunt around in their headless CMS to answer questions like “Where does this header live? Where can I edit it? Is it even in this CMS?”
-
-This is a tour through Jane's eyes.
-
-**Step 1:** Content creator sees a problem on the website.
-
-![Screenshot of a website with a copy editing mistake and a thought bubble from a content creator saying “How do I edit this text? I have some new ideas.”](./Step-1-Sees-a-problem.png)
-
-**Step 2:** Content creator searches for the text in the CMS and gets no search results
-
-![Screenshot of a CMS with no search results and a thought bubble from a content creator saying “Hm, no search results in our CMS. That’s weird.”](./Step-2-Cant-fix-problem-in-CMS.png)
-
-**Step 3:** Content creator goes to Slack to ask their developer coworkers for help editing the copy.
-
-![Screenshot of a Slack conversation and a thought bubble from a content creator saying “Ugh, it’s so tedious to ask my coworkers to help. It’s so slow to take screenshots and circle things on them.”](./Step3-Asks-devs-for-help.png)
-
-**Step 4:** It turns out the copy is hard-coded, and the developers have to edit it.
-
-## Secondary personas
+> Jane is a content creator who is helping launch a new version of an Italian restaurant site. She sees a header she wants to edit to make it more SEO-friendly, and has to go hunt around in their headless CMS to answer questions like “Where does this header live? Where can I edit it? Is it even in this CMS?”
 
 **Marketing and content managers** expect to monitor and request changes to the site’s performance and content to make sure the site is reaching marketing goals, like lead generation. Ideally, they’d like to set a performance budget and maintain it.
 
@@ -108,7 +90,7 @@ This is a tour through Jane's eyes.
 
 ## Creating a conceptual design
 
-To avoid becoming blind to opportunities outside our product's current scope, I interviewed people who didn't use Gatsby so I could see the root problems of website creation, regardless of whether a content creator uses Gatsby.
+To avoid becoming blind to opportunities outside our product’s current scope, I interviewed people who didn’t use Gatsby so I could see the root problems of website creation, regardless of whether a content creator uses Gatsby.
 
 ## Problem 1 = inefficient feedback cycle
 
@@ -133,7 +115,7 @@ A solution that **helps teams make better website decisions** must include:
 
 ## Long term ideas
 
-I looked through many competitor's products and started sketching some ideas. My favorite inspirations are Figma's commenting system (which isn't perfect) and WordPress's Gutenberg editor (which also has its flaws).
+I looked through many competitor’s products and started sketching some ideas. My favorite inspirations are Figma’s commenting system (which isn’t perfect) and WordPress’s Gutenberg editor (which also has its flaws).
 
 ## User can see where each part of page comes from
 

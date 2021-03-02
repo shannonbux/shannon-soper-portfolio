@@ -4,15 +4,15 @@ date: "2018-10-12"
 featuredImage: "hacktoberfest-landing-page.png"
 ---
 
-If you haven't participated in [Hacktoberfest](https://hacktoberfest.digitalocean.com/) before, it's a celebration of open source projects every October. To participate, you sign up at [this website](https://hacktoberfest.digitalocean.com/), get a number of PR's merged to a participating open source project, and get a t-shirt.
+[Hacktoberfest](https://hacktoberfest.digitalocean.com/) is a celebration of open source projects every October. To participate, you sign up at [this website](https://hacktoberfest.digitalocean.com/), get a number of PR’s merged to a participating open source project, and get a t-shirt.
 
 Gatsby was a participating open source project for Hacktoberfest in 2018, and I helped **double our number of new contributors that month.**
 
 ## The challenge
 
-To understand the user flow for a Hacktoberfest contributor, I looked at Hacktoberfest's list of projects to contribute to. It took three hours to find a project that had a beginner-friendly issue that I could resolve (side note: I did find one and got a t-shirt!).
+To understand the user flow for a Hacktoberfest contributor, I looked at Hacktoberfest’s list of projects to contribute to. It took three hours to find a project that had a beginner-friendly issue that I could resolve (side note: I did find one and got a t-shirt!).
 
-My conclusion was that we could **differentiate ourselves** with our Hacktoberfest onboarding. If newcomers could spend less than 3 hours finding a Gatsby issue to resolve, we'd have a leg up.
+My conclusion was that we could **differentiate ourselves** with our Hacktoberfest onboarding. If newcomers could spend less than 3 hours finding a Gatsby issue to resolve, we’d have a leg up.
 
 ## Giving a welcoming first impression
 

@@ -4,13 +4,13 @@ date: "2018-03-07"
 featuredImage: "plugin-tweet.png"
 ---
 
-Many of Gatsby's powerful capabilities come from its plugin system and wide array of community contributed plugins. But finding and creating plugins hasn't always been easy. After hearing these common complaints while interviewing Gatsby users a few years ago, I drew an “empathy map” to put myself in their shoes.
+Many of Gatsby’s powerful capabilities come from its plugin system and wide array of community contributed plugins. But finding and creating plugins hasn’t always been easy. After hearing these common complaints while interviewing Gatsby users a few years ago, I drew an “empathy map” to put myself in their shoes.
 
 ![Empathy map](empathy-map.png)
 
 ## Presenting this empathy map
 
-I shared this research with Gatsby's co-founders and the community and saw [enthusiasm for the idea of making a plugin library](https://github.com/gatsbyjs/gatsby/issues/3003).
+I shared this research with Gatsby’s co-founders and the community and saw [enthusiasm for the idea of making a plugin library](https://github.com/gatsbyjs/gatsby/issues/3003).
 
 ## Learning from other plugin libraries
 

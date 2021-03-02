@@ -83,7 +83,7 @@ The icons were free online (at this point I hadn’t developed Adobe Illustrator
 2. Tailoring for Resonance (the scissor + measuring tape icon)
 3. Taking Control of the Sale (the flag icon)
 
-The panda magnet was awarded when a person completed all courses and assignments and meant they were Challenger "certified".
+The panda magnet was awarded when a person completed all courses and assignments and meant they were Challenger “certified”.
 
 ![Designs for magnets](badges.png)
 

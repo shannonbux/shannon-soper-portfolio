@@ -11,14 +11,14 @@ export default function About({ data }) {
       <div css={{ maxWidth: 700 }}>
         <h1>Nice to meet you :)</h1>
         <p>
-          I'm a Product Designer with a passion for UX Research. I have 3+ years
+          I’m a Product Designer with a passion for UX Research. I have 3+ years
           designing developer tools and 6+ years designing learning experiences.
         </p>
         <p>
           After years of discussing, with anyone willing to listen, the
           particular failings of poorly designed things, I discovered I could
           get paid for this hobby. Other hobbies: joking w/ family and friends,
-          asking my cute baby and dog: "how did you get so cute?", and hiking w/
+          asking my cute baby and dog: “how did you get so cute?”, and hiking w/
           hubs.
         </p>
         <StaticImage
