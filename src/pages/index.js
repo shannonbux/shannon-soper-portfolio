@@ -33,8 +33,8 @@ export default function Home({ data }) {
             </span>{" "}
             with 7+ years experience, looking for my next role.
           </h1>
-          <div css={{ fontSize: 24 }}>
-            Share your thoughts about my portfolio at shannon.soper@gmail.com
+          <div css={{ fontSize: 23, lineHeight: 1.17 }}>
+            Share your thoughts about my portfolio at shannon.soper@gmail.com.
           </div>
         </div>
         <div
