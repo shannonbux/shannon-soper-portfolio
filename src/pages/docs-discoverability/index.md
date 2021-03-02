@@ -1,6 +1,7 @@
 ---
 title: "Gatsby Documentation Sidebar"
 date: "2018-07-31"
+featuredImage: "expand-all-button.png"
 ---
 
 Many React developers (or those interested in learning React) test out Gatsby by building portfolios, blogs, marketing sites, and e-commerce sites. Through dozens of interviews, I discovered that **this persona struggled to find the right documentation** for common tasks, like adding a manifest file. There were many reasons for this:

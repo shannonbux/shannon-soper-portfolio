@@ -1,6 +1,7 @@
 ---
 title: "Hacktoberfest Docs Contributions"
 date: "2018-10-12"
+featuredImage: "hacktoberfest-landing-page.png"
 ---
 
 If you haven't participated in [Hacktoberfest](https://hacktoberfest.digitalocean.com/) before, it's a celebration of open source projects every October. To participate, you sign up at [this website](https://hacktoberfest.digitalocean.com/), get a number of PR's merged to a participating open source project, and get a t-shirt.

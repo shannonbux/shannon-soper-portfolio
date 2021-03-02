@@ -1,6 +1,7 @@
 ---
 title: "Gatsby Cloud Onboarding"
 date: "2019-12-09"
+featuredImage: "select-work-org-confusion.png"
 ---
 
 After Gatsby's Cloud product launched, [FullStory](https://www.fullstory.com/) clips made it obvious that some users struggled to onboard. To learn why, I setup usability tests with 5 Gatsby users and 5 developers who hadn't used Gatsby before to watch them onboard.

@@ -8,6 +8,8 @@ import kirkhamTheme from "typography-theme-kirkham"
 import "fontsource-alegreya-sans/latin.css"
 //import "fontsource-merriweather/latin.css"
 import "fontsource-merriweather-sans/latin.css"
+import "fontsource-merriweather-sans/400-italic.css"
+import "./typography.css"
 
 console.log(kirkhamTheme)
 kirkhamTheme.headerFontFamily = [`Merriweather Sans`, `sans-serif`]

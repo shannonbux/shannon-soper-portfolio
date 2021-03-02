@@ -1,0 +1,47 @@
+h1 {
+  font-family: Merriweather Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+
+h2 {
+  font-family: Merriweather Sans;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+
+h3 {
+  font-family: Merriweather Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Deep periwinkle */
+
+  color: #756fd6;
+}
+
+p {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Gray 1 */
+
+  color: #333333;
+}

@@ -64,15 +64,16 @@ export default function Layout({ children }) {
           css={{
             float: `left`,
             marginRight: rhythm(1 / 4),
-            top: 2,
           }}
         />
         <h3
           css={css`
             display: inline-block;
+            font-weight: 500;
             font-style: normal;
-            font-size: 24px;
+            font-size: 21px;
             padding-right: ${rhythm(2)};
+            color: #333;
           `}
         >
           {data.site.siteMetadata.title}
@@ -80,7 +81,6 @@ export default function Layout({ children }) {
       </Link>
       <div css={{ float: `right` }}>
         <HeaderLink to="/work/">Work</HeaderLink>
-        <HeaderLink to="/blog/">Blog</HeaderLink>
         <HeaderLink to="/about/">About</HeaderLink>
       </div>
 
