@@ -4,13 +4,13 @@ date: "2015-07-31"
 featuredImage: "badges.png"
 ---
 
-Back in 2015, the VP of Sales at Instructure told me that the 250+ sales people in his organization were not using a [_The Challenger Sale_](https://www.challengerinc.com/) methodology he wanted them to use. **He asked me to help them adopt the new methodology**. As the company's sole instructional designer, I got to work creating a series of learning experiences with effective incentives.
+Back in 2015, the VP of Sales at Instructure told me that the 250+ sales people in his organization were not using a [_The Challenger Sale_](https://www.challengerinc.com/) methodology he wanted them to use. **He asked me to help them adopt the new methodology**. As the company’s sole instructional designer, I got to work creating a series of learning experiences with effective incentives.
 
 ![Screenshot of the homescreen for the course](challenger-course.png)
 
 ## Asking for clarification
 
-I was fresh out of college and after I sat down to work, I freaked myself out by imagining the VP of Sales had some ideal project in mind and just wasn't giving me the details. After worrying for a day or two, I **asked my manager for more details** about the project. She and I set up a meeting with the VP of Sales. He clarified that he didn't care how I reached the goal, as long as I reached it.
+I was fresh out of college and after I sat down to work, I freaked myself out by imagining the VP of Sales had some ideal project in mind and just wasn’t giving me the details. After worrying for a day or two, I **asked my manager for more details** about the project. She and I set up a meeting with the VP of Sales. He clarified that he didn’t care how I reached the goal, as long as I reached it.
 
 ## Not reinventing the wheel
 
