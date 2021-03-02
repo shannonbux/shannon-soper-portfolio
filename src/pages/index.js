@@ -37,7 +37,16 @@ export default function Home({ data }) {
             Share your thoughts about my portfolio at shannon.soper@gmail.com
           </div>
         </div>
-        <div css={{ flex: 1 }}>
+        <div
+          css={{
+            flex: 1,
+            "@media (max-width: 450px)": {
+              minWidth: 96,
+              right: 96,
+              position: `relative`,
+            },
+          }}
+        >
           <StaticImage
             src="./images/profile-2019.JPG"
             aspectRatio={0.8333333}

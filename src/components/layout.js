@@ -72,7 +72,6 @@ export default function Layout({ children }) {
             font-weight: 500;
             font-style: normal;
             font-size: 21px;
-            padding-right: ${rhythm(2)};
             color: #333;
           `}
         >
