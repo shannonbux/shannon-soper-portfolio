@@ -11,8 +11,9 @@ export default function About({ data }) {
       <div css={{ maxWidth: 700 }}>
         <h1>Nice to meet you :)</h1>
         <p>
-          I’m a Product Designer with a passion for UX Research. I have 3+ years
-          designing developer tools and 6+ years designing learning experiences.
+          I’m a Product Designer with a passion for solving difficult design
+          problems. I have 3+ years designing developer tools and 6+ years
+          designing learning experiences.
         </p>
         <p>
           After years of discussing, with anyone willing to listen, the
@@ -43,6 +44,25 @@ export default function About({ data }) {
             allowFullScreen
           ></iframe>
         </div>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/watch?v=dTl817c6G_E&list=PLR38WdMdLF9sFCz15rbSQzMQrYYZ-ObiO&index=2">
+              Gatsby UX Research by Shannon Soper presented at 2018{" "}
+              <a href="https://www.contentful.com/">Contentful</a> meetup in
+              Berlin
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=3VuZvTeXbKQ&list=PLR38WdMdLF9sFCz15rbSQzMQrYYZ-ObiO&index=3">
+              ENCRYPT Conference 2020
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=Hp_cJGwT1Jc&list=PLR38WdMdLF9sFCz15rbSQzMQrYYZ-ObiO&index=4">
+              Gatsby Admin Product Design — presented at Gatsby Conf 2020
+            </a>
+          </li>
+        </ul>
         <br></br>
         <br></br>
         <h2>Side projects</h2>
@@ -61,10 +81,15 @@ export default function About({ data }) {
         <h2>Apps</h2>
         <div>
           <ul>
-            <li>Zoom</li>
-            <li>Usertesting.com</li>
-            <li>FullStory</li>
-            <li>Figma</li>
+            <li>
+              <a href="https://www.figma.com/">Figma</a>
+            </li>
+            <li>
+              <a href="https://www.usertesting.com/">Usertesting</a>
+            </li>
+            <li>
+              <a href="https://www.fullstory.com/">FullStory</a>
+            </li>
           </ul>
         </div>
         <h2>Background</h2>
