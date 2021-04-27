@@ -6,7 +6,7 @@ featuredImage: "portfolio-tour-first-slide.png"
 
 Sit back and keep your arms and legs inside the car for a roller-coaster ride through my first years as a product designer at Gatsby. I was the first employee and first designer at the startup in 2018 and had so much fun doing these design projects! First you'll see a brief history about me and the company, then a high-level overview of the major projects I accomplished, and finally a deeper dive into an onboarding experience I redesigned.
 
-P.S. To leave comments on the slides, expand the presentation to full view and hover across the top to view and click on a speech bubble icon. Scroll down this page to see more detailed instructions.
+P.S. To leave comments on the slides, scroll down this page to see more detailed instructions.
 
 [Navigate to this Figma link](https://www.figma.com/proto/L1TdUmMOH5RijFazZ7u7XZ/Portfolio-Tour?page-id=152%3A0&node-id=152%3A502&viewport=-10415%2C894%2C0.41548648476600647&scaling=min-zoom) or use the embedded Figma slides below to start your tour!
 
