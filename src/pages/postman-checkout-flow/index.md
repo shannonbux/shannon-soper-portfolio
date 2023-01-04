@@ -1,7 +1,7 @@
 ---
 title: "Postman Checkout Flow"
 date: "2022-02-05"
-featuredImage: "badges.png"
+featuredImage: "feature-comparison-table.png"
 ---
 
 I redesigned Postman's checkout flow by replacing a card design with a feature comparison table.
