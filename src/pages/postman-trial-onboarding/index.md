@@ -5,13 +5,16 @@ featuredImage: "checklist-card.png"
 ---
 
 ## What I did
+I designed and shipped a user experience to help Postman users get the most out of their 14-day free trial.
 
-
+![Zoomed in view of checklist introducing them to valuable features](checklist-card.png)
 
 ## Why I did it
+The previous free trial experiment increased conversion rates from 1.31 to 1.72%. I thought we could do even better than that, especially since users had essentially zero assistance knowing what their trial included or how to take advantage of it. They just saw this modal, and that was it.
 
+![User sees a modal at the beginning of their trial experience to introduce them to trial features](trial-start.png)
 
-## Why did you upgrade during/after the trial?
+## First of all, why did the previous trial experiment succeed?
 I needed an answer to this question, so I interviewed 7 users who upgraded during/after the trial to ask: "Why did you upgrade after the trial?" 
 
 > Onboarding new people quicker. Environments help when I just need to make sure that I don't share some protect production credentials.
@@ -21,23 +24,26 @@ I needed an answer to this question, so I interviewed 7 users who upgraded durin
 
 > I wanted to add team members and pay for the seats to share documentation, collections, and more without needing to update it in more than one place. Contractors are less confused in Postman about what props are optional vs required, and they seem more familiar with the request and response format than other tools he tried outside Postman. —Oliver, Developer
 
-## So, why DID some users upgrade during/after the trial?
+## So, why *was* the previous trial experiment successful?
 Quick summary of the UX Research results:
 - They need more than 3 people on their Postman team
 - They need to share collections, environments, and documentation with more than 3 ppl
-
 
 ## Hypothesis
 Based on the UX Research results, I asked our data analyst to see if there was a correlation between conversion and teams that edited documentation and/or edited environments. There was a strong correlation. With that qualitative and quantitative data in mind, I created this hypothesis:
 
 Postman trial teams who convert usually have a team member who champions Postman. They setup environments with variables, add authentication methods, and write/edit documentation. Because sharing these things is so valuable, this admin usually asks stakeholders (or informs them) that Postman is worth paying for. Some trial teams could benefit from creating and sharing documentation and environments, but they don't know about the features or how to use them. If we encourage trial teams to create environments and documentation for their collection(s), they will invite more team members to use the collection and will upgrade more frequently because the people they invited need to keep using those resources.
 
-
-
-
+## New user flow
+Three steps.
+### First, user sees existing modal
 ![User sees a modal at the beginning of their trial experience to introduce them to trial features](trial-start.png)
+### Second, user sees a checklist in their workspace
+![User sees a checklist introducing them to valuable features](checklist-default-state.png)
+### Third, user gets a hint on how to make paying easier
+![User sees a hint at the end of their trial on how to send a payment link to a billing person](trial-end.png)
 
-## How did this project improve the previous components?
+## How did this project improve existing design system components?
 
 ### Adding “Don't show me this checklist"
 The previous checklist did not allow users to dismiss the checklist. The ‘x’ icon just collapsed the checklist into further collapsed state—a rocket illustration on the sidebar. I hypothesized that users would expect the 'x' to completely dismiss the checklist forever. In order to test this hypothesis, I kept both the ‘x’ and ‘don't show me the checklist' button so I could track how users interacted with them. If users clicked on the “x” > click on the rocket icon to reopen it > click on “dismiss checklist”, I'd know that users expected the “x” to close the checklist forever and we can adjust the design to meet their expectations.
