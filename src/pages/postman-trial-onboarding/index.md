@@ -32,7 +32,7 @@ Quick summary of the UX Research results:
 ## Hypothesis
 Based on the UX Research results, I asked our data analyst to see if there was a correlation between conversion and teams that edited documentation and/or edited environments. There was a strong correlation. With that qualitative and quantitative data in mind, I created this hypothesis:
 
-Postman trial teams who convert usually have a team member who champions Postman. They setup environments with variables, add authentication methods, and write/edit documentation. Because sharing these things is so valuable, this admin usually asks stakeholders (or informs them) that Postman is worth paying for. Some trial teams could benefit from creating and sharing documentation and environments, but they don't know about the features or how to use them. If we encourage trial teams to create environments and documentation for their collection(s), they will invite more team members to use the collection and will upgrade more frequently because the people they invited need to keep using those resources.
+*Increasing the visibility and usability of documentation and environments to trial teams will lead to more conversions, because the team will start inviting more team members who need those resources.*
 
 ## New user flow
 Three steps.
