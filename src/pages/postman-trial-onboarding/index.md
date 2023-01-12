@@ -4,7 +4,6 @@ date: "2022-11-09"
 featuredImage: "checklist-card.png"
 ---
 
-## What I did
 I designed and shipped a user experience to help Postman users get the most out of their 14-day free trial.
 
 ![Zoomed in view of checklist introducing them to valuable features](checklist-card.png)
