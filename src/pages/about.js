@@ -12,7 +12,7 @@ export default function About({ data }) {
         <h1>Nice to meet you :)</h1>
         <p>
           I’m a Product Designer with a passion for solving difficult design
-          problems. I have 3+ years designing developer tools and 6+ years
+          problems. I have 5 years designing developer tools and 6+ years
           designing learning experiences.
         </p>
         <p>
@@ -96,7 +96,7 @@ export default function About({ data }) {
         <div>
           <ul>
             <li>
-              <a href="/shannon-soper-resume.pdf">Resume</a>
+              <a href="/resume-2023.pdf">Resume</a>
             </li>
             <li>MA in English: Rhetoric emphasis</li>
             <li>
