@@ -1,7 +1,7 @@
 ---
 title: "Gatsby Cloud Onboarding"
 date: "2019-12-09"
-featuredImage: "select-work-org-confusion.png"
+featuredImage: "first-time-user-zoom.png"
 ---
 
 After Gatsby launched our cloud website hosting product (a developer tool), I reviewed [FullStory](https://www.fullstory.com/) clips and it soon became obvious that some users struggled to finish creating a new site. To learn why, I setup and ran 10 usability tests in which I watched five existing Gatsby users and five new users onboard onto Gatsby Cloud.
@@ -15,7 +15,7 @@ Most users wanted to take Gatsby Cloud for a test drive by making a project in s
 
 *The core problem:* The user had to do work (choose a place to save the project) that the system could have done for them by selecting an acceptable default location where the project could be saved.
 
-![Users confused when selecting organization](select-work-org-confusion.png)
+![Users confused when adding organization](2-user-history.png)
 
 ## User leaves onboarding once they realize their site will be saved in a weird place
 Most users added their work’s GitHub organization. After they realized that their Gatsby Cloud site would be saved there, and with no way to back out, they often left onboarding. They didn’t want to save a random new test site amongst work projects.
@@ -45,14 +45,14 @@ The wireframe below shows my redesign, in which the user does not have to intera
 
 I visually de-emphasized the “where do you want to save this project?” choice so users could focus on the fun part: naming their project.
 
-![First time user](first-time-user.png)
+![First time user](first-time-user-zoom.png)
 
 ### Returning user
 If there is a returning user that has already connected their personal account plus at least one more organization, their personal account will be the first item in a list and will always be pre-selected, with any work organizations as the second, third, etc. choices. This makes sure that, again, they do not have to interact with the software except to correct it, if it’s wrong.
 
 See wireframe on the next page.
 
-![Returning user](returning-user.png)
+![Returning user](returning-user-zoom.png)
 
 # Results
 We tested our assumptions by doing five additional usability tests and watching FullStory clips and the new flow worked in every case.
