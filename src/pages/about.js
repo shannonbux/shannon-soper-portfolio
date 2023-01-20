@@ -18,9 +18,7 @@ export default function About({ data }) {
         <p>
           After years of discussing, with anyone willing to listen, the
           particular failings of poorly designed things, I discovered I could
-          get paid for this hobby. Other hobbies: joking w/ family and friends,
-          asking my cute baby and dog: “how did you get so cute?”, and hiking w/
-          hubs.
+          get paid for this hobby. Other hobbies: reading science fiction and classic literature, playing piano and guitar, taking art and improv classes, and hiking with my family.
         </p>
         <StaticImage
           src="../pages/images/profile-2019.JPG"
@@ -74,11 +72,11 @@ export default function About({ data }) {
               </a>
             </li>
             <li>
-              <a href="http://watson.surge.sh/">Cute dog</a>
+              <a href="http://watson.surge.sh/">Guide to Taking Care of Watson</a>
             </li>
           </ul>
         </div>
-        <h2>Apps</h2>
+        <h2>Skills</h2>
         <div>
           <ul>
             <li>
