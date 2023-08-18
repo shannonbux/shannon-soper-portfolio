@@ -50,7 +50,7 @@ export default function About({ data }) {
             <li>
               <a href="https://www.instagram.com/discovered_ux/">
                 Discovered UX
-              </a>{" "}Instagram account, chronicling software and physical designs that are delightful, dismal, and everything in between
+              </a>{" "} — my Instagram account, chronicling software and physical designs that are delightful, dismal, and everything in between
             </li>
             <li>
               <a href="http://watson.surge.sh/">Guide to Taking Care of Our Dog, Watson</a>
@@ -75,10 +75,10 @@ export default function About({ data }) {
         <div>
           <ul>
             <li>
-              Product Designer at <a href="https://www.postman.com/">Postman</a>
+              Product Designer at <a href="https://www.postman.com/">Postman</a>{" "} — 2 years — 2021-2023
             </li>
             <li>
-              Product Designer at <a href="https://www.gatsbyjs.com/">GatsbyJS</a>
+              Product Designer at <a href="https://www.gatsbyjs.com/">GatsbyJS</a>{" "} — 3.5 years — 2018-2021
             </li>
             <li>MA in English: Rhetoric emphasis</li>
             <li>
