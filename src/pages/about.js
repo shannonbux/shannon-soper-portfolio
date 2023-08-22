@@ -30,7 +30,7 @@ export default function About({ data }) {
           <li>
           <a href="https://www.youtube.com/watch?v=PIhJtTboXZ0&t=1332s">
               "How do you balance the needs of different user personas?"
-            </a>{" "}  —  <a href="https://evilmartians.com/">Evil Martians</a> roundtable discussion
+            </a>{" "}  —  <a href="https://evilmartians.com/">Evil Martians</a> roundtable discussion 2023
           </li>
           <li>
             <a href="https://youtu.be/3VuZvTeXbKQ?list=PLR38WdMdLF9sFCz15rbSQzMQrYYZ-ObiO&t=122">
