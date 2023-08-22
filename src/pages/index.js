@@ -31,7 +31,7 @@ export default function Home({ data }) {
             >
               Product Designer
             </span>{" "}
-            with 5+ years’ experience, looking for my next role.
+            with 6 years’ experience, looking for my next role.
           </h1>
         </div>
         <div
