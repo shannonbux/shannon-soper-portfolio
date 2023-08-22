@@ -75,19 +75,19 @@ export default function About({ data }) {
         <div>
           <ul>
             <li>
+              <a href="/resume-2023-1.pdf">Resume</a>
+            </li>
+            <li>
               Product Designer at <a href="https://www.postman.com/">Postman</a>{" "} — 2 years — 2021-2023
             </li>
             <li>
-              Product Designer at <a href="https://www.gatsbyjs.com/">GatsbyJS</a>{" "} — 3.5 years — 2018-2021
+              Product Designer at <a href="https://www.gatsbyjs.com/">GatsbyJS</a>{" "} — 4 years — 2017-2021
             </li>
-            <li>MA in English: Rhetoric emphasis</li>
             <li>
               Instructional designer for online and face-to-face classes for 6
               years
             </li>
-            <li>
-              <a href="/resume-2023-1.pdf">Resume</a>
-            </li>
+            <li>MA in English: Rhetoric emphasis</li>
           </ul>
         </div>
         <div>
