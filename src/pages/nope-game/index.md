@@ -1,12 +1,14 @@
 ---
 title: "The Nope Game App"
 date: "2019-11-07"
-featuredImage: "./home-screen-preview.jpg"
+featuredImage: "./header-image-nope-game.png"
+excerpt: "This game acts like a friend who helps me decide whether to say yes or no when someone asks me to do something."
+
 ---
 
 For 6 months, I’ve worked on a passion project called The Nope Game. [Play v0.1 of the game here](https://thenopegame.gtsb.io/). This game acts like a friend who helps me not only decide _whether_ to say yes or no to a particular request, but also _why_ I answered the way I did. It imbues me with confidence because I’m prepared to justify why I’m saying yes or no, which is something I’ve struggled with.
 
-![The Nope Game home screen](home-screen.jpg)
+![The Nope Game home screen](home-screen-nope-game.png)
 
 ## The Dilemma
 
@@ -56,19 +58,16 @@ Even though it’s possible to say yes to a request, I wanted a memorable name. 
 
 ![A screenshot showing that I’m focusing on the right side of the worksheet](right-side-worksheet.jpeg)
 
+
 ## Branding the app
 
 In my brainstorm, saying yes, no, and maybe conjured memories of Magic 8 Balls and watching the triangle floating to the top with the answer appearing as white text with blue liquid around it.
 
-![dflkj](magic-eight-ball.jpeg)
-
 **Abstracting the Magic 8 Ball image** led me to a rounded equilateral triangle shape, the purplish blue color, a font that recalls 80’s game shows. Here’s a first draft of the **abstract combination logo**.
 
-![The Nope Game icon](nope-game-logo.jpeg)
+![dflkj](magic-eight-ball.jpeg)
 
-The layered triangles are intended to mimic motion, like shaking the Magic 8 Ball or playing a card game and splaying the cards out in your hands.
-
-This was the first logo I’d designed, and it was fun to experiment.
+![The Nope Game icon](nope-game-logo.jpg)
 
 ## Changing the genre
 
