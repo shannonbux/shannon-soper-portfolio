@@ -37,7 +37,7 @@ export default function Work({ data }) {
                 >
                   {node.frontmatter.title}
                 </h2>
-                <p>{node.excerpt}</p>
+                <p>{node.frontmatter.excerpt}</p>
               </div>
             </Link>
           </div>
@@ -59,14 +59,14 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: FIXED, width: 128, height: 128)
+                gatsbyImageData(layout: CONSTRAINED, width: 128, height: 128)
               }
             }
+            excerpt
           }
           fields {
             slug
           }
-          excerpt(pruneLength: 200)
         }
       }
     }

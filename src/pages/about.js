@@ -12,8 +12,7 @@ export default function About({ data }) {
         <h1>Nice to meet you :)</h1>
         <p>
           I’m a Product Designer with a passion for solving difficult design
-          problems. I have 6 years designing developer tools and a previous 6 years
-          designing learning experiences.
+          problems. I have a background in teaching college-level writing and creating online learning experiences. In 2017, I switched to product design and have loved designing developer tools.
         </p>
         <p>
           After years of discussing, with anyone willing to listen, the

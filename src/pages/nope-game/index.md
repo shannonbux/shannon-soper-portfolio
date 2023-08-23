@@ -1,7 +1,7 @@
 ---
 title: "The Nope Game App"
 date: "2019-11-07"
-featuredImage: "./home-screen.jpg"
+featuredImage: "./home-screen-preview.jpg"
 ---
 
 For 6 months, I’ve worked on a passion project called The Nope Game. [Play v0.1 of the game here](https://thenopegame.gtsb.io/). This game acts like a friend who helps me not only decide _whether_ to say yes or no to a particular request, but also _why_ I answered the way I did. It imbues me with confidence because I’m prepared to justify why I’m saying yes or no, which is something I’ve struggled with.

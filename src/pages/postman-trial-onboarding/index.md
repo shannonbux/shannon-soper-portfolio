@@ -2,6 +2,7 @@
 title: "Postman Trial Onboarding"
 date: "2022-11-09"
 featuredImage: "checklist-card.png"
+excerpt: "This is the first excerpt. I like the dance dance revolution baby."
 ---
 
 I designed and shipped a user experience to help Postman users get the most out of their 14-day free trial.
