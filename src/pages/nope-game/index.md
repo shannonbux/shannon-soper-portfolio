@@ -5,18 +5,24 @@ featuredImage: "./header-image-nope-game.png"
 excerpt: "This game acts like a friend who helps me decide whether to say yes or no when someone asks me to do something."
 
 ---
+## Your dog wants to go on a walk at midnight
+Let’s say your dog wants you to take it on a walk at midnight. If you're not sure whether you want to say yes or no, you could use this game I designed, The Nope Game, to decide on your response.
 
-For 6 months, I’ve worked on a passion project called The Nope Game. [Play v0.1 of the game here](https://thenopegame.gtsb.io/). This game acts like a friend who helps me not only decide _whether_ to say yes or no to a particular request, but also _why_ I answered the way I did. It imbues me with confidence because I’m prepared to justify why I’m saying yes or no, which is something I’ve struggled with.
+[Play v0.1 of the Nope Game here!](https://thenopegame.gtsb.io/). 
+
+This game, a passion project of mine, acts like a friend who helps you not only decide _whether_ to say yes or no to a particular request, but also _why_ your response makes sense. It can imbue you with confidence when you respond to your dog, because you can justify why you said yes or no.
 
 ![The Nope Game home screen](home-screen-nope-game.png)
 
 ## The Dilemma
 
-It’s hard for many people, especially me, to evaluate the impact of people’s requests on my time. If I say yes now, will I regret it later? If I say no, will I lose my resolve if the other person pushes back?
+It’s hard for many people to evaluate the impact of people’s requests on their time. If you say yes now, will you regret it later? If you say no, will you lose your resolve if the other person pushes back?
 
-To train my ability to say no (or yes) with confidence, I use something called The Dime Game (the basis for The Nope Game App). It leads the user through a series of questions and, based on the answers to those questions, calculates a recommendation. Let’s say your dog wants you to take it on a walk at midnight. You could use the game to evaluate whether to say yes or no to your dog’s request and how strongly to say yes or no.
+I personally decided to train my ability to say no (or yes) with confidence using something called The Dime Game (the inspiration for my app, The Nope Game). It leads the user through a series of questions and, based on the answers to those questions, calculates a recommendation. 
 
 <small>The worksheet for the original Dime Game</small>
+
+<!-- replace these images with crisp pdf images -->
 
 ![The Dime Game worksheet](dime-game-worksheet-one.jpeg)
 
@@ -65,8 +71,6 @@ In my brainstorm, saying yes, no, and maybe conjured memories of Magic 8 Balls a
 
 **Abstracting the Magic 8 Ball image** led me to a rounded equilateral triangle shape, the purplish blue color, a font that recalls 80’s game shows. Here’s a first draft of the **abstract combination logo**.
 
-![dflkj](magic-eight-ball.jpeg)
-
 ![The Nope Game icon](nope-game-logo.jpg)
 
 ## Changing the genre
@@ -77,7 +81,7 @@ At the heart of The Nope Game are a series of yes or no questions. If you look a
 
 In addition, there’s some tricky math involved in adding up the responses. To save the user from doing the math, and **to reduce the amount of work it takes for them to track their answers** to each question, I put the game into a survey format on the app.
 
-![A survey makes yes or no answers easier for the user to mark](can-i-give.jpeg)
+![A survey makes yes or no answers easier for the user to mark](can-i-give.png)
 
 ## Emphasizing prerequisites
 
@@ -97,13 +101,13 @@ The online survey initially lost this visual reminder. A worksheet has permanenc
 
 The text input box restored that visual reminder. After a user enters text, the text **sticks to the top of the screen so users can refer back to it at any point**.
 
-![The survey lets you save your scenario](saved-scenario.jpeg)
+![The survey lets you save your scenario](saved-scenario.png)
 
 ## Dealing with deal breakers
 
 One survey question is a deal breaker. If you answer “no” to “Can I give this person what is wanted?”, there is no need to take the rest of the survey because, without further effort, you tell the person “no, I can’t do that.” The survey needed to prioritize this question so users could skip the rest of the survey if they answer no.
 
-![A "no" answer can be a deal breaker if the question is "Can I give the person what is wanted?](can-i-give.jpeg)
+![A "no" answer can be a deal breaker if the question is "Can I give the person what is wanted?](can-i-give.png)
 
 ## Evolving the game
 
