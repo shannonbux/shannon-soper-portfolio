@@ -98,7 +98,7 @@ One survey question is a deal breaker. If you answer “no” to “Can I give t
 
 ## Evolving the game
 
-The project now exists on the web in early form! [Play v0.1 of the game here](https://thenopegame.gtsb.io/). I’m currently testing it with users before investing in the visual design.
+The project now exists on the web in early form! [Play v0.1 of the game here](https://thenopegame.gatsbyjs.io/). I’m currently testing it with users before investing in the visual design.
 
 - users can save notes under each survey question so they can remember their reasoning, and to make the details viewable and editable at a later time if they want to revisit the decision
 - users can share the results of their game with others to get their friends to weigh in on their decision. It’s helpful to get alternate perspectives to see if they validate or differ from yours
