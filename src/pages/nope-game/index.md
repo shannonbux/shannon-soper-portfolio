@@ -8,7 +8,7 @@ excerpt: "This game acts like a friend who helps me decide whether to say yes or
 ## Your dog wants to go on a walk at midnight
 Let’s say your dog wants you to take it on a walk at midnight. If you're not sure whether you want to say yes or no, you could use this game I designed, The Nope Game, to decide on your response.
 
-[Play v0.1 of the Nope Game here!](https://thenopegame.gtsb.io/). 
+[Play v0.1 of the Nope Game here!](https://thenopegame.gatsbyjs.io/). 
 
 This game, a passion project of mine, acts like a friend who helps you not only decide _whether_ to say yes or no to a particular request, but also _why_ your response makes sense. It can imbue you with confidence when you respond to your dog, because you can justify why you said yes or no.
 
@@ -90,13 +90,11 @@ If the user is able to write down the other person’s request in the text input
 
 ![The survey lets you save your scenario](saved-scenario.png)
 
-<!-- Only add this section back in once I get the new image from the game, showing the suggestion not to continue the game
-
 ## Preventing unecessary user interaction
 
 One survey question is a deal breaker. If you answer “no” to “Can I give this person what is wanted?”, there is no need to take the rest of the survey because, without further effort, you tell the person “no, I can’t do that.” The survey needed to prioritize this question so users could skip the rest of the survey if they answer no.
 
-![A "no" answer can be a deal breaker if the question is "Can I give the person what is wanted?](can-i-give.png) -->
+![A "no" answer can be a deal breaker if the question is "Can I give the person what is wanted?](request-not-clear.png)
 
 ## Evolving the game
 
