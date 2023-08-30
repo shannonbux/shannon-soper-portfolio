@@ -15,9 +15,7 @@ export default function About({ data }) {
           problems. I have a background in teaching college-level writing and creating online learning experiences. In 2017, I switched to product design and have loved designing developer tools.
         </p>
         <p>
-          After years of discussing, with anyone willing to listen, the
-          particular failings of poorly designed things, I discovered I could
-          get paid for this hobby. Other hobbies: cooking, reading science fiction and classic literature, playing piano and guitar, taking art and improv classes, and hiking with my family.
+          Other hobbies: cooking, reading science fiction and classic literature, playing piano and guitar, taking art and improv classes, and hiking with my family.
         </p>
         <h2>Talks</h2>
         <h3>How Gatsby Does High-Impact, Low-Effort UX Research (and You Can Too!)</h3>
@@ -47,6 +45,7 @@ export default function About({ data }) {
         <div>
           <ul>
             <li>
+//add Nope Game 
               <a href="https://www.instagram.com/discovered_ux/">
                 Discovered UX
               </a>{" "} — my Instagram account, chronicling software and physical designs that are delightful, dismal, and everything in between
