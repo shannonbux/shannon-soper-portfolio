@@ -2,6 +2,7 @@
 title: "The Gatsby Plugin Library"
 date: "2018-03-07"
 featuredImage: "plugin-tweet.png"
+excerpt: "Since the launch of the Plugin Library, which I designed, the library has grown from 51 plugins to 3,000+ plugins."
 ---
 
 Many of Gatsby’s powerful capabilities come from its plugin system and wide array of community contributed plugins. But finding and creating plugins hasn’t always been easy. After hearing these common complaints while interviewing Gatsby users a few years ago, I drew an “empathy map” to put myself in their shoes.
@@ -43,7 +44,7 @@ Here’s a GIF depicting prototypes I designed. I sought feedback from many comm
 
 ## End result
 
-Since the launch of [the Plugin Library](https://www.gatsbyjs.com/plugins) and plugin authoring docs in March 2018, the library has grown from 51 plugins to 2,264 plugins as of November 2020. The most used plugin is downloaded 1.7 million times per month. There are about 60k unique visitors per month as of December 2020.
+Since the launch of [the Plugin Library](https://www.gatsbyjs.com/plugins) and plugin authoring docs in March 2018, the library has grown from 51 plugins to 3,000 plugins. The most used plugin is downloaded 1.7 million times per month. There are about 60k unique visitors per month as of December 2020.
 
 ![Plugin tweet](plugin-tweet.png)
 

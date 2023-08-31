@@ -2,6 +2,7 @@
 title: "Gatsby Preview"
 date: "2020-01-15"
 featuredImage: "gatsby-preview-user-flow.png"
+excerpt: "Because Gatsby websites often pull content from multiple sources, content creators needed a way to see content and identify its source in order to edit it.
 ---
 
 During the end of 2019, I designed a preview experience for content editors working on Gatsby websites.

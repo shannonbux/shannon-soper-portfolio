@@ -2,9 +2,10 @@
 title: "Gatsby Documentation Sidebar"
 date: "2018-07-31"
 featuredImage: "expand-all-button.png"
+excerpt: "I revised documentation navigation to match users’ mental models and vocabulary."
 ---
 
-Many React developers (or those interested in learning React) test out Gatsby by building portfolios, blogs, marketing sites, and e-commerce sites. Through dozens of interviews, I discovered that **this persona struggled to find the right documentation** for common tasks, like adding a manifest file. There were many reasons for this:
+Many React developers (or those interested in learning React) test out Gatsby by building portfolios, blogs, marketing sites, and e-commerce sites. Through dozens of interviews, I discovered that **many users struggled to find the right documentation** for common tasks, like adding a manifest file. There were many reasons for this:
 
 - menu items had inconsistent naming conventions, so users didn’t know what to search for with ctrl+f
 - menu was long enough to extend below the fold, so some items weren’t visible

@@ -2,6 +2,7 @@
 title: "Postman Checkout Flow"
 date: "2022-02-05"
 featuredImage: "feature-comparison-table.png"
+excerpt: "Successfully helped more users decide Postman was worth purchasing by replacing the checkout flow's card design with a feature comparison table."
 ---
 
 I redesigned Postman's checkout flow by replacing a card design with a feature comparison table.
@@ -61,7 +62,7 @@ Why would this hypothesis be true? When high-intent users evaluate a technical t
 
 
 ### Business goals
-Our primary success metric was page 1 to page 2 of checkout flow,  showed stat-sig improvement of 1.48% as compared to control. This brings us to a P1 -> P2 conversion rate of 5.51% for variation, and 4.03% for control. 
+Our primary success metric was page 1 to page 2 of checkout flow, showed stat-sig improvement of 1.48% as compared to control. This brings us to a P1 -> P2 conversion rate of 5.51% for variation, and 4.03% for control. 
 - increase in overall paid conversion by ~ 0.2% (or ~12% improvement over baseline). This is not stat sig yet but we have 88% chance of this improvement being due to the experiment design.
 
 During the two weeks this experiment ran, 224 of the teams who saw the experiment upgraded, which is 17 more teams than the control. We are ~80% confident that the higher number of upgrades was due to the new design (the limiting factor was sample size).
