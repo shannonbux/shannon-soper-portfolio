@@ -10,10 +10,12 @@ Let’s say your dog wants you to take it on a walk at midnight. If you're not s
 
 [Play v0.1 of the Nope Game here!](https://thenopegame.gatsbyjs.io/). 
 
-This game, a passion project of mine, acts like a friend who helps you not only decide _whether_ to say yes or no to a particular request, but also _why_ your response makes sense. It can imbue you with confidence when you respond to your dog, because you can justify why you said yes or no.
+This game, a passion project of mine, acts like a friend who helps you not only decide _whether_ to say yes or no to a particular request, but also _why_ your response makes sense. It can imbue you with confidence when you respond to your dog, because you can justify why you said yes or no.&nbsp;
+
 
 ![The Nope Game home screen](home-screen-nope-game.png)
-
+<br />
+<br />
 ## The Dilemma
 
 It’s hard for many people to evaluate the impact of people’s requests on their time. If you say yes now, will you regret it later? If you say no, will you lose your resolve if the other person pushes back?
@@ -27,7 +29,8 @@ I personally decided to train my ability to say no (or yes) with confidence usin
 ![The Dime Game worksheet](dime-game-worksheet-one.jpeg)
 
 ![The Dime Game second page](dime-game-worksheet-two.jpeg)
-
+<br />
+<br />
 ## Gaining empathy
 
 Through **using this game 100+ times and recommending it to dozens of people,** I gathered the insights necessary to create an empathy map.

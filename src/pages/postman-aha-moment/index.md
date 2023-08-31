@@ -1,9 +1,8 @@
 ---
-title: "Creating an "Aha!" Moment for New Postman Users"
+title: "Creating an “Aha!” Moment for New Postman Users"
 date: "2021-07-31"
 featuredImage: "./header-image-postman-aha-moment.png"
-excerpt: "This design helped more Postman users experience their first "aha!" moment."
-
+excerpt: "This design helped more Postman users experience their first “aha!” moment."
 ---
 ## What I did
 At Postman, we knew that users who performed these two actions were more likely to still be using Postman six months later:
@@ -28,13 +27,13 @@ I decided to focus on helping that first group test out the platform as quickly 
 The five usability tests I ran led my to this hypothesis: 
 - Low-intent users want to send a request to test out Postman, yet they don’t see an obvious option to send a request during Postman onboarding. If we increase the visibility of sending a request, more users will try it and become activated.
 
-Here are users reactions when they first landed on the Postman app's homepage:
+Here are users reactions when they first landed on the Postman app's homepage (image below the quotes):
 
-> "Why is the invite button the most important thing on the homepage? I don’t think that’s very important right now. I’m trying to test it out."
+> “Why is the invite button the most important thing on the homepage? I don’t think that’s very important right now. I’m trying to test it out.”
 
 <small>—Ebru, Backend Developer</small>
 
-> "Ok, how can I send an API request?"
+> “Ok, how can I send an API request?”
 
 <small>—Gaurang, Backend Software Engineer</small>
 
@@ -55,12 +54,13 @@ After these interviews, I concluded that an easily removable design would be the
 
 I do think bigger redesigns can be impactful. There are pros and cons to small vs. dramatic changes.
 
-![The Postman App homepage showing a shortcut to sending the first request](postman-shortcut.png)
+![The Postman App homepage showing a shortcut to sending the first request](postman-shortcut.jpg)
 
-## Reducing user's cognitive load
+## Reducing the user’s cognitive load
 After a low-intent user clicks on "send a request", I decided to provide a default request that produced a mini-tutorial in the response. This could help users test out Postman without any unecessary work on their part, and with the bonus that reading the response could give them tips on what to try next.
 
-![The user's first request showing a response](postman-response.png)
+[Image coming soon]
+<!---![The user's first request showing a response](postman-response.png) -->
 
 ## Results
 This experiment was a partial success. We saw the following:
@@ -70,10 +70,10 @@ This experiment was a partial success. We saw the following:
 What I learned is that increasing the number of users sending a first request did not increase user activation metric, because users who send a first request aren’t necessarily more likely to create a collection. Maybe they don't even know they can save the request in a collection. 
 
 ## Followup experiment
-A colleague created this followup experiment.
+A colleague created a followup experiment.
 
-
-![The Postman workspace showing a nudge to create a collection](postman-collection.png)
+[Image coming soon]
+<!---![The Postman workspace showing a nudge to create a collection](postman-collection.png)-->
 
 Hypothesis:
 - Nudging users to create a collection if they have sent X numbers of requests (without creating any collection) will help increase the number of activated users.
