@@ -80,6 +80,7 @@ export default function Layout({ children }) {
       </Link>
       <div css={{ float: `right` }}>
         <HeaderLink to="/work/">Work</HeaderLink>
+        <HeaderLink to="/blog/">Blog</HeaderLink>
         <HeaderLink to="/about/">About</HeaderLink>
       </div>
 

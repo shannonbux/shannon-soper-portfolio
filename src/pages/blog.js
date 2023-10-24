@@ -1,15 +1,20 @@
-import React from "react"
-import { css } from "@emotion/react"
-import { Link, graphql } from "gatsby"
-import { rhythm } from "../utils/typography"
-import Layout from "../components/layout"
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import React from "react";
+import { css } from "@emotion/react";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
+import { rhythm } from "../utils/typography";
 
 export default function Blog({ data }) {
   return (
     <Layout>
       <div css={{ maxWidth: 600 }}>
-        <h1 css={css`margin-bottom: 2.1rem;`}>Work</h1>
+        <h1
+          css={css`
+            margin-bottom: 2.1rem;
+          `}
+        >
+          Blog posts
+        </h1>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
@@ -22,21 +27,24 @@ export default function Blog({ data }) {
                 margin-bottom: 32px;
               `}
             >
-              <GatsbyImage
-                css={css`
-                  margin-right: 24px;
-                `}
-                image={getImage(node.frontmatter.featuredImage)}
-              />
               <div css={{ flex: 1 }}>
                 <h2
                   css={css`
-                    margin-bottom: 4px;
+                    margin-bottom: 0px;
                     color: #000000;
                   `}
                 >
                   {node.frontmatter.title}
                 </h2>
+                <div
+                  css={css`
+                    display: block;
+                    margin-bottom: 8px;
+                    color: gray;
+                  `}
+                >
+                  {node.frontmatter.date}
+                </div>
                 <p>{node.frontmatter.excerpt}</p>
               </div>
             </Link>
@@ -44,12 +52,15 @@ export default function Blog({ data }) {
         ))}
       </div>
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { isBlogPost: { eq: true } } }
+    ) {
       totalCount
       edges {
         node {
@@ -57,11 +68,6 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 128, height: 128)
-              }
-            }
             excerpt
           }
           fields {
@@ -71,4 +77,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
