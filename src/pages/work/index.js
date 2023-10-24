@@ -1,15 +1,21 @@
-import React from "react"
-import { css } from "@emotion/react"
-import { Link, graphql } from "gatsby"
-import { rhythm } from "../../utils/typography"
-import Layout from "../../components/layout"
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import React from "react";
+import { css } from "@emotion/react";
+import { Link, graphql } from "gatsby";
+import { rhythm } from "../../utils/typography";
+import Layout from "../../components/layout";
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function Work({ data }) {
   return (
     <Layout>
       <div css={{ maxWidth: 600 }}>
-        <h1 css={css`margin-bottom: 2.1rem;`}>Work</h1>
+        <h1
+          css={css`
+            margin-bottom: 2.1rem;
+          `}
+        >
+          Work
+        </h1>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
@@ -44,12 +50,15 @@ export default function Work({ data }) {
         ))}
       </div>
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { isBlogPost: { ne: true } } }
+    ) {
       totalCount
       edges {
         node {
@@ -71,4 +80,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
