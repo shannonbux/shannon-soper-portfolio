@@ -24,9 +24,18 @@ If I’m creating a website from scratch and using VS code, I might want to comp
 
 ## Information density
 
-The density of data in dev tool design is often necessary because users have open-ended questions like “is there a faster way to create routes for my website’s pages?”. A good designer friend of mine, Anton, says that a “hyper-saturated interface” is common in creative tools, as opposed to interfaces that users only use for consumption of data.
+The density of data in dev tool design is necessary because users have open-ended questions that they answer through creative exploration. For example, “is there a faster way to create routes for my website’s pages?” might lead a developer to look at other people's projects and then test out the same strategies they've seen to see if it works or produces errors. A good designer friend of mine, Anton Lovchikov, says that because developers are creators, a “hyper-saturated interface” is ideal. By surfacing all frequent actions (and there are _a lot_) in the UI and hiding less frequent actions, a hyper-saturated interface speeds up developer workflows. 
 
-Developers are professionals who are getting paid to make creative choices that require a lot of human work. In other words, the tool can’t do all their work for them. Uber does almost all the work for the user. VS code doesn’t get the user nearly as close to completing their task, and that’s because that task requires way more expertise.
+In contrast, interfaces intended mostly for the consumption of data surface fewer actions, so the interface is usually focused on a select few points of user interaction (say, a checkout flow, which might have a few text input fields and one button).
+
+## Can't we hide complexity in developer tools?
+
+Yes and no. Developers are professionals who make creative choices that require a lot of human work. In other words, the tool might be able to provide templates or boilerplate code, but it can’t do custom work with expertise. Uber does almost all the work for the user. VS code doesn’t get the user nearly as close to completing their task, and that’s because that task requires way more expertise. 
+
+However, there are smart ways to hide complexity. Here are ways of hiding complexity that don't hinder creativity:
+- hide less frequent actions in dropdowns, settings, etc.
+- use smart defaults and ask the user if the default is correct or if they want to change it
+- anticipate user questions, for example, if you know users will want to compare plugin options, productize that comparison! Make it easy to compare plugins side-by-side
 
 ## “Too cluttered” or cluttered enough? 
 
