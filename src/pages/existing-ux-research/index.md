@@ -2,7 +2,7 @@
 title: Taking advantage of existing UX research
 isBlogPost: true
 date: 2024-01-30
-excerpt: There are many ways to answer these questions about users, not just interviews.
+excerpt: There are many ways to answer questions about users, not just interviews.
 ---
 
 ## Why do UX research? It’s fun & helpful
