@@ -45,7 +45,9 @@ export default function About({ data }) {
         <div>
           <ul>
             <li>
-//add Nope Game 
+              <a href="https://thenopegame.gatsbyjs.io/">The Nope Game</a>{" "} — play this when you want to decide how strongly to say yes or no to a request
+            </li>
+            <li>
               <a href="https://www.instagram.com/discovered_ux/">
                 Discovered UX
               </a>{" "} — my Instagram account, chronicling software and physical designs that are delightful, dismal, and everything in between
@@ -74,6 +76,9 @@ export default function About({ data }) {
           <ul>
             <li>
               <a href="/resume-2023-1.pdf">Resume</a>
+            </li>
+            <li>
+              Contract Senior Product Designer at <a href="https://buildbetter.ai/">BuildBetter.ai</a>{" "} — 2023-2024
             </li>
             <li>
               Product Designer at <a href="https://www.postman.com/">Postman</a>{" "} — 2 years — 2021-2023
