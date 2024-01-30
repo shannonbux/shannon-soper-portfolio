@@ -2,7 +2,7 @@
 title: Taking advantage of existing UX research
 isBlogPost: true
 date: 2024-01-30
-excerpt: 
+excerpt: There are many ways to answer these questions about users, not just interviews.
 ---
 
 ## Why do UX research? It’s fun & helpful
@@ -41,16 +41,14 @@ Here’s the checklist I used to make sure I thoroughly used existing sources of
 ## My Checklist
 ### Check existing research
 - Document the current user journey
-- Check community forum
-- Look at GitHub issues
-- Check with squad PM to see if they have any research on the topic already
-- Ask PM "Could you help me find 4-5 people that could test this?" Can I hop on any calls you already have set up?
-- Check ZenDesk customer tickets
-- Check #customer-calls and ask the sales folks who posted the notes follow up questions
-- Talk to other product designers
-- Read existing UX Research reports
+- Check with squad PM, other designers and researchers, and leaders to see if they have any research on the topic already
+- Ask PM "Can I hop on any calls you already have set up?
+- Search community forum
+- Search at GitHub issues
+- Search ZenDesk customer tickets
+- Search #customer-calls and ask follow up questions of the sales folks who posted relevant the notes
 - Watch Gong calls
-- Data from data team
+- Ask for data from data analysts
 - Look at other products with similar features and problems
 
 ### Things that didn’t work:
@@ -69,7 +67,7 @@ Anytime you share research or invite someone to research with you, always start 
 
 **Inviting people to research with you** is one of the best ways to share research. Hop on a call with a coworker and read some sales call notes together! They will get excited and talk about it with others, and you can even present results together.
 
-Keep sharing short. Share a user quote every few days in Slack.
+Keep sharing short. **Share a user quote every few days in Slack**.
 
 **Volunteer to do a 5 min presentation** for your team, department, or the whole company. Rehearse with a timer, so you know you can do it in under 5 minutes. That will force you to make it clear enough for anyone to understand. The 5 minutes will leave people wanting more.
 
