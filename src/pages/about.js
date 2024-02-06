@@ -75,7 +75,7 @@ export default function About({ data }) {
         <div>
           <ul>
             <li>
-              <a href="/resume-2023-1.pdf">Resume</a>
+              <a href="/Resume-2024.pdf">Resume</a>
             </li>
             <li>
               Contract Senior Product Designer at <a href="https://buildbetter.ai/">BuildBetter.ai</a>{" "} — 2023-2024
