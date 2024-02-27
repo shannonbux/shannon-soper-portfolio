@@ -37,7 +37,7 @@ Here are users reactions when they first landed on the Postman app's homepage (i
 
 <small>—Gaurang, Backend Software Engineer</small>
 
-![The Postman App homepage showing many activity feeds and links to team information](postman-homepage.png)
+![The Postman App homepage showing many activity feeds and links to team information](Homepage-old-comment.png)
 
 ## Interviewing my design predecessors
 
@@ -52,15 +52,12 @@ After these interviews, I concluded that an easily removable design would be the
 2. It would be easy to remove if it failed
 3. Because of the previous two reasons, it would cause the least internal resistance and ship quickly
 
-I do think bigger redesigns can be impactful. There are pros and cons to small vs. dramatic changes.
-
-![The Postman App homepage showing a shortcut to sending the first request](postman-shortcut.jpg)
+![The Postman App homepage showing a shortcut to sending the first request](Homepage-new-comment.png)
 
 ## Reducing the user’s cognitive load
 After a low-intent user clicks on "send a request", I decided to provide a default request that produced a mini-tutorial in the response. This could help users test out Postman without any unecessary work on their part, and with the bonus that reading the response could give them tips on what to try next.
 
-[Image coming soon]
-<!---![The user's first request showing a response](postman-response.png) -->
+![The user's first request showing a response](Response-new-comment.png)
 
 ## Results
 This experiment was a partial success. We saw the following:
@@ -82,6 +79,12 @@ Hypothesis:
 This followup experiment added to the partial success of the first one. It strongly correlated with an increase in the number of users creating collections & becoming activated. 
 
 From this result, we learned that many users want to create collections once they know about them.
+
+### View old user flow in Figma!
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkztr50mArdY9Gow8eh58bs%2FPortfolio-Website-Image-Files%3Fpage-id%3D23%253A776%26type%3Ddesign%26node-id%3D232-4503%26viewport%3D221%252C538%252C0.06%26t%3D1VzHzIQU3W53caNr-1%26scaling%3Dcontain%26starting-point-node-id%3D232%253A4503" allowfullscreen></iframe>
+
+### View new user flow in Figma!
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkztr50mArdY9Gow8eh58bs%2FPortfolio-Website-Image-Files%3Fpage-id%3D23%253A776%26type%3Ddesign%26node-id%3D29-1965%26viewport%3D221%252C538%252C0.06%26t%3D1VzHzIQU3W53caNr-1%26scaling%3Dcontain%26starting-point-node-id%3D29%253A1965%26mode%3Ddesign" allowfullscreen></iframe>
 
 ## Final step
 Normally, experiments are only shown to a small percentage of users for a short time period, e.g. 1-2 weeks. If they are successful, we show the feature to all users.
