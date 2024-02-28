@@ -27,7 +27,10 @@ I decided to focus on helping that first group test out the platform as quickly 
 The five usability tests I ran led my to this hypothesis: 
 - Low-intent users want to send a request to test out Postman, yet they don’t see an obvious option to send a request during Postman onboarding. If we increase the visibility of sending a request, more users will try it and become activated.
 
-Here are users reactions when they first landed on the Postman app's homepage (image below the quotes):
+### Old homepage design
+![The Postman App homepage showing many activity feeds and links to team information](Homepage-old-comment.png)
+
+Here are users reactions when they first landed on the Postman app's homepage:
 
 > “Why is the invite button the most important thing on the homepage? I don’t think that’s very important right now. I’m trying to test it out.”
 
@@ -37,7 +40,9 @@ Here are users reactions when they first landed on the Postman app's homepage (i
 
 <small>—Gaurang, Backend Software Engineer</small>
 
-![The Postman App homepage showing many activity feeds and links to team information](Homepage-old-comment.png)
+### Old send request design
+Once users clicked on `Create new` and elected to send a new request, they saw this:
+![A Postman workspace showing an empty API request input field](send-request-old-comment.png)
 
 ## Interviewing my design predecessors
 
@@ -52,10 +57,16 @@ After these interviews, I concluded that an easily removable design would be the
 2. It would be easy to remove if it failed
 3. Because of the previous two reasons, it would cause the least internal resistance and ship quickly
 
+### New homepage design
 ![The Postman App homepage showing a shortcut to sending the first request](Homepage-new-comment.png)
 
 ## Reducing the user’s cognitive load
-After a low-intent user clicks on "send a request", I decided to provide a default request that produced a mini-tutorial in the response. This could help users test out Postman without any unecessary work on their part, and with the bonus that reading the response could give them tips on what to try next.
+After a low-intent user clicks on "send a request" on the homepage, I decided to provide a default request that produced a mini-tutorial in the response. This could help users test out Postman without any unecessary work on their part, and with the bonus that reading the response could give them tips on what to try next.
+
+### New send request design
+Here are the two main steps I designed.
+
+![A Postman workspace showing an pre-filled API request input field](send-request-new-comment.png)
 
 ![The user's first request showing a response](Response-new-comment.png)
 
@@ -67,18 +78,18 @@ This experiment was a partial success. We saw the following:
 What I learned is that increasing the number of users sending a first request did not increase user activation metric, because users who send a first request aren’t necessarily more likely to create a collection. Maybe they don't even know they can save the request in a collection. 
 
 ## Followup experiment
-A colleague created a followup experiment.
+A colleague and I collaborated to create a followup experiment, based on the hypothesis that strongly and clearly nudging users to create a collection if they have sent X numbers of requests (without creating any collection) would help increase the number of activated users.
 
-[Image coming soon]
-<!---![The Postman workspace showing a nudge to create a collection](postman-collection.png)-->
+### Old design
+![A Postman workspace showing an empty state, nudging the user to create a collection](collectionscta-old-comment.png)
 
-Hypothesis:
-- Nudging users to create a collection if they have sent X numbers of requests (without creating any collection) will help increase the number of activated users.
+### New design
+![A Postman workspace showing a new version of the same empty state that includes a preview of collection features](collectionscta-new-comment.png)
 
 ## Results
 This followup experiment added to the partial success of the first one. It strongly correlated with an increase in the number of users creating collections & becoming activated. 
 
-From this result, we learned that many users want to create collections once they know about them.
+From this result, we learned that many users want to create collections once they understand what they are.
 
 ### View old user flow in Figma!
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkztr50mArdY9Gow8eh58bs%2FPortfolio-Website-Image-Files%3Fpage-id%3D23%253A776%26type%3Ddesign%26node-id%3D232-4503%26viewport%3D221%252C538%252C0.06%26t%3D1VzHzIQU3W53caNr-1%26scaling%3Dcontain%26starting-point-node-id%3D232%253A4503" allowfullscreen></iframe>
