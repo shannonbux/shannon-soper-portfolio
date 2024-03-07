@@ -5,43 +5,29 @@ featuredImage: "./header-image-postman-aha-moment.png"
 excerpt: "This design helped more Postman users experience their first “aha!” moment."
 ---
 ## What I did
-At Postman, we knew that users who performed these two actions were more likely to still be using Postman six months later:
+I pursued the open question "how might we help more Postman users become activated?" My design led to a 4% increase in users performing the first step of activation.
+
+## How did we define activation?
+Activated users performed these two actions during their first few days using Postman, and were more likely (41% vs 28%) to be using Postman 6 months later:
 1. send a request
 2. save that request in a collection
-
-We called these users "activated users".
-
-- Activated users have a 41% chance that they will still be using Postman 6 months later.
-- Users who are not yet activated are 28% likely.
-
-I was assigned to pursue the open question "how might we help more Postman users become activated?" This would help them experience the value of the product and improve our business.
 
 ## Helping users who want to take the product for a test drive
 Through recruiting for and running five usability tests with developers using Postman for the first time, I learned the following:
 1. Some new Postman users are testing out the platform to see if it meets their needs.
 2. Some new Postman users are already convinced of its value. They create an account and intend to use Postman as long as nothing blocks them. 
 
-I decided to focus on helping that first group test out the platform as quickly as possible, because I hypothesized they were the most likely to give up if they ran into friction early in their experience. 
+I decided help the first group test out the platform as quickly as possible. We could make more impact by helping them since they were the most likely to give up if they ran into friction early in their experience. 
 
-## My hypothesis
+## Why did low-intent users not activate? My hypothesis
 The five usability tests I ran led my to this hypothesis: 
-- Low-intent users want to send a request to test out Postman, yet they don’t see an obvious option to send a request during Postman onboarding. If we increase the visibility of sending a request, more users will try it and become activated.
+- Low-intent users don’t see an obvious option to send a request during onboarding, even though that's what they want to do. If we increase the visibility of sending a request, more users will try it and become activated.
 
-### Old homepage design
-![The Postman App homepage showing many activity feeds and links to team information](Homepage-old-comment.png)
+### Old step 1: homepage
+![The Postman App homepage showing many activity feeds and links to team information](Homepage-old-comment.jpg)
 
-Here are users reactions when they first landed on the Postman app's homepage:
-
-> “Why is the invite button the most important thing on the homepage? I don’t think that’s very important right now. I’m trying to test it out.”
-
-<small>—Ebru, Backend Developer</small>
-
-> “Ok, how can I send an API request?”
-
-<small>—Gaurang, Backend Software Engineer</small>
-
-### Old send request design
-Once users clicked on `Create new` and elected to send a new request, they saw this:
+### Old step 2: send request
+Once users clicked on "Create New" and elected to send a new request, they saw this:
 ![A Postman workspace showing an empty API request input field](send-request-old-comment.png)
 
 ## Interviewing my design predecessors
@@ -52,22 +38,18 @@ What I found is that most designers were already frustrated with the cluttered h
 
 ## Choosing an easily removeable design
 
-After these interviews, I concluded that an easily removable design would be the best option for two reasons:
+After these interviews, I concluded that an easily removable design would be the best option for three reasons:
 1. It would be fast to implement
 2. It would be easy to remove if it failed
 3. Because of the previous two reasons, it would cause the least internal resistance and ship quickly
 
-### New homepage design
+### New step 1: see send request option on homepage
 ![The Postman App homepage showing a shortcut to sending the first request](Homepage-new-comment.png)
 
-## Reducing the user’s cognitive load
-After a low-intent user clicks on "send a request" on the homepage, I decided to provide a default request that produced a mini-tutorial in the response. This could help users test out Postman without any unecessary work on their part, and with the bonus that reading the response could give them tips on what to try next.
-
-### New send request design
-Here are the two main steps I designed.
-
+### New step 2: send request
 ![A Postman workspace showing an pre-filled API request input field](send-request-new-comment.png)
 
+### New step 3: see response
 ![The user's first request showing a response](Response-new-comment.png)
 
 ## Results
@@ -75,10 +57,13 @@ This experiment was a partial success. We saw the following:
 - a 4% increase in # of users sending their first request
 - the new design was a significant improvement upon the control
 
-What I learned is that increasing the number of users sending a first request did not increase user activation metric, because users who send a first request aren’t necessarily more likely to create a collection. Maybe they don't even know they can save the request in a collection. 
+Why did it work?—reducing the user’s cognitive load
+After a low-intent user clicks on "send a request" on the homepage, the default request that produced a mini-tutorial in a response helped users test out Postman without any unecessary work on their part, and with the bonus that reading the response could give them tips on what to try next.
 
 ## Followup experiment
-A colleague and I collaborated to create a followup experiment, based on the hypothesis that strongly and clearly nudging users to create a collection if they have sent X numbers of requests (without creating any collection) would help increase the number of activated users.
+Increasing the number of users sending a first request did not increase the number of collections created (second step in user activation metric). My hypothesis was that they don't know why they should save the request in a collection. 
+
+A colleague and I collaborated to create a followup experiment, based on the hypothesis that strongly and clearly nudging users to create a collection if they have sent X numbers of requests would help increase the number of activated users.
 
 ### Old design
 ![A Postman workspace showing an empty state, nudging the user to create a collection](collectionscta-old-comment.png)
