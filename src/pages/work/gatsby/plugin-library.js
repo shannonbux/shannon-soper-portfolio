@@ -9,7 +9,7 @@ export default function PluginLibrary() {
       <div css={{ maxWidth: 700, marginBottom: 32 }}>
         <h1 css={{ marginBottom: 24 }}>Gatsby Plugin Library</h1>
         <StaticImage
-          src="../library/plugin-tweet.png"
+          src="../../library/plugin-tweet.png"
           aspectRatio={3 / 2}
           width={700}
           alt="work stuff"
