@@ -15,13 +15,12 @@ Doing UX research also helps you make decisions, explain those decisions, and em
 Does UX research guarantee our decisions work for users and the business? Nope, but even if a new feature doesn't turn out well for users, having research behind the decisions makes it easier to find the next step. Did we miss something in the previous research? Did we get the research right but the design has a bug or usability issue? Having a partially complete map of the landscape makes it easier to start exploring remaining blank spots.
 
 ## Taking advantage of existing UX research
-So how do you learn about users? This is the first post in a series of posts about UX research strategies that addresses taking advantage of existing UX research before doing your own original research. Stay tuned for future posts:
+The following sections of the blogpost address how to learn about users using these three steps:
+1. starting with questions
+2. looking at existing UX research
+3. sharing research insights
 
-- Finding users to talk to (“recruiting”)
-- Running interviews
-- Working with dedicated UX Research teams
-
-## Starting with questions
+## 1. Starting with questions
 Before doing anything else, start with curiosity about people’s behavior and lives. Asking questions, whether in interviews or just to yourself while browsing a community forum, is a way to learn. 
 
 **Example questions:**
@@ -31,14 +30,12 @@ Before doing anything else, start with curiosity about people’s behavior and l
 - What are users’ common workflows when trying to do [xyz behavior]?
 - Who am I and what am I doing here?! (it might take a while to answer this one)
 
-## Looking at existing UX research
+## 2. Looking at existing UX research
 There are many ways to answer these questions about users, not just interviews. And getting feedback from users face-to-face is so precious and hard-won that you keep learning from other sources so you’re more prepared for the interviews. The questions you ask them should be ones you can’t answer in any other way. 
 
+## The checklist I used at Postman (a developer tools company)
 Here’s the checklist I used to make sure I thoroughly used existing sources of user feedback at my last job at Postman before reaching out to users myself.
-
-
 ---
-## My Checklist
 ### Check existing research
 - Document the current user journey
 - Check with squad PM, other designers and researchers, and leaders to see if they have any research on the topic already
@@ -61,35 +58,32 @@ Here’s the checklist I used to make sure I thoroughly used existing sources of
 - Internal testing w/ another squad
 
 ---
+## 3. Sharing research insights
+1. **Remind people what question the research is intended to answer** anytime you share research or invite someone to research with you. It helps make sure you have a shared goal and know how to interpret user feedback.
 
-## Sharing research insights
-Anytime you share research or invite someone to research with you, always start with a **reminder of what question the research is intended to answer**. It helps make sure you have a shared goal and know how to interpret user feedback.
+2. **Inviting people to research with you** is one of the best ways to share research. Hop on a call with a coworker and read some sales call notes together! They will get excited and talk about it with others, and you can even present results together.
 
-**Inviting people to research with you** is one of the best ways to share research. Hop on a call with a coworker and read some sales call notes together! They will get excited and talk about it with others, and you can even present results together.
+3. **Sharing a user quote every few days in Slack** gives people a steady drip of insights and empathy for users in bite-sized pieces.
 
-Keep sharing short. **Share a user quote every few days in Slack**.
+4. **Volunteer to do a 5 min presentation** for your team, department, or the whole company. Rehearse with a timer, so you know you can do it in under 5 minutes. That will force you to make it clear enough for anyone to understand. The 5 minutes will leave people wanting more.
 
-**Volunteer to do a 5 min presentation** for your team, department, or the whole company. Rehearse with a timer, so you know you can do it in under 5 minutes. That will force you to make it clear enough for anyone to understand. The 5 minutes will leave people wanting more.
+5. **Write a 1 page summary** so you can share the research anywhere and at any moment. Refer back to your 1 page report in every relevant project by linking to it in:
+    - Tickets
+    - PRD’s 
+    - PRFAQs 
+    - design specs
+    - Figma files
+    - Slack conversations
 
-**Write a 1 page summary** so you can share the research anywhere and at any moment. Refer back to your 1 page report in every relevant project by linking to it in:
-- Tickets
-- PRD’s 
-- PRFAQs 
-- design specs
-- Figma files
-- Slack conversations
-
-**Note:** I often write a longer summary for myself first, and find the writing process is super useful to deeply think through the problem. My experience is that much research is evergreen; I refer to it during many future projects.
-
-Below is an example of a 1 page research report I wrote that starts with a question. The research for the report came from internal resources like talking to the Head of Engineering, a product designer in Postman’s Public API team, the CEO, and looking at what users were saying and doing online.
-
+## Example of a 1 page summary I created
+When I worked at Postman, I created this 1 page summary using existing UX Research.
 ---
 ## What makes some Postman API collections go viral?
 
-### 1) They are foundational APIs that people need to build on top of
+### 1. They are foundational APIs that people need to build on top of
 > “#1 thing that makes collection go viral is it’s a foundational API that everyone needs to build on top of or use. Look at ppl who have productized this, like Stripe.” —Numaan
 
-### 2) They are easy to use & easy to find
+### 2. They are easy to use & easy to find
 > “My favourite workspaces are ones that have good documentation and guides on how to get started with using the APIs they have. Eg. Twilio” —Avinash
 
 What makes an API easy to use and find?
@@ -97,7 +91,7 @@ What makes an API easy to use and find?
 - clear guidelines on how to create an account / get a key to use their APIs
 - marketing the API outside of Postman
 
-### 3) Their structure and documentation fits a need
+### 3. Their structure and documentation fits a need
 There are 4 types of collections with corresponding documentation patterns (often 1 API will have all 4 types, exact same API but diff documentation and folder structure)
 - How-to (Example of a how-to style collection)
 - tutorial
