@@ -12,8 +12,7 @@ I redesigned and shipped a new version of Gatsby Cloud's Builds dashboard, which
 
 This dashboard helps users browse the status of all proposed changes to their website so they can catch and fix any errors. The dashboard presents these error summaries in a more easily readable format than the CLI or GitHub. And, since we could analyze their website in nuanced ways by knowing so much about how Gatsby websites are ideally built, we hypothesized that we could also offer specific suggestions to improve their website's performance. 
 
-![The final design](./builds-final.png)
-
+## My role
 As part of the design process, I did the following:
 - Ran UX Research process
 - Ran team sketching sessions
@@ -24,9 +23,8 @@ Through setting up interviews with users and inviting coworkers, I identified tw
 1. As a developer, I want to see the impact of potential site changes on site performance so I can determine whether to adopt the change
 2. As a developer, I want to see errors and warnings in potential site changes so I can resolve them to make the site function properly
 
-The previous design left users with open questions, like "ok, I see there was an error, but which PR introduced that error? And how can I see how merging this PR might impact my site's performance?"
-
-So, the previous design fell short of helping the user with their 2 main jobs to be done.
+## Previous design
+As you can see in the image below, the previous design left users with open questions, like "ok, I see there was an error, but which PR introduced that error? And how can I see how merging this PR might impact my site's performance?"
 
 ![The previous design](./builds-previous.png)
 
@@ -73,6 +71,11 @@ The design still provided raw logs so we could see what additional data processe
 [Image coming soon]
 ![The user's first request showing a response](postman-response.png) -->
 
+## From GitHub to Gatsby Cloud
+When a user saw a problem reported by the GitHub bot (called Gatsbot, very cute :), they could drill into the details by navigating to Gatsby Cloud to figure out why a certain PR was throwing an error or reducing the site's performance.
+
+## Final design: sneak peak!
+![The final design](./builds-final.png)
 
 ## How we evaluated results
 - FullStory clips
@@ -81,7 +84,7 @@ The design still provided raw logs so we could see what additional data processe
 The dashboard enabled Gatsby to come out of beta and launch its commercial offering.
 
 ## Why did the solution work?
-We presented the user with prioritized data which allowed them to focus on their website’s biggest problems and/or biggest opportunities.
+We presented the user with prioritized data which answered their questions. The data empowered them to focus on their website’s biggest problems and/or biggest opportunities.
 
 ## Future idea
 One feature we didn't ship yet was showing site performance changes over time. We wanted users to be able to do these things:
@@ -91,4 +94,4 @@ One feature we didn't ship yet was showing site performance changes over time. W
 
 ![future design idea depicting performance site changes over time](future-idea.png)
 
-The design we shipped gave a static snapshot of performance measurements, and users needed to track trends and compare past and future in order to trouble-shoot their website's performance and evolve the website over time.
+The design we shipped gave a static snapshot of performance measurements with no information about whether the measurements were better or worse than before. Users needed to track trends and compare past and future in order to trouble-shoot their website's performance and evolve the website over time.
