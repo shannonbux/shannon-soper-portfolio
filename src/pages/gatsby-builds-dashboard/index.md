@@ -60,19 +60,18 @@ GitHub doesn't have a ton of room for designing custom things, so I designed the
 
 ![GitHub bot](./github-bot.png)
 
-## Users can dive into details when they want
+<!--## Users can dive into details when they want
 Before we designed the UI here, users scanned raw logs to identify errors and calculate the time of each step in the process. These summaries saved them time.
 
 [Image coming soon]
-<!---![The user's first request showing a response](postman-response.png) -->
+![The user's first request showing a response](postman-response.png) 
 
 
 ## Advanced usage
 The design still provided raw logs so we could see what additional data processes users performed to identify which common patterns we could adopt into the UI.
 
-
 [Image coming soon]
-<!---![The user's first request showing a response](postman-response.png) -->
+![The user's first request showing a response](postman-response.png) -->
 
 
 ## How we evaluated results
@@ -84,10 +83,12 @@ The dashboard enabled Gatsby to come out of beta and launch its commercial offer
 ## Why did the solution work?
 We presented the user with prioritized data which allowed them to focus on their website’s biggest problems and/or biggest opportunities.
 
-## Next steps
-Normally, experiments are only shown to a small percentage of users for a short time period, e.g. 1-2 weeks. If they are successful, we show the feature to all users.
+## Future idea
+One feature we didn't ship yet was showing site performance changes over time. We wanted users to be able to do these things:
+- set performance goals
+- track their progress towards those goals
+- identify not just their site's performance scores, but also the trends; e.g. is performance better after the most recent PR merged or worse?
 
-Because these two experiments were successful, they were turned on so **100% of users see them**. It continues to be exciting to see these simple steps make an impact!
+![future design idea depicting performance site changes over time](future-idea.png)
 
-
-
+The design we shipped gave a static snapshot of performance measurements, and users needed to track trends and compare past and future in order to trouble-shoot their website's performance and evolve the website over time.
