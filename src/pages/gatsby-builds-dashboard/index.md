@@ -74,14 +74,14 @@ The design still provided raw logs so we could see what additional data processe
 ## From GitHub to Gatsby Cloud
 When a user saw a problem reported by the GitHub bot (called Gatsbot, very cute :), they could drill into the details by navigating to Gatsby Cloud to figure out why a certain PR was throwing an error or reducing the site's performance.
 
-## Final design: sneak peak!
-![The final design](./builds-final.png)
+## Final design
+The final design answered users' questions so they could fix any website errors, and enabled Gatsby to come out of beta and launch its commercial offering.
 
-## How we evaluated results
+We evaluated the design's success using:
 - FullStory clips
 - 5 usability tests
 
-The dashboard enabled Gatsby to come out of beta and launch its commercial offering.
+![The final design](./builds-final.png)
 
 ## Why did the solution work?
 We presented the user with prioritized data which answered their questions. The data empowered them to focus on their website’s biggest problems and/or biggest opportunities.
