@@ -18,6 +18,11 @@ kirkhamTheme.baseFontSize = `18px`
 kirkhamTheme.baseLineHeight = 1.4
 kirkhamTheme.scaleRatio = 1.8
 kirkhamTheme.headerWeight = 500
+kirkhamTheme.overrideThemeStyles = ({ rhythm }, options) => ({
+    'p *:last-child:not(.gatsby-resp-image-wrapper)': {
+      marginBottom: rhythm(3/2),
+    }
+  })
 
 delete kirkhamTheme.googleFonts
 
