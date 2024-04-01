@@ -9,6 +9,8 @@ After Gatsby launched our cloud website hosting product (a developer tool), I re
 
 My usability tests identified the moment where most users dropped off.
 
+My new designs resolved this problem in 5 usability tests.
+
 ## Unnecessary interaction: user must choose where to save their first project
 When a user decided to create a Gatsby Cloud site for the first time, the onboarding flow asked them to select a GitHub organization so it would know where to save the site, despite this step not being necessary or, as it turned out, what most new users wanted.
 
