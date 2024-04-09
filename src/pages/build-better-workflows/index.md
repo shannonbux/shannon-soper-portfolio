@@ -1,5 +1,5 @@
 ---
-title: Analyzing groups of video transcripts with AI at BuildBetter.ai 
+title: Analyzing video transcripts with AI
 isBlogPost: false
 date: 2024-02-06
 featuredImage: "thumbnail.jpg"
