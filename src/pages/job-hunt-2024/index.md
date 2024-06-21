@@ -90,15 +90,15 @@ Early in my career, I intended to get into UX Research roles. I got lucky enough
 Recently, I’ve been messaging hiring managers on LinkedIn whenever I find out they aren’t making me an offer. I’m paying for the lowest tier of LinkedIn, which allows me to message people I’m not connected to yet. This has worked out better than reaching out via email. Maybe they feel more comfortable giving feedback via a non-work channel.
 
 ## One person forgot most of my presentation
-One responded and based on their feedback, they seemed to have forgotten one of the two projects I presented. They also said they wanted someone who displayed more evidence of collaboration. Tragically, that is one of my superpowers. And they didn’t ask me any questions about it during the interviews. 
+One hiring manager who gave me feedback 2 days after my presentation seemed to have completely forgotten one of the two projects I presented. This is either evidence of them not paying attention for some reason or my presentation not being memorable enough. Maybe both. They also said they wanted someone who displayed more evidence of collaboration. Tragically, that is one of my superpowers. And they didn’t ask me any questions about it during the interviews. 
 
 I took time to reflect. What could I learn from his feedback?
 
-His emphasis on collaboration could mean their team is really struggling in silos with designers as ticket takers. They are looking for someone to rescue them. They are nervous about this, so they don’t want to emphasize it in interviews too much.
-I could have emphasized collaboration more, without being asked about it.
-He didn’t remember the interview well, for whatever reason, and didn’t check his notes. He is relying on vague memories.
-He doesn’t have the self-awareness to know why he made the decision.
-There is some other reason he doesn’t want to tell me.
+1. His emphasis on collaboration could mean their team is really struggling in silos with designers as ticket takers. They are looking for someone to rescue them. They are nervous about this, so they don’t want to emphasize it in interviews too much.
+2. I could have emphasized collaboration more, without being asked about it. And generally made my presentation more memorable.
+3. He didn’t remember the interview well, for whatever reason, and didn’t check his notes. He is relying on vague memories.
+4. He doesn’t have the self-awareness to know why he made the decision.
+5. There is some other reason he decided not to proceed, and he doesn’t want to tell me that reason so made up another excuse.
 
 ## One person ended up caring about something they didn’t expect
 
@@ -110,9 +110,8 @@ I felt somewhat upset by this feedback at first, because the take-home assignmen
 
 Upon more reflection, I can see a few reasons they ended up valuing enthusiasm for user needs, even though they hadn’t put it in the assignment description.
 
-It’s possible that someone else who presented the same take-home assignment was way more enthusiastic than me, and the hiring team realized they wanted that enthusiasm. They simply didn’t know they wanted it until they saw it.
-
-They might have wanted that enthusiasm because they’re working on a new product at the company. They need a lot of people to get the sales team and executives pumped up about it. They don’t want to admit they want a cheerleader designer, because maybe it’s a little scary to not feel your department has gotten its feet under it yet.
+1. It’s possible that someone else who presented the same take-home assignment was way more enthusiastic than me, and the hiring team realized they wanted that enthusiasm. They simply didn’t know they wanted it until they saw it.
+2. They might have wanted that enthusiasm because they’re working on a new product at the company. They need a lot of people to get the sales team and executives pumped up about it. They don’t want to admit they want a cheerleader designer, because maybe it’s a little scary to not feel your department has gotten its feet under it yet.
 
 So, I learned that feedback is kind of like clues about how the organization is working and how human beings aren’t perfect at predicting what they want, and don’t always know why they made certain decisions. If you’re lucky enough to hear feedback, pretend you’re a detective and an anthropologist and psychologist. You’re studying how the world actually works.
 
