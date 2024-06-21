@@ -4,28 +4,23 @@ isBlogPost: true
 date: 2024-06-21
 excerpt: In an uncertain world and hyper-competitive job market, product designer hiring decisions are often made based upon factors not obvious in job descriptions. So, to save yourself time and headache, avoid over-tailoring your resume or portfolio and focus instead on consistently broadcasting your top strengths.
 ---
+In this post, I'll explain how I learned that hiring decisions are often made based upon factors not obvious in job descriptions. Which led me to the conclusion that the right response is to avoid over-tailoring your resume or portfolio and focus instead on consistently broadcasting your top strengths. 
 
-In an uncertain world and hyper-competitive job market, hiring decisions are often made based upon factors not obvious in job descriptions. 
-
-So, to save yourself time and headache, avoid over-tailoring your resume or portfolio and focus instead on consistently broadcasting your top strengths.
-
-In this post, bear with me while because I'll explain how I came to this conlusion in the **middle** of the post. First, I share what I've learned in each stage of the job hunt, starting from applications all the way to final interviews and job offers. 
-
-And if you make it to the end of this post, you'll see the most absurd, awkward, funny, and embarrassing stories from my job hunt.
+(And if you make it to the end of this post, you'll see the most absurd, awkward, funny, and embarrassing stories from my job hunt ;).
 
 ## Facts about my job hunt
 I’m a Senior Product Designer with 6 years’ experience designing developer tools, and a previous 4 years’ experience designing online learning experiences as an Instructional Designer.
 
-- Jobs applied to during 6 months: 100
-- Referrals: 3
-- Referrals that led to a job offer: 1
-- Full interview cycles (where I completed all interviews for a role and was one of the top candidates considered for the role): 5
-- Job offers: 2
-- Jobs quit: 1 (after 3 months)
-- Jobs that were rescinded due to HR deciding they wouldn’t allow me to be remote: 1
+- Jobs applied to during 6 months: **100**
+- Referrals: **3**
+- Referrals that led to a job offer: **1**
+- Full interview cycles (where I completed all interviews for a role and was one of the top candidates considered for the role): **5**
+- Job offers: **2**
+- Jobs quit: **1** (after 3 months)
+- Jobs that were rescinded due to HR deciding they wouldn’t allow me to be remote: **1**
 - Do I have a job right now? No. Email me at shannon.soper@gmail.com or on [LinkedIn](https://www.linkedin.com/in/shannonsoper/) if you want to connect!
 
-## Insights, in order from starting the search to doing final interviews
+Insights, in order from starting the search to doing final interviews.
 
 ## Job hunting is not my favorite job
 Sometimes I forget that I actually really like product design, because I’m spending all my time job hunting. It’s fun to take breaks to do design exercises, go to meetups, and look at funny design fails to remember that I actually like designing.
@@ -38,9 +33,9 @@ Though I’m interested in many industries, especially edTech, biotech, and heal
 
 Two likely reasons for this higher rate of success:
 
-First, recruiters and hiring managers want to increase their chance of hiring a successful employee, so they often pursue the candidate whose portfolio looks almost identical to the work they need.
+1. Recruiters and hiring managers want to increase their chance of hiring a successful employee, so they often pursue the candidate whose portfolio looks almost identical to the work they need.
 
-Second, most technical tools and SaaS products aren’t as “sexy” and can seem intimidating to designers. Therefore, they are less competitive than applying to Airbnb or Instagram. So, you’re more likely to get an interview there, just by virtue of actually applying and if your projects show you can design for technical audiences.
+2. Most technical tools and SaaS products aren’t as “sexy” and can seem intimidating to designers. Therefore, they are less competitive than applying to Airbnb or Instagram. So, you’re more likely to get an interview there, just by virtue of actually applying and if your projects show you can design for technical audiences.
 
 At first, it seemed like a bummer to have to stick to one industry, and then I got more excited / peaceful because the interviews are also easier for me. I don’t have to completely rewrite my presentations to fit audiences with no background in developer tools. 
 
@@ -59,11 +54,11 @@ The [Simplify.jobs](https://simplify.jobs/) Chrome extension fills in your resum
 
 I accepted the first one. Within the first 90 days, it became obvious it was not the right bet to take. It was an AI startup where the following were true:
 
-founders had fundamental disagreements about what AI could/couldn’t do
-founders weren’t communicating often enough, and weren’t willing to change
-one person abruptly tried to undermine me and push me out in passive aggressive ways, accusing me (in front of others) of things I didn’t do, pressuring me to pass along my assignments to another designer, and spreading a culture of mistrust by putting other people on the spot in public
+1. founders had fundamental disagreements about what AI could/couldn’t do
+2. founders weren’t communicating often enough, and weren’t willing to change
+3. one person abruptly tried to undermine me and push me out in passive aggressive ways, accusing me (in front of others) of things I didn’t do, pressuring me to pass along my assignments to another designer, and spreading a culture of mistrust by putting other people on the spot in public
 
-I was sad, because I liked the founders as people and was initially excited about the potential of the product vision. After observing the first two things, I was going to keep the job but start looking for a new one. After the third thing happened, I quit, even with no other job lined up. 
+It was sad, because I liked the founders as people and was initially excited about the potential of the product vision. After observing the first two things, I was going to keep the job but start looking for a new one. After the third thing happened, I quit, even with no other job lined up. 
 
 Another company gave me a soft job offer and then rescinded it, because their HR department had become inflexible about their hybrid work policy. The role was supposed to be hybrid in Seattle, and I’m moving to SLC, UT. Initially they said this was fine because none of the team is in Seattle anyway, and then HR became more strict than they had been in the past, and wouldn’t make an exception. I felt sad about losing this opportunity. I appreciated that the hiring manager set up a lot of meetings to advocate for me, and I hope we cross paths again.
 
