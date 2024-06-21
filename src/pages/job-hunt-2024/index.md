@@ -129,19 +129,19 @@ Of course, if you like tailoring, by all means, go for it. It might make a diffe
 ## Funny / awkward stories
 
 Because job hunting can be tedious, I reflected on the funniest/worst interviews I've been in:
-
+### They had the ball(s)
 Throughout an entire 1 hour Zoom interview, a product manager bounced up and down on an exercise ball. Every time he bounced up, his face blurred in his background filter. I almost asked him to stop, and decided his judgment was so poor, it wasn’t worth giving him feedback because I wasn’t interested in the job.
----
+### An unexpected expert
 A designer did a collaborative design exercise interview with me. She asked me to imagine what school teachers value. I said “they value student success, and they are pressured to value meeting their district’s standards so they can continue to get funding.” She said “Wrong. They only value student success.” Turned out she is the authority on what all teachers think ;).
----
+### Self-sabotage
 A hiring manager said “Who are you again? What role are you interviewing for? I’m so disorganized, haha.”
----
+### Work-life balance = running a cafe
 The same hiring manager said “This company has great work-life balance. I spend half my time running a cafe with my husband.”
----
+### Ghosting me
 2 different Meta recruiters emailed me to invite me to set up a phone call interview. I emailed them back immediately, and they never responded. It’s been months.
----
+### Not reading emails
 I showed up to an interview where the hiring manager wanted to ask me all about the materials she had emailed me ahead of time. I hadn't read the email carefully because I thought it was an auto-generated email from the recruiter rather than a personal one from her. I felt very embarrassed.
-—
+### An Old West style shoot-out
 One company invited me to attend their company demo day as a guest, as part of my interview process. Attending was very useful and seeing their crisp, exciting, and short demos made me want to join the company. However, they unexpectedly asked all guests to introduce themselves. Right after I introduced myself, another senior product designer introduced themselves. It felt very uncomfortable to know who my competition was…
 
 ## Still no job
