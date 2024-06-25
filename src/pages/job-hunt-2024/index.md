@@ -152,14 +152,12 @@ So what do I do next?
 
 Apply to another few dozen jobs, armed with the knowledge that if I focus on dev tool companies and keep broadcasting my 3-5 top strengths, at some point it will work out. It might take longer in this market than I’d like. 
 
-I hope this was helpful, and I’d love to hear other’s experiences too!
-
 ## What are my superpowers?
 Since I'm arguing that broadcasting your 3-5 top strengths is the way to find a good fit, here are mine:
-1. I'm Dr. Design. I diagnose user's needs and problems, through research, and prescribe solutions. When I truly understand the root need or problem, the solution usually becomes obvious.
-2. I'm MVP-obsessed. I'm ferociously committed to shipping MVPs because I love seeing results and solving user problems as fast as possible :)
-3. I anticipate coworker's questions and needs. My Figma files and written documents are easy for anyone to navigate and understand. They have decision logs about why we made certain design decisions. The layers are labelled and there are no unused layers. I'm great at autolayout, which has made me a faster designer. I produce design specs that include a hypotheses, how we will test it, and competitor analyses. I write 1-page UX Research summaries and meeting agendas with clear objectives. 
-4. 
-5. I'm courageous about resolving alignment issues in one-on-one conversations. learning from qualitative and quantitative data to iterate on designs
+1. *I'm Dr. Design.* I'm truly interested in understanding user's needs and problems, through research, and "diagnosing" the problems so I can prescribe solutions.
+2. *I'm MVP-obsessed.* I'm ferociously committed to shipping MVPs because I love seeing results and solving user problems as fast as possible. I've found that exploring multiple design options, early on, prevents my teams from spending too long designing something too big.
+3. *My Figma files are tidy* & easy to use. They have decision logs about why we made certain design decisions. The layers are labelled. There are no unused layers. 
+4. *I'm a concise writer.* I produce design specs that include a hypotheses, how we will test it, and competitor analyses. I write 1-page UX Research summaries and meeting agendas with clear objectives. I give 5 minute presentations with clear takeaways. 
+5. I *minimize confusion and misalignment* by facilitating shared knowledge. I invite my teammates to usability tests, sketching exercises, and design feedback sessions. For lingering misalignment issues that I notice, I set up one-on-one conversations.
 
-Email me at shannon.soper@gmail.com or on [LinkedIn](https://www.linkedin.com/in/shannonsoper/) if you want to connect! And just because I'm focusing on applying to dev tool companies, I'm very open to other industries if people reach out to me.
+Email me at shannon.soper@gmail.com or on [LinkedIn](https://www.linkedin.com/in/shannonsoper/) if you want to connect! And just because I'm focusing on applying to dev tool companies, that's just to make my job hunt more efficient. I'm also interested in other industries and I'm very open if people reach out to me!
