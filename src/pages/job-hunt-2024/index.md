@@ -18,7 +18,7 @@ I’m a Senior Product Designer with 6 years’ experience designing developer t
 - Job offers: **2**
 - Jobs quit: **1** (after 3 months)
 - Jobs offers that were rescinded due to HR deciding they wouldn’t allow me to be remote: **1**
-- Do I have a job right now? No. Email me at shannon.soper@gmail.com or on [LinkedIn](https://www.linkedin.com/in/shannonsoper/) if you want to connect!
+- Do I have a job right now? ~~No. Email me at shannon.soper@gmail.com or on [LinkedIn](https://www.linkedin.com/in/shannonsoper/) if you want to connect!~~ Update: In Sept 2024, I got a job! Wohoo!
 
 Insights, in order from starting the search to doing final interviews.
 
@@ -146,11 +146,9 @@ I showed up to an interview where the hiring manager wanted to ask me all about 
 ### An Old West style shoot-out
 One company invited me to attend their company demo day as a guest, as part of my interview process. Attending was very useful and seeing their crisp, exciting, and short demos made me want to join the company. However, they unexpectedly asked all guests to introduce themselves. Right after I introduced myself, another senior product designer introduced themselves. It felt very uncomfortable to know who my competition was…
 
-## Still no job
+## I found a job!
 
-So what do I do next?
-
-Apply to another few dozen jobs, armed with the knowledge that if I focus on dev tool companies and keep broadcasting my 3-5 top strengths, at some point it will work out. It might take longer in this market than I’d like. 
+Update: as of Sept 2024, I have a job. I stuck with my strategy and kept applying to dev tool companies, and got an offer from one of them. It's been excellent so far!
 
 ## What are my superpowers?
 Since I'm arguing that broadcasting your 3-5 top strengths is the way to find a good fit, here are mine:
@@ -160,4 +158,4 @@ Since I'm arguing that broadcasting your 3-5 top strengths is the way to find a 
 4. *I'm a concise writer.* I produce design specs that include a hypotheses, how we will test it, and competitor analyses. I write 1-page UX Research summaries and meeting agendas with clear objectives. I give 5 minute presentations with clear takeaways. 
 5. *I minimize confusion and misalignment* by facilitating shared knowledge. I invite my teammates to usability tests, sketching exercises, and design feedback sessions. For lingering misalignment issues that I notice, I set up one-on-one conversations.
 
-Email me at shannon.soper@gmail.com or on [LinkedIn](https://www.linkedin.com/in/shannonsoper/) if you want to connect! And just because I'm focusing on applying to dev tool companies, that's just to make my job hunt more efficient. I'm also interested in other industries and I'm very open if people reach out to me!
+Email me at shannon.soper@gmail.com or on [LinkedIn](https://www.linkedin.com/in/shannonsoper/) if you want to connect! 
