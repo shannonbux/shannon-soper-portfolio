@@ -44,9 +44,9 @@ export default function About({ data }) {
         <h2>Side projects</h2>
         <div>
           <ul>
-            <li>
+            {/* <li>
               <a href="https://thenopegame.gatsbyjs.io/">The Nope Game</a>{" "} — play this when you want to decide how strongly to say yes or no to a request
-            </li>
+            </li> */}
             <li>
               <a href="https://www.instagram.com/discovered_ux/">
                 Discovered UX
@@ -57,40 +57,12 @@ export default function About({ data }) {
             </li>
           </ul>
         </div>
-        <h2>Skills</h2>
-        <div>
-          <ul>
-            <li>
-              <a href="https://www.figma.com/">Figma</a>
-            </li>
-            <li>
-              <a href="https://www.usertesting.com/">Usertesting</a>
-            </li>
-            <li>
-              <a href="https://www.fullstory.com/">FullStory</a>
-            </li>
-          </ul>
-        </div>
         <h2>Background</h2>
         <div>
           <ul>
             <li>
-              <a href="/Resume-2024-poem.pdf">Resume</a>
+              <a href="/Resume 2026.pdf">Resume</a>
             </li>
-            <li>
-              Contract Senior Product Designer at <a href="https://buildbetter.ai/">BuildBetter.ai</a>{" "} — 2023-2024
-            </li>
-            <li>
-              Product Designer at <a href="https://www.postman.com/">Postman</a>{" "} — 2 years — 2021-2023
-            </li>
-            <li>
-              Product Designer at <a href="https://www.gatsbyjs.com/">GatsbyJS</a>{" "} — 4 years — 2017-2021
-            </li>
-            <li>
-              Instructional designer for online and face-to-face classes for 6
-              years
-            </li>
-            <li>MA in English: Rhetoric emphasis</li>
           </ul>
         </div>
         <div>
