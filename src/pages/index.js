@@ -31,7 +31,7 @@ export default function Home({ data }) {
             >
               Product Designer
             </span>{" "}
-            with 6 years’ experience designing elegant solutions to complex problems.
+            with 8 years’ experience designing elegant solutions to complex problems.
           </h1>
         </div>
         <div
