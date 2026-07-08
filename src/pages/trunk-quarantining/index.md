@@ -121,7 +121,7 @@ We tested these iterations internally and with customers.
 - Bringing the Status History onto the page rather than behind a tab makes it more visible.
 
 **What didn't work well enough:**
-- No downsides were uncovered.
+- No downsides were uncovered.  
 
 ## Stakeholder Pressure Resisted
 
