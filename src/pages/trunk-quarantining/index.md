@@ -12,7 +12,7 @@ excerpt: "I redesigned the quarantine feature with increased visibility, a simpl
  
 ## TL;DR
  
-At Trunk, we introduced a paid feature called Quarantining, and usage numbers weren't as high as we predicted. To investigate the reason, I conducted user interviews, competitive analysis, and three rounds of usability testing and discovered usability issues.
+At Trunk, we introduced a paid feature called Quarantining, and usage numbers weren't as high as we predicted. To investigate the reason, I conducted user interviews, competitive analysis, and three rounds of usability testing and discovered several critical usability issues.
  
 I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way for users to save and view why the status changed. My designs shipped to production and passed customer usability tests, ensuring that usability issues were no longer a barrier to feature usage.
 
@@ -26,11 +26,11 @@ Flaky tests are tests that fail randomly. They waste engineering time as enginee
  
 ## Business Problem
  
-Trunk's Flaky Test product's business model included Quarantining as a paid feature, so low feature usage meant companies weren't upgrading to get access to Quarantining. We wanted to find out if the feature lacked usability or value (or both!).
+Trunk's Flaky Test product's business model included Quarantining as a paid feature to incentivize upgrades, but low feature usage meant companies weren't upgrading often enough. We wanted to find out if the feature lacked usability or value (or both!).
  
-## Original Design's Problems
- 
-The Quarantining feature suffered from low visibility, a lack of a unique visual identity, mismatch with the user's mental model, and requiring a leap of trust before proof. Customer access at Trunk was tightly gated, so I first ran internal usability testing before spending our limited customer access. Sessions with participants of mixed familiarity, plus async feedback threads, surfaced clear insights. 
+## Problems with the Original Design
+
+Customer access at Trunk was tightly gated, so I first ran internal usability testing before spending our limited customer access. Sessions with participants surfaced clear insights. The Quarantining feature suffered from low visibility, a lack of a unique visual identity, mismatch with the user's mental model, and requiring a leap of trust before proof. 
 
 
 ![Original Design](original-design.jpg)
@@ -125,13 +125,13 @@ We tested these iterations internally and with customers.
 
 ## Stakeholder Pressure Resisted
 
-Stakeholders asked to re-add the "Default" statuses. I wrote up the options with explicit trade-offs — under Pros: *"can't think of any."* We'd removed it because hardly anyone, including employees, could articulate what it meant; re-adding it required a banner explaining an unremarkable state. The interview data was already on record, so I could decline with evidence instead of opinion. The default status stayed dead.
+Stakeholders asked to re-add the "Default" statuses. I wrote up the options with explicit trade-offs, and under the Pros for including "Default", we listed *"can't think of any."* Having it written down helped reassure everyone we'd done the right thing by renaming it. We'd renamed it it because hardly anyone, including employees, could articulate what it meant; re-adding the name required a banner explaining an unremarkable state. The interview data was already on record, so I could decline with evidence instead of opinion. The default status name stayed dead.
  
 ## Outcome
  
 Our final customer validation came back clean: no task failures, no comprehension issues. Every contested element from earlier rounds — the hidden status history, the confusing status names, the preselection trap — was resolved.
  
-The designs shipped to production. I left in a company restructuring after launch but before usage data came in. What the design work established: usability issues were no longer a barrier to usage.
+The designs shipped to production. I left the company after launch but before usage data came in. What the design work established: usability issues were no longer a barrier to usage.
  
 ![Final shipped designs](final-design-open.jpg) 
 
