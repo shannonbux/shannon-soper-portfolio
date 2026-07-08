@@ -5,11 +5,14 @@ featuredImage: "./header-image-postman-aha-moment.png"
 excerpt: "This design helped more Postman users experience their first “aha!” moment."
 ---
 ## What I did
-I pursued the open question "how might we help more Postman users become activated?" My design led to a 4% increase in users performing the first step of activation.
+At Postman, activation rates weren't as high as industry benchmarks, so I pursued the question "how might we help more Postman users become activated?" My usability tests with first-time users led me to prioritize a flow that helped low-intent users experience value faster, and my designs led to a 4% increase in users performing the first step of activation. My project also inspired followup experiments that further increased activation numbers.  
+
+## What is Postman?
+[Postman](https://www.postman.com/) is an API platform to help engineers develop, test, manage, and distribute APIs and services.  
 
 ## How did we define activation?
 Activated users performed these two actions during their first few days using Postman, and were more likely (41% vs 28%) to be using Postman 6 months later:
-1. send a request
+1. send an APIT request
 2. save that request in a collection
 
 ## Helping users who want to take the product for a test drive
@@ -32,7 +35,7 @@ Once users clicked on "Create New" and elected to send a new request, they saw t
 
 ## Interviewing my design predecessors
 
-Because I had only been at the company for 2 months, I decided to interview designers who previously worked on the homepage to ask them why they made certain design decisions. I didn't want to try something they'd already tried before, and I wanted to respect any decisions that were made for really good reasons. 
+Because I had only been at the company for 2 months, I decided to interview designers who previously worked on the homepage to ask them why they made certain design decisions. I didn't want to try something they'd already tried before, and I wanted to respect any decisions that were made for good reasons. 
 
 What I found is that most designers were already frustrated with the cluttered homepage and just never had the time to prioritize cleaning it up. It was also a politically messy area for designers since every part of the Postman app wants to be represented on the homepage, so it takes assertive/proactive effort to keep it from becoming bloated.
 
@@ -53,14 +56,13 @@ After these interviews, I concluded that an easily removable design would be the
 ![The user's first request showing a response](response.jpg)
 
 ## Results
-This experiment was a partial success. We saw the following:
+This experiment was a success. We saw the following:
 - a 4% increase in # of users sending their first request
-- the new design was a significant improvement upon the control
 
 Why did it work?—reducing the user’s cognitive load
 After a low-intent user clicks on "send a request" on the homepage, the default request that produced a mini-tutorial in a response helped users test out Postman without any unecessary work on their part, and with the bonus that reading the response could give them tips on what to try next.
 
-## Followup experiment
+## Follow-up experiment
 Increasing the number of users sending a first request did not increase the number of collections created (second step in user activation metric). My hypothesis was that they don't know why they should save the request in a collection. 
 
 A colleague and I collaborated to create a followup experiment, based on the hypothesis that strongly and clearly nudging users to create a collection if they have sent X numbers of requests would help increase the number of activated users.
@@ -72,7 +74,7 @@ A colleague and I collaborated to create a followup experiment, based on the hyp
 ![A Postman workspace showing a new version of the same empty state that includes a preview of collection features](collectionscta-new-comment.jpg)
 
 ## Results
-This followup experiment added to the partial success of the first one. It strongly correlated with an increase in the number of users creating collections & becoming activated. 
+This followup experiment added to the success of the first one. It strongly correlated with an increase in the number of users creating collections & becoming activated. 
 
 From this result, we learned that many users want to create collections once they understand what they are.
 
