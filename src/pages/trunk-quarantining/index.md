@@ -15,6 +15,10 @@ excerpt: "I redesigned the quarantine feature with increased visibility, a simpl
 At Trunk, we introduced a paid feature called Quarantining, and usage numbers weren't as high as we predicted. To investigate the reason, I conducted user interviews, competitive analysis, and three rounds of usability testing and discovered usability issues.
  
 I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way for users to save and view why the status changed. My designs shipped to production and passed customer usability tests, ensuring that usability issues were no longer a barrier to feature usage.
+
+[New Design Prototype](https://www.figma.com/proto/83LQuuuuvAgFsw9J2yU0xa/Quarantining?page-id=1%3A302581&node-id=7-293319&viewport=989%2C307%2C0.03&t=NwHraBw9j9vPPnB3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=7%3A293319&show-proto-sidebar=1)
+
+
  
 ## What are Flaky Tests and Quarantining?
  
