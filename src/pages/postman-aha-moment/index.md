@@ -66,10 +66,10 @@ Increasing the number of users sending a first request did not increase the numb
 A colleague and I collaborated to create a followup experiment, based on the hypothesis that strongly and clearly nudging users to create a collection if they have sent X numbers of requests would help increase the number of activated users.
 
 ### Old design
-![A Postman workspace showing an empty state, nudging the user to create a collection](collectionscta-old-comment.png)
+![A Postman workspace showing an empty state, nudging the user to create a collection](collectionscta-old.jpg)
 
 ### New design
-![A Postman workspace showing a new version of the same empty state that includes a preview of collection features](collectionscta-new-comment.png)
+![A Postman workspace showing a new version of the same empty state that includes a preview of collection features](collectionscta-new-comment.jpg)
 
 ## Results
 This followup experiment added to the partial success of the first one. It strongly correlated with an increase in the number of users creating collections & becoming activated. 
