@@ -57,6 +57,7 @@ To test usability of my design iterations, I defined success as task completion 
 - Explain why auto-quarantining changed a test's status
 - Set, override, and revert test statuses and save reasons
 - Predict the next test run's quarantining behavior — e.g. "if this flaky test runs again, now that you changed it to auto-quarantine, what do you think will happen to it?"
+
 I also proposed post-launch usage tracking.
  
 ## Benchmarks
@@ -65,6 +66,7 @@ I led the team in annotating examples of status design from Linear, GitHub, Sent
  
 - The who/when/why stays visible right next to the status (Snyk shows user, reason, and expiration inline)
 - Changeable statuses look interactive (Linear's status is the entry point for changing it)
+
 The annotations captured failure modes too — Sentry's buried activity feed and Snyk's silently vanishing rows.
 
 Here is Sentry's UI with annotations. My second iteration imitated their "Workflow" line.
