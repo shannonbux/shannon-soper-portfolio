@@ -22,7 +22,7 @@ I redesigned the quarantine feature with increased visibility, a simplified ment
  
 ## What are Flaky Tests and Quarantining?
  
-Flaky tests are tests that fail randomly. They waste engineering time as engineers try for hours to get their PR to pass the test, only to realize eventually they cannot reliably make it pass. To save engineers from this pain and drain on their time, Trunk's Quarantining feature allows engineers to quarantine flaky tests, so that the tests keep running but don't block engineers from merging PRs. The user chooses between two quarantine modes: automatic, when the Trunk Flaky Test product automatically detects and quarantines flaky tests, and manual, when a CI owner sets the quarantine status.
+Flaky tests are tests that fail randomly. They waste engineering time when engineers flail for hours trying to get their PR to pass the test. To save engineers from this pain and drain on their time, Trunk's Quarantining feature allows engineers to quarantine flaky tests, so that quarantined tests keep running but don't block engineers from merging PRs. The user chooses between two quarantine modes: automatic, when the Trunk Flaky Test product automatically detects and quarantines flaky tests, and manual, when a CI owner sets the quarantine status.
  
 ## Business Problem
  
@@ -91,7 +91,7 @@ We tested these iterations internally and with customers.
 
 **What didn't work well enough:**
  
-- The actual status names, e.g. "Auto (Quarantined)," still didn't match users' mental models.
+- The actual status names, e.g. "Default (Not Quarantined)," still didn't match users' mental models.
 - Including a timestamp improved trust somewhat since it answered "who changed this status and when?" However, it felt redundant to hover over it for more details that also existed in the Status History tab.  
 
 ### Iteration 2: Action Row and Drop-down Modal
@@ -100,7 +100,7 @@ We tested these iterations internally and with customers.
  
 **What worked well:**
 - I simplified statuses by replacing "Default (Not Quarantined)" with "Not Quarantined"
-- The modal gave enough room to explain the statuses. The status definitions increased user confidence that they understood the consequences of changing the status.
+- The modal had enough room for status definitions, which increased user confidence in changing the status.
 - Having room to save a comment felt natural to users; anyone manually changing the status has a reason they'd like to save for their own record-keeping and for teammates to read later.
 
 **What didn't work well enough:**
@@ -114,10 +114,9 @@ We tested these iterations internally and with customers.
 ![Final shipped designs](final-design-open.jpg) 
 
 **What worked well:**
-- Improved visibility and clarity about what Quarantine statuses mean, how they're related to Test Status, and when and why they change increased users' trust in the feature.
 - Test Status and Quarantine Status have unique yet equally important visual identities, so users will notice both and not ignore or confuse them.
 - Test Status and Quarantine Status are next to each other, so users can easily use Test Status to decide Quarantine Status.
-- The drop-down modal still gives enough space for users to understand each status and leave a comment.
+- Retained all previously stated benefits of the drop-down modal.
 - Bringing the Status History onto the page rather than behind a tab makes it more visible.
 
 **What didn't work well enough:**
@@ -125,7 +124,7 @@ We tested these iterations internally and with customers.
 
 ## Stakeholder Pressure Resisted
 
-Stakeholders asked to re-add the "Default" statuses. I wrote up the options with explicit trade-offs, and under the Pros for including "Default", we listed *"can't think of any."* Having it written down helped reassure everyone we'd done the right thing by renaming it. We'd renamed it it because hardly anyone, including employees, could articulate what it meant; re-adding the name required a banner explaining an unremarkable state. The interview data was already on record, so I could decline with evidence instead of opinion. The default status name stayed dead.
+Stakeholders asked to re-add the "Default" statuses. I wrote up the options with explicit trade-offs taken from interviews and our own reasoning, and under the Pros for including "Default", we listed *"can't think of any."* Having it written down helped reassure everyone we'd done the right thing by renaming it. 
  
 ## Outcome
  
@@ -139,6 +138,6 @@ The designs shipped to production. I left the company after launch but before us
  
 ## What I'd Prioritize Next
  
-- **Granular overrides and expirations** — the "Override" misread exposed real demand for PR- or branch-scoped quarantines with end dates.
+- **Granular overrides and expirations** — there was demand for PR- or branch-scoped quarantines with end dates
 - **Suggestions rather than Auto-Quarantining** — close the trust gap by suggesting instead of acting: "this test is failing intermittently — quarantine it and create a ticket?"
-- **Discoverability** — increase visibility of the link from CI logs and GitHub bot comments to this part of the UI.
+- **Discoverability** — increase visibility of the link from CI logs and GitHub bot comments to this part of the UI
