@@ -92,7 +92,8 @@ We tested these iterations internally and with customers.
 **What didn't work well enough:**
  
 - The actual status names, e.g. "Auto (Quarantined)," still didn't match users' mental models.
-- Including a timestamp improved trust somewhat since it answered "who changed this status and when?" However, it felt redundant to hover over it for more details that also existed in the Status History tab.
+- Including a timestamp improved trust somewhat since it answered "who changed this status and when?" However, it felt redundant to hover over it for more details that also existed in the Status History tab.  
+
 ### Iteration 2: Action Row and Drop-down Modal
  
 ![Iteration 2: Action Row and Drop-down Modal](iteration-2-action-row.jpg)
