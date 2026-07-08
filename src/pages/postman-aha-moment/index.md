@@ -28,7 +28,7 @@ The five usability tests I ran led my to this hypothesis:
 
 ### Old step 2: send request
 Once users clicked on "Create New" and elected to send a new request, they saw this:
-![A Postman workspace showing an empty API request input field](send-request-old-comment.png)
+![A Postman workspace showing an empty API request input field](send-request-old-comment.jpg)
 
 ## Interviewing my design predecessors
 
@@ -44,13 +44,13 @@ After these interviews, I concluded that an easily removable design would be the
 3. Because of the previous two reasons, it would cause the least internal resistance and ship quickly
 
 ### New step 1: see send request option on homepage
-![The Postman App homepage showing a shortcut to sending the first request](Homepage-new-comment.png)
+![The Postman App homepage showing a shortcut to sending the first request](Homepage-new-comment.jpg)
 
 ### New step 2: send request
-![A Postman workspace showing an pre-filled API request input field](send-request-new-comment.png)
+![A Postman workspace showing an pre-filled API request input field](send-request-new-comment.jpg)
 
 ### New step 3: see response
-![The user's first request showing a response](Response-new-comment.png)
+![The user's first request showing a response](response.jpg)
 
 ## Results
 This experiment was a partial success. We saw the following:
@@ -66,10 +66,10 @@ Increasing the number of users sending a first request did not increase the numb
 A colleague and I collaborated to create a followup experiment, based on the hypothesis that strongly and clearly nudging users to create a collection if they have sent X numbers of requests would help increase the number of activated users.
 
 ### Old design
-![A Postman workspace showing an empty state, nudging the user to create a collection](collectionscta-old-comment.png)
+![A Postman workspace showing an empty state, nudging the user to create a collection](collectionscta-old.jpg)
 
 ### New design
-![A Postman workspace showing a new version of the same empty state that includes a preview of collection features](collectionscta-new-comment.png)
+![A Postman workspace showing a new version of the same empty state that includes a preview of collection features](collectionscta-new-comment.jpg)
 
 ## Results
 This followup experiment added to the partial success of the first one. It strongly correlated with an increase in the number of users creating collections & becoming activated. 
