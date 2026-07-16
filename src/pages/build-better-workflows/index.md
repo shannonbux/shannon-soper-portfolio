@@ -5,8 +5,9 @@ date: 2024-02-06
 featuredImage: "thumbnail.jpg"
 excerpt: AI is great at empowering users to analyze video transcripts.
 ---
-From November 2023 to January 2024, I did contract work for [BuildBetter.ai](https://buildbetter.ai/), an early-stage startup. 
+From November 2023 to January 2024, I did contract work for [BuildBetter.ai](https://buildbetter.ai/), an early-stage startup whose goal was to empower product teams to use AI to summarize unwieldy UX research and make faster, better product decisions. The features that were novel in 2023 are now common in Claude, ChatGPT, and more.
 
+## Overview
 In conversations with coworkers and through doing UX Research, it became clear that BuildBetter's Projects feature needed rethinking. Here's a 1 min. video showing the feature I designed!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5qYsiZrFfbo?si=yA4kO2LJUKNC5VC_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
