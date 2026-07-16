@@ -12,7 +12,7 @@ Many React developers (or those interested in learning React) test out Gatsby by
 - there was no site search
 - some common tasks were missing from the docs and only existed in the tutorial or plugin READMEs
 
-<small>Here’s a screenshot of what the sidebar looked like in late 2017</small>
+Old design:
 
 <div class="markdown-image">
   <img src="2017-sidebar.png" alt="Older version of the sidebar" />
@@ -49,6 +49,6 @@ I decided to compromise with the following plan:
   <img src="expand-all-button.png" alt="Docs sidebar screenshot" />
 </div>
 
-This isn’t a perfect design. In usability testing, I noticed that some people missed the “expand all” button so we tweaked the design until it was easier to see. Also, saving the state of the menu for each user is in the backlog.
+Iterations: in usability testing, I noticed that some people missed the “expand all” button so we tweaked the design until it was easier to see. Also, saving the state of the menu for each user is in the backlog.
 
 _Original post at [the Gatsby Blog](https://www.gatsbyjs.com/blog/2018-07-31-docs-redesign)_
