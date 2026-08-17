@@ -59,7 +59,9 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { isBlogPost: { eq: true } } }
+      filter: {
+        frontmatter: { isBlogPost: { eq: true }, hidden: { ne: true } }
+      }
     ) {
       totalCount
       edges {
