@@ -32,7 +32,7 @@ export default function Work({ data }) {
                 css={css`
                   margin-right: 24px;
                   flex: none;
-                  border: 1px solid #000000;
+                  border: 1px solid #d3d3d3;
                   border-radius: 4px;
                   overflow: hidden;
                 `}
