@@ -31,6 +31,10 @@ export default function Work({ data }) {
               <GatsbyImage
                 css={css`
                   margin-right: 24px;
+                  flex: none;
+                  border: 1px solid #000000;
+                  border-radius: 4px;
+                  overflow: hidden;
                 `}
                 image={getImage(node.frontmatter.featuredImage)}
               />
@@ -39,6 +43,7 @@ export default function Work({ data }) {
                   css={css`
                     margin-bottom: 4px;
                     color: #000000;
+                    font-style: normal;
                   `}
                 >
                   {node.frontmatter.title}
@@ -68,7 +73,7 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 128, height: 128)
+                gatsbyImageData(layout: CONSTRAINED, width: 200, aspectRatio: 1.5)
               }
             }
             excerpt
