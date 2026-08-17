@@ -43,7 +43,6 @@ export default function Work({ data }) {
                   css={css`
                     margin-bottom: 4px;
                     color: #000000;
-                    font-style: normal;
                   `}
                 >
                   {node.frontmatter.title}

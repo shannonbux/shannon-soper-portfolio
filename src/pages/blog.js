@@ -32,7 +32,6 @@ export default function Blog({ data }) {
                   css={css`
                     margin-bottom: 0px;
                     color: #000000;
-                    font-style: normal;
                   `}
                 >
                   {node.frontmatter.title}
