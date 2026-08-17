@@ -8,7 +8,7 @@ excerpt: "This game acts like a friend who helps me decide whether to say yes or
 ## Your dog wants to go on a walk at midnight
 Let’s say your dog wants you to take it on a walk at midnight. If you're not sure whether you want to say yes or no, you could use this game I designed, The Nope Game, to decide on your response.
 
-[Play v0.1 of the Nope Game here!](https://thenopegame.gatsbyjs.io/). 
+[Play v0.1 of the Nope Game here!](http://thenopegame.com/) 
 
 This game, a passion project of mine, acts like a friend who helps you not only decide _whether_ to say yes or no to a particular request, but also _why_ your response makes sense. It can imbue you with confidence when you respond to your dog, because you can justify why you said yes or no.&nbsp;
 
@@ -101,7 +101,7 @@ One survey question is a deal breaker. If you answer “no” to “Can I give t
 
 ## Evolving the game
 
-The project now exists on the web in early form! [Play v0.1 of the game here](https://thenopegame.gatsbyjs.io/). I’m currently testing it with users before investing in the visual design.
+The project now exists on the web in early form! [Play v0.1 of the game here](http://thenopegame.com/). I’m currently testing it with users before investing in the visual design.
 
 - users can save notes under each survey question so they can remember their reasoning, and to make the details viewable and editable at a later time if they want to revisit the decision
 - users can share the results of their game with others to get their friends to weigh in on their decision. It’s helpful to get alternate perspectives to see if they validate or differ from yours
