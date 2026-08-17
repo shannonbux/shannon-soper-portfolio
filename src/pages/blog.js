@@ -7,7 +7,7 @@ import { rhythm } from "../utils/typography";
 export default function Blog({ data }) {
   return (
     <Layout>
-      <div css={{ maxWidth: 600 }}>
+      <div css={{ maxWidth: 800 }}>
         <h1
           css={css`
             margin-bottom: 2.1rem;

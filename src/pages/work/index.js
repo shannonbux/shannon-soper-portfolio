@@ -8,7 +8,7 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 export default function Work({ data }) {
   return (
     <Layout>
-      <div css={{ maxWidth: 600 }}>
+      <div css={{ maxWidth: 800 }}>
         <h1
           css={css`
             margin-bottom: 2.1rem;
@@ -31,6 +31,10 @@ export default function Work({ data }) {
               <GatsbyImage
                 css={css`
                   margin-right: 24px;
+                  flex: none;
+                  border: 1px solid #d3d3d3;
+                  border-radius: 4px;
+                  overflow: hidden;
                 `}
                 image={getImage(node.frontmatter.featuredImage)}
               />
@@ -70,7 +74,7 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 128, height: 128)
+                gatsbyImageData(layout: CONSTRAINED, width: 200, aspectRatio: 1.5)
               }
             }
             excerpt
