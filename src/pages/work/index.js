@@ -26,14 +26,7 @@ export default function Work({ data }) {
 
   return (
     <Layout>
-      <div
-        css={css`
-          width: 66.6667%;
-          @media (max-width: 720px) {
-            width: 100%;
-          }
-        `}
-      >
+      <div>
         <h1
           css={css`
             margin-bottom: 8px;
@@ -62,12 +55,9 @@ export default function Work({ data }) {
           <div
             css={css`
               display: grid;
-              grid-template-columns: repeat(2, 1fr);
+              grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
               column-gap: 32px;
               row-gap: 48px;
-              @media (max-width: 720px) {
-                grid-template-columns: 1fr;
-              }
             `}
           >
             {visible.map(({ node }) => (
@@ -145,9 +135,9 @@ export const query = graphql`
               childImageSharp {
                 gatsbyImageData(
                   layout: CONSTRAINED
-                  width: 900
+                  width: 1100
                   aspectRatio: 1.5
-                  sizes: "(max-width: 720px) 100vw, 33vw"
+                  sizes: "(max-width: 813px) 100vw, (max-width: 1253px) 45vw, 510px"
                 )
               }
             }
