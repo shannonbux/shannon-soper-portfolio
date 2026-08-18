@@ -3,6 +3,7 @@ title: "Postman Checkout Flow"
 date: "2022-02-05"
 featuredImage: "feature-comparison-table.png"
 excerpt: "Successfully helped more users decide Postman was worth purchasing by replacing the checkout flow's card design with a feature comparison table."
+tags: ["GROWTH"]
 ---
 
 I redesigned Postman's checkout flow by replacing a card design with a feature comparison table.

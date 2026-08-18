@@ -44,7 +44,7 @@ export default function Layout({ children }) {
     <div
       css={css`
         margin: 0 auto;
-        max-width: 1440px;
+        max-width: 1152px;
         padding: ${rhythm(3 / 4)};
         padding-top: ${rhythm(1 / 2)};
         position: relative;

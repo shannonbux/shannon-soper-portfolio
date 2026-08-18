@@ -3,6 +3,7 @@ title: What’s unique about developer tool design?
 isBlogPost: true
 date: 2023-10-24
 excerpt: All product design shares the same fundamental design principles, and yet the way a designer executes on those principles often looks very different in developer tools.
+tags: ["DX"]
 ---
 ## What’s unique about developer tool design? How is it different from consumer-facing products?
 

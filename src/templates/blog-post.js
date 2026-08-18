@@ -2,12 +2,19 @@ import React from "react";
 import { css } from "@emotion/react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
+import { TagList } from "../components/tags";
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
   return (
     <Layout>
       <div css={{ maxWidth: 800 }}>
+        <TagList
+          tags={post.frontmatter.tags}
+          css={css`
+            margin-bottom: 12px;
+          `}
+        />
         <h1>{post.frontmatter.title}</h1>
         {post.frontmatter.isBlogPost && (
           <div
@@ -33,6 +40,7 @@ export const query = graphql`
         title
         date(formatString: "DD MMMM, YYYY")
         isBlogPost
+        tags
       }
     }
   }

@@ -3,6 +3,7 @@ title: Being yourself in a job hunt, and not taking rejection personally
 isBlogPost: true
 date: 2024-06-21
 excerpt: In an uncertain world and hyper-competitive job market, product designer hiring decisions are often made based upon factors not obvious in job descriptions. So, to save yourself time and headache, avoid over-tailoring your resume or portfolio and focus instead on consistently broadcasting your top strengths.
+tags: []
 ---
 In this post, I'll explain how I learned that hiring decisions are often made based upon factors not obvious in job descriptions. Which led me to the unexpected conclusion that the right response is to *avoid over-tailoring your resume or portfolio* and focus instead on consistently *broadcasting your top strengths*.
 
