@@ -45,6 +45,7 @@ export default function Work({ data }) {
         <TagFilter
           selected={selected}
           onToggle={toggleTag}
+          onClear={() => setSelected([])}
           css={css`
             margin-bottom: 2.1rem;
           `}

@@ -57,29 +57,40 @@ export function TagList({ tags, className }) {
   );
 }
 
-export function TagFilter({ tags = TAGS, selected, onToggle, className }) {
+function FilterChip({ label, active, onClick }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={active}
+      css={css`
+        ${chip(active)};
+        cursor: pointer;
+        :hover {
+          border-color: #ec5800;
+        }
+      `}
+    >
+      {label}
+    </button>
+  );
+}
+
+export function TagFilter({ tags = TAGS, selected, onToggle, onClear, className }) {
+  // ALL is a control rather than a tag: it is deliberately not part of TAGS, so
+  // it never lands on an article. It reads as active whenever no tag is
+  // selected, which is the state it returns you to.
   return (
     <div css={row} className={className}>
-      {tags.map((tag) => {
-        const active = selected.includes(tag);
-        return (
-          <button
-            key={tag}
-            type="button"
-            onClick={() => onToggle(tag)}
-            aria-pressed={active}
-            css={css`
-              ${chip(active)};
-              cursor: pointer;
-              :hover {
-                border-color: #ec5800;
-              }
-            `}
-          >
-            {tag}
-          </button>
-        );
-      })}
+      <FilterChip label="ALL" active={selected.length === 0} onClick={onClear} />
+      {tags.map((tag) => (
+        <FilterChip
+          key={tag}
+          label={tag}
+          active={selected.includes(tag)}
+          onClick={() => onToggle(tag)}
+        />
+      ))}
     </div>
   );
 }
