@@ -1,9 +1,9 @@
 ---
-title: "Creating an “Aha!” Moment for New Postman Users"
+title: "Postman Onboarding"
 date: "2021-07-31"
 featuredImage: "./header-image-postman-aha-moment.png"
 excerpt: "This design helped more Postman users experience their first “aha!” moment."
-tags: ["DX", "GROWTH"]
+tags: ["DX", "GROWTH", "ONBOARDING"]
 ---
 ## What I did
 At Postman, activation rates weren't as high as industry benchmarks, so I pursued the question "how might we help more Postman users become activated?" My usability tests with first-time users led me to prioritize a flow that helped low-intent users experience value faster, and my designs led to a 4% increase in users performing the first step of activation. My project also inspired followup experiments that further increased activation numbers.  

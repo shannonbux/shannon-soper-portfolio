@@ -14,7 +14,13 @@ import { css } from "@emotion/react";
 //   tags: ["DX", "GROWTH"]   several
 //   tags: ["DX"]             one
 //   tags: []                 none — hidden whenever any filter is active
-export const TAGS = ["DX", "GROWTH", "AI & AGENTS"];
+export const TAGS = [
+  "DX",
+  "GROWTH",
+  "AI & AGENTS",
+  "SIDE PROJECTS",
+  "ONBOARDING",
+];
 
 const row = css`
   display: flex;

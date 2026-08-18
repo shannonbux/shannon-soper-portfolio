@@ -1,5 +1,5 @@
 ---
-title: "Making Status Visible, Understandable, and Actionable"
+title: "Trunk Quarantining Feature"
 date: "2025-06-17"
 featuredImage: "quarantine-preview.jpg"
 excerpt: "I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way for users to save and view why the status changed."
