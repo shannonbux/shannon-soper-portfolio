@@ -18,8 +18,7 @@ export const TAGS = [
   "DX",
   "GROWTH",
   "AI & AGENTS",
-  "SIDE PROJECTS",
-  "ONBOARDING",
+  "SIDE PROJECTS"
 ];
 
 const row = css`
