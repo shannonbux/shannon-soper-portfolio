@@ -8,7 +8,14 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 export default function Work({ data }) {
   return (
     <Layout>
-      <div css={{ maxWidth: 800 }}>
+      <div
+        css={css`
+          width: 66.6667%;
+          @media (max-width: 720px) {
+            width: 100%;
+          }
+        `}
+      >
         <h1
           css={css`
             margin-bottom: 2.1rem;
@@ -16,42 +23,59 @@ export default function Work({ data }) {
         >
           Work
         </h1>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
+        <div
+          css={css`
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 32px;
+            row-gap: 48px;
+            @media (max-width: 720px) {
+              grid-template-columns: 1fr;
+            }
+          `}
+        >
+          {data.allMarkdownRemark.edges.map(({ node }) => (
             <Link
+              key={node.id}
               to={node.fields.slug}
               css={css`
                 text-decoration: none;
-                display: flex;
-                align-items: flex-start;
                 color: inherit;
-                margin-bottom: 32px;
+                display: block;
               `}
             >
               <GatsbyImage
                 css={css`
-                  margin-right: 24px;
-                  flex: none;
+                  display: block;
+                  width: 100%;
+                  margin-bottom: 16px;
                   border: 1px solid #d3d3d3;
                   border-radius: 4px;
                   overflow: hidden;
                 `}
                 image={getImage(node.frontmatter.featuredImage)}
               />
-              <div css={{ flex: 1 }}>
-                <h2
-                  css={css`
-                    margin-bottom: 4px;
-                    color: #000000;
-                  `}
-                >
-                  {node.frontmatter.title}
-                </h2>
-                <p>{node.frontmatter.excerpt}</p>
+              <h2
+                css={css`
+                  margin-bottom: 4px;
+                  color: #000000;
+                `}
+              >
+                {node.frontmatter.title}
+              </h2>
+              <div
+                css={css`
+                  display: block;
+                  margin-bottom: 8px;
+                  color: gray;
+                `}
+              >
+                {node.frontmatter.date}
               </div>
+              <p>{node.frontmatter.excerpt}</p>
             </Link>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </Layout>
   );
@@ -74,7 +98,12 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 200, aspectRatio: 1.5)
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  width: 900
+                  aspectRatio: 1.5
+                  sizes: "(max-width: 720px) 100vw, 33vw"
+                )
               }
             }
             excerpt
