@@ -135,7 +135,6 @@ export const query = graphql`
                   width: 1100
                   aspectRatio: 1.5
                   sizes: "(max-width: 813px) 100vw, (max-width: 1253px) 45vw, 510px"
-                  transformOptions: { cropFocus: CENTER }
                 )
               }
             }
