@@ -57,7 +57,7 @@ export default function Home({ data }) {
         >
           <StaticImage
             src="./images/profile-2019.JPG"
-            aspectRatio={0.8333333}
+            aspectRatio={0.75}
             width={400}
             placeholder="blurred"
             formats={["auto", "webp", "avif"]}
@@ -66,7 +66,7 @@ export default function Home({ data }) {
             css={{
               borderRadius: 8,
               overflow: `hidden`,
-              // aspectRatio above bakes the 0.8333 portrait crop into the
+              // aspectRatio above bakes the 3:4 portrait crop into the
               // generated file. contain then keeps that framing intact: it
               // letterboxes rather than trimming if a wrapper ever drifts off
               // ratio, so the photo can never be cropped a second time.
