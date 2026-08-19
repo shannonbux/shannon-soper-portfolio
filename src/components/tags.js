@@ -27,8 +27,12 @@ const row = css`
   gap: 8px;
 `;
 
+// Outline and label stay constant across states; only the container fill and
+// the leading checkmark change, following Material's filter chip pattern.
 const chip = (active) => css`
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-family: Merriweather Sans, sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -36,10 +40,32 @@ const chip = (active) => css`
   line-height: 1.3;
   padding: 4px 10px;
   border-radius: 4px;
-  border: 1px solid ${active ? `#843F03` : `#E5C2A5`};
-  background: transparent;
-  color: ${active ? `#843F03` : `#A95207`};
+  border: 1px solid #E5C2A5;
+  background: ${active ? `#FEF2E8` : `transparent`};
+  color: #A95207;
 `;
+
+function CheckMark() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+      css={css`
+        flex: none;
+      `}
+    >
+      <path d="M20 6 L9 17 L4 12" />
+    </svg>
+  );
+}
 
 export function TagList({ tags, className }) {
   if (!tags || tags.length === 0) {
@@ -66,10 +92,11 @@ function FilterChip({ label, active, onClick }) {
         ${chip(active)};
         cursor: pointer;
         :hover {
-          background: #FEF2E8;
+          background: #FFE8D4;
         }
       `}
     >
+      {active && <CheckMark />}
       {label}
     </button>
   );
