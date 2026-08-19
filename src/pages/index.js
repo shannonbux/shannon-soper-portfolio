@@ -19,6 +19,7 @@ export default function Home({ data }) {
           // the text without changing reading order.
           "@media (max-width: 720px)": {
             flexDirection: `column-reverse`,
+            marginTop: 48,
           },
         }}
       >
@@ -57,7 +58,6 @@ export default function Home({ data }) {
         >
           <StaticImage
             src="./images/profile-2019.JPG"
-            aspectRatio={0.8333333}
             width={400}
             placeholder="blurred"
             formats={["auto", "webp", "avif"]}
