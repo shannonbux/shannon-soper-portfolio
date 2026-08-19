@@ -11,7 +11,7 @@ const HeaderLink = ({ to, children }) => {
     <Link
       css={{
         fontFamily: `Merriweather Sans, sans-serif`,
-        fontSize: 12,
+        fontSize: 16,
         textTransform: `uppercase`,
         letterSpacing: `0.06em`,
         color: `#333333`,
@@ -92,6 +92,7 @@ export default function Layout({ children }) {
               font-style: normal;
               font-size: 16px;
               line-height: 1.2;
+              text-transform: uppercase;
               color: #333;
             `}
           >
