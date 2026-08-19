@@ -13,6 +13,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
+// Every markdown file gets a page, including ones marked `hidden: true` in
+// frontmatter. Hiding only removes an article from the Work and Blog listings —
+// its URL stays live so existing links keep working.
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
