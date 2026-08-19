@@ -36,9 +36,9 @@ const chip = (active) => css`
   line-height: 1.3;
   padding: 4px 10px;
   border-radius: 4px;
-  border: none;
-  background: ${active ? `#FFE8D4` : `#FEF2E8`};
-  color: #FFE8D4;
+  border: 1px solid ${active ? `#A95207` : `#E5C2A5`};
+  background: #FEF2E8;
+  color: #A95207;
 `;
 
 export function TagList({ tags, className }) {
