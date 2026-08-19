@@ -93,7 +93,6 @@ export default function Layout({ children }) {
               font-style: normal;
               font-size: 16px;
               line-height: 1.2;
-              text-transform: uppercase;
               color: #000000;
             `}
           >
