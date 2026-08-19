@@ -16,6 +16,12 @@ const HeaderLink = ({ to, children }) => {
         textDecoration: `none`,
         padding: 0,
         marginLeft: 24,
+        ":hover": {
+          textDecoration: `underline`,
+          textUnderlineOffset: `3px`,
+          textDecorationThickness: `2px`,
+          textDecorationColor: `#333333`,
+        },
       }}
       activeStyle={{
         textDecoration: `underline`,
