@@ -30,14 +30,14 @@ const row = css`
 const chip = (active) => css`
   display: inline-block;
   font-family: Merriweather Sans, sans-serif;
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: normal;
   letter-spacing: 0.06em;
   line-height: 1.3;
   padding: 4px 10px;
   border-radius: 4px;
   border: 1px solid ${active ? `#A95207` : `#E5C2A5`};
-  background: #FEF2E8;
+  background: transparent;
   color: #A95207;
 `;
 
@@ -66,7 +66,7 @@ function FilterChip({ label, active, onClick }) {
         ${chip(active)};
         cursor: pointer;
         :hover {
-          background: #FFE8D4;
+          background: #E5C2A5;
         }
       `}
     >
