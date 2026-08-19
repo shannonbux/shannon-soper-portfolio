@@ -4,6 +4,9 @@ import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 
+// Peach block behind the hero. Flip to true to bring it back.
+const showAccentBlock = false
+
 export default function Home({ data }) {
   return (
     <Layout>
@@ -51,20 +54,22 @@ export default function Home({ data }) {
             css={{}}
           />
         </div>
-        <div
-          css={{
-            width: `66.6666%`,
-            height: 264,
-            position: `absolute`,
-            background: `#FFF1E9`,
-            top: 88,
-            "z-index": -1,
-            right: 0,
-            "@media (min-width: 1280px)": {
-              right: 64,
-            },
-          }}
-        />
+        {showAccentBlock && (
+          <div
+            css={{
+              width: `66.6666%`,
+              height: 264,
+              position: `absolute`,
+              background: `#FFF1E9`,
+              top: 88,
+              "z-index": -1,
+              right: 0,
+              "@media (min-width: 1280px)": {
+                right: 64,
+              },
+            }}
+          />
+        )}
       </div>
     </Layout>
   )
