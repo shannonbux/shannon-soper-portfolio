@@ -12,14 +12,10 @@ const HeaderLink = ({ to, children }) => {
       css={{
         fontFamily: `Merriweather Sans, sans-serif`,
         fontSize: 16,
-        textTransform: `uppercase`,
         color: `#333333`,
         textDecoration: `none`,
         padding: 0,
         marginLeft: 24,
-        ":hover": {
-          color: `#1A1A1A`,
-        },
       }}
       activeStyle={{
         textDecoration: `underline`,
