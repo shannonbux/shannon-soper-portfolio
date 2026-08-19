@@ -47,7 +47,13 @@ export default function Home({ data }) {
             with 8 years’ experience designing elegant solutions to complex problems.
           </h1>
         </div>
-        <div css={{ flex: 1 }}>
+        <div
+          css={{
+            flex: 1,
+            display: `flex`,
+            justifyContent: `flex-end`,
+          }}
+        >
           <StaticImage
             src="./images/profile-2019.JPG"
             aspectRatio={0.8333333}
@@ -56,7 +62,13 @@ export default function Home({ data }) {
             formats={["auto", "webp", "avif"]}
             layout="constrained"
             alt="a photo of me in an orange jacket in front of stone buildings in Blockley, England."
-            css={{ borderRadius: 8, overflow: `hidden` }}
+            css={{
+              borderRadius: 8,
+              overflow: `hidden`,
+              "@media (max-width: 720px)": {
+                width: `100%`,
+              },
+            }}
           />
         </div>
         {showAccentBlock && (
