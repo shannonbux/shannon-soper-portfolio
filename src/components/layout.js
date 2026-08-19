@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import "./layout.css"
-import { StaticImage } from "gatsby-plugin-image"
+import logo from "../pages/images/icons/hello.png"
 
 import { rhythm } from "../utils/typography"
 
@@ -76,12 +76,14 @@ export default function Layout({ children }) {
             text-decoration: none;
           `}
         >
-          <StaticImage
-            src="../pages/images/icons/hello.png"
+          {/* Plain img on purpose: gatsby-plugin-image fades each mount in
+              over 250ms, and Layout remounts on every route change, so the
+              logo appeared to reload whenever a nav item was clicked. */}
+          <img
+            src={logo}
+            alt=""
             width={16}
             height={16}
-            layout="fixed"
-            placeholder="none"
             css={{
               marginRight: rhythm(1 / 4),
             }}
