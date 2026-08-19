@@ -1,3 +1,13 @@
+/* Mobile browsers paint a translucent grey box over anything tappable the
+   moment it is touched, which reads as a flash. Suppress it on the elements
+   that carry their own press feedback, and drop the ~300ms double-tap-zoom
+   delay while we are here. Both are no-ops on desktop. */
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
 .gatsby-resp-image-wrapper {
   margin-bottom: 1.08rem;
   text-align: center;
