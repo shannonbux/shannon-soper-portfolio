@@ -27,12 +27,10 @@ const row = css`
   gap: 8px;
 `;
 
-// Outline and label stay constant across states; only the container fill and
-// the leading checkmark change, following Material's filter chip pattern.
-//
-// Metrics: 32dp container, 8dp radius, 8dp between
-// elements, 16dp side padding — dropping to 8dp on the side carrying the
-// leading icon. Height includes the 1px outline, hence border-box.
+// Outline and label stay constant across states; only the container fill
+// changes. Material filter chip metrics: 32dp container, 8dp radius, 8dp
+// between elements, 16dp side padding. Height includes the 1px outline,
+// hence border-box.
 const chip = (active) => css`
   box-sizing: border-box;
   display: inline-flex;
@@ -41,7 +39,6 @@ const chip = (active) => css`
   gap: 8px;
   height: 32px;
   padding: 0 16px;
-  padding-left: ${active ? `8px` : `16px`};
   font-family: Merriweather Sans, sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -53,27 +50,6 @@ const chip = (active) => css`
   color: #A95207;
 `;
 
-function CheckMark() {
-  return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="3"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      focusable="false"
-      css={css`
-        flex: none;
-      `}
-    >
-      <path d="M20 6 L9 17 L4 12" />
-    </svg>
-  );
-}
 
 export function TagList({ tags, className }) {
   if (!tags || tags.length === 0) {
@@ -104,7 +80,6 @@ function FilterChip({ label, active, onClick }) {
         }
       `}
     >
-      {active && <CheckMark />}
       {label}
     </button>
   );
