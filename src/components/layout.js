@@ -25,6 +25,7 @@ const HeaderLink = ({ to, children }) => {
       activeStyle={{
         color: `#000000`,
         textDecoration: `underline`,
+        textUnderlineOffset: `2px`,
       }}
       to={to}
     >
@@ -58,34 +59,54 @@ export default function Layout({ children }) {
         }
       `}
     >
-      <Link to={`/`}>
-        <StaticImage
-          src="../pages/images/icons/hello.png"
-          width={20}
-          height={20}
-          layout="fixed"
-          placeholder="none"
-          css={{
-            float: `left`,
-            marginRight: rhythm(1 / 4),
-          }}
-        />
-        <h3
+      <div
+        css={css`
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        `}
+      >
+        <Link
+          to={`/`}
           css={css`
-            display: inline-block;
-            font-weight: 500;
-            font-style: normal;
-            font-size: 21px;
-            color: #333;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
           `}
         >
-          {data.site.siteMetadata.title}
-        </h3>
-      </Link>
-      <div css={{ float: `right` }}>
-        <HeaderLink to="/work/">Work</HeaderLink>
-        <HeaderLink to="/blog/">Blog</HeaderLink>
-        <HeaderLink to="/about/">About</HeaderLink>
+          <StaticImage
+            src="../pages/images/icons/hello.png"
+            width={16}
+            height={16}
+            layout="fixed"
+            placeholder="none"
+            css={{
+              marginRight: rhythm(1 / 4),
+            }}
+          />
+          <h3
+            css={css`
+              margin: 0;
+              font-weight: 500;
+              font-style: normal;
+              font-size: 16px;
+              line-height: 1.2;
+              color: #333;
+            `}
+          >
+            {data.site.siteMetadata.title}
+          </h3>
+        </Link>
+        <div
+          css={css`
+            display: flex;
+            align-items: center;
+          `}
+        >
+          <HeaderLink to="/work/">Work</HeaderLink>
+          <HeaderLink to="/blog/">Blog</HeaderLink>
+          <HeaderLink to="/about/">About</HeaderLink>
+        </div>
       </div>
 
       <div css={{ marginBottom: rhythm(2) }} />
