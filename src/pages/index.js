@@ -12,10 +12,6 @@ export default function Home({ data }) {
           display: `flex`,
           position: `relative`,
           marginTop: 128,
-          paddingLeft: 32,
-          "@media (min-width: 1280px)": {
-            paddingLeft: 64,
-          },
         }}
       >
         <div css={{ marginTop: 32, flex: 1, paddingRight: 32 }}>
