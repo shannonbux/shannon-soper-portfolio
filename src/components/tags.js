@@ -66,7 +66,7 @@ function FilterChip({ label, active, onClick }) {
         ${chip(active)};
         cursor: pointer;
         :hover {
-          background: #E5C2A5;
+          background: #FEF2E8;
         }
       `}
     >
