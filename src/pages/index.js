@@ -47,7 +47,6 @@ export default function Home({ data }) {
             </span>{" "}
             with 8 years’ experience designing elegant solutions to complex problems.
           </h1>
-          <p>Designed at Gatsby, Postman, and Trunk</p>
         </div>
         <div
           css={{
