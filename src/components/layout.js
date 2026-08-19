@@ -10,17 +10,21 @@ const HeaderLink = ({ to, children }) => {
   return (
     <Link
       css={{
+        fontFamily: `Merriweather Sans, sans-serif`,
+        fontSize: 12,
+        textTransform: `uppercase`,
+        letterSpacing: `0.06em`,
         color: `inherit`,
         textDecoration: `none`,
-        fontSize: 16,
-        paddingLeft: 16,
-        paddingRight: 16,
-        paddingTop: 8,
-        paddingBottom: 8,
-        marginLeft: 16,
+        padding: 0,
+        marginLeft: 24,
         ":hover": {
-          background: `#FFF1E9`,
+          color: `#1A1A1A`,
         },
+      }}
+      activeStyle={{
+        color: `#000000`,
+        textDecoration: `underline`,
       }}
       to={to}
     >

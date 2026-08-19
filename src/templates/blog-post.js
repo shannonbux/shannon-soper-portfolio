@@ -16,16 +16,14 @@ export default function BlogPost({ data }) {
           `}
         />
         <h1>{post.frontmatter.title}</h1>
-        {post.frontmatter.isBlogPost && (
-          <div
-            css={css`
-              color: gray;
-              margin-bottom: 8px;
-            `}
-          >
-            {post.frontmatter.date}
-          </div>
-        )}
+        <div
+          css={css`
+            color: gray;
+            margin-bottom: 8px;
+          `}
+        >
+          {post.frontmatter.date}
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -38,7 +36,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD MMMM, YYYY")
+        date(formatString: "MMMM D, YYYY")
         isBlogPost
         tags
       }
