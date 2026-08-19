@@ -66,8 +66,14 @@ export default function Home({ data }) {
             css={{
               borderRadius: 8,
               overflow: `hidden`,
+              // The constrained layout pins an inner sizer at max-width 400px
+              // via an inline style. Widening only the wrapper leaves the
+              // height behind and the cover-fit image crops, so release both.
               "@media (max-width: 720px)": {
                 width: `100%`,
+                "> div": {
+                  maxWidth: `100% !important`,
+                },
               },
             }}
           />
