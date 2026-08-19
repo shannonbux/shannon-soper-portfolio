@@ -66,6 +66,12 @@ export default function Home({ data }) {
             css={{
               borderRadius: 8,
               overflow: `hidden`,
+              // Never crop: gatsby-image cover-fits by default, which trims the
+              // photo whenever the wrapper ratio drifts from the source ratio.
+              // contain letterboxes instead, so the full frame always survives.
+              img: {
+                objectFit: `contain !important`,
+              },
               // The constrained layout pins an inner sizer at max-width 400px
               // via an inline style. Widening only the wrapper leaves the
               // height behind and the cover-fit image crops, so release both.
