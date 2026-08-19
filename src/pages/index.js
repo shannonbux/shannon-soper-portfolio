@@ -4,6 +4,9 @@ import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 
+// Peach block behind the hero. Flip to true to bring it back.
+const showAccentBlock = false
+
 export default function Home({ data }) {
   return (
     <Layout>
@@ -12,13 +15,24 @@ export default function Home({ data }) {
           display: `flex`,
           position: `relative`,
           marginTop: 128,
-          paddingLeft: 32,
-          "@media (min-width: 1280px)": {
-            paddingLeft: 64,
+          // Children are [text, photo]; column-reverse lifts the photo above
+          // the text without changing reading order.
+          "@media (max-width: 720px)": {
+            flexDirection: `column-reverse`,
+            marginTop: 48,
           },
         }}
       >
-        <div css={{ marginTop: 32, flex: 1, paddingRight: 32 }}>
+        <div
+          css={{
+            flex: 1,
+            paddingRight: 32,
+            "@media (max-width: 720px)": {
+              paddingRight: 0,
+              marginTop: 32,
+            },
+          }}
+        >
           <h1 css={{ fontWeight: 500, fontSize: 36, marginBottom: 48 }}>
             Hi! I’m Shannon.
           </h1>
@@ -37,38 +51,58 @@ export default function Home({ data }) {
         <div
           css={{
             flex: 1,
-            "@media (max-width: 450px)": {
-              minWidth: 96,
-              right: 36,
-              position: `relative`,
-            },
+            display: `flex`,
+            justifyContent: `flex-end`,
           }}
         >
           <StaticImage
             src="./images/profile-2019.JPG"
-            aspectRatio={0.8333333}
+            // 4:5 — gatsby-image takes aspectRatio as width / height
+            aspectRatio={4 / 5}
             width={400}
             placeholder="blurred"
             formats={["auto", "webp", "avif"]}
             layout="constrained"
             alt="a photo of me in an orange jacket in front of stone buildings in Blockley, England."
-            css={{}}
+            css={{
+              borderRadius: 8,
+              overflow: `hidden`,
+              // aspectRatio above bakes the 4:5 portrait crop into the
+              // generated file. contain then keeps that framing intact: it
+              // letterboxes rather than trimming if a wrapper ever drifts off
+              // ratio, so the photo can never be cropped a second time.
+              img: {
+                objectFit: `contain !important`,
+              },
+              // The constrained layout pins an inner sizer at max-width 400px
+              // via an inline style. Widening only the wrapper leaves the
+              // height behind and the image crops, so release both and the
+              // portrait ratio scales intact.
+              "@media (max-width: 720px)": {
+                width: `100%`,
+                "> div": {
+                  maxWidth: `100% !important`,
+                },
+              },
+            }}
           />
         </div>
-        <div
-          css={{
-            width: `66.6666%`,
-            height: 264,
-            position: `absolute`,
-            background: `#FFF1E9`,
-            top: 88,
-            "z-index": -1,
-            right: 0,
-            "@media (min-width: 1280px)": {
-              right: 64,
-            },
-          }}
-        />
+        {showAccentBlock && (
+          <div
+            css={{
+              width: `66.6666%`,
+              height: 264,
+              position: `absolute`,
+              background: `#FFF1E9`,
+              top: 88,
+              "z-index": -1,
+              right: 0,
+              "@media (min-width: 1280px)": {
+                right: 64,
+              },
+            }}
+          />
+        )}
       </div>
     </Layout>
   )
