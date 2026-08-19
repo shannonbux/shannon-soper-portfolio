@@ -14,7 +14,7 @@ const HeaderLink = ({ to, children }) => {
         fontSize: 12,
         textTransform: `uppercase`,
         letterSpacing: `0.06em`,
-        color: `inherit`,
+        color: `#333333`,
         textDecoration: `none`,
         padding: 0,
         marginLeft: 24,
