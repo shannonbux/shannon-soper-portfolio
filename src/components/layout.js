@@ -93,7 +93,7 @@ export default function Layout({ children }) {
               font-style: normal;
               font-size: 16px;
               line-height: 1.2;
-              color: #000000;
+              color: #333333;
             `}
           >
             {data.site.siteMetadata.title}
