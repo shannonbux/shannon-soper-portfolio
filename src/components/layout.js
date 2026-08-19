@@ -88,10 +88,11 @@ export default function Layout({ children }) {
           <h3
             css={css`
               margin: 0;
-              font-weight: 500;
+              font-weight: 400;
               font-style: normal;
               font-size: 16px;
               line-height: 1.2;
+              letter-spacing: 0.06em;
               text-transform: uppercase;
               color: #333;
             `}
