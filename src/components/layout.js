@@ -13,7 +13,6 @@ const HeaderLink = ({ to, children }) => {
         fontFamily: `Merriweather Sans, sans-serif`,
         fontSize: 16,
         textTransform: `uppercase`,
-        letterSpacing: `0.06em`,
         color: `#333333`,
         textDecoration: `none`,
         padding: 0,
@@ -23,10 +22,10 @@ const HeaderLink = ({ to, children }) => {
         },
       }}
       activeStyle={{
-        color: `#000000`,
         textDecoration: `underline`,
         textUnderlineOffset: `3px`,
         textDecorationThickness: `2px`,
+        textDecorationColor: `#333333`,
       }}
       to={to}
     >
@@ -92,9 +91,8 @@ export default function Layout({ children }) {
               font-style: normal;
               font-size: 16px;
               line-height: 1.2;
-              letter-spacing: 0.06em;
               text-transform: uppercase;
-              color: #333;
+              color: #000000;
             `}
           >
             {data.site.siteMetadata.title}
