@@ -30,15 +30,15 @@ const row = css`
 const chip = (active) => css`
   display: inline-block;
   font-family: Merriweather Sans, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: normal;
   letter-spacing: 0.06em;
   line-height: 1.3;
   padding: 4px 10px;
   border-radius: 4px;
-  border: 1px solid ${active ? `#ec5800` : `#d3d3d3`};
-  background: ${active ? `#FFF1E9` : `transparent`};
-  color: ${active ? `#ec5800` : `#333333`};
+  border: none;
+  background: ${active ? `#FFE8D4` : `#FEF2E8`};
+  color: #FFE8D4;
 `;
 
 export function TagList({ tags, className }) {
@@ -66,7 +66,7 @@ function FilterChip({ label, active, onClick }) {
         ${chip(active)};
         cursor: pointer;
         :hover {
-          border-color: #ec5800;
+          background: #FFE8D4;
         }
       `}
     >
