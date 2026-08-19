@@ -24,11 +24,11 @@ export default function Home({ data }) {
       >
         <div
           css={{
-            marginTop: 32,
             flex: 1,
             paddingRight: 32,
             "@media (max-width: 720px)": {
               paddingRight: 0,
+              marginTop: 32,
             },
           }}
         >
@@ -46,6 +46,7 @@ export default function Home({ data }) {
             </span>{" "}
             with 8 years’ experience designing elegant solutions to complex problems.
           </h1>
+          <p>Designed at Gatsby, Postman, and Trunk</p>
         </div>
         <div
           css={{
