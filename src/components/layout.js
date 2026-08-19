@@ -25,7 +25,8 @@ const HeaderLink = ({ to, children }) => {
       activeStyle={{
         color: `#000000`,
         textDecoration: `underline`,
-        textUnderlineOffset: `2px`,
+        textUnderlineOffset: `3px`,
+        textDecorationThickness: `2px`,
       }}
       to={to}
     >
