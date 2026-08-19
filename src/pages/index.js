@@ -57,6 +57,7 @@ export default function Home({ data }) {
         >
           <StaticImage
             src="./images/profile-2019.JPG"
+            aspectRatio={0.8333333}
             width={400}
             placeholder="blurred"
             formats={["auto", "webp", "avif"]}
@@ -65,15 +66,17 @@ export default function Home({ data }) {
             css={{
               borderRadius: 8,
               overflow: `hidden`,
-              // Never crop: gatsby-image cover-fits by default, which trims the
-              // photo whenever the wrapper ratio drifts from the source ratio.
-              // contain letterboxes instead, so the full frame always survives.
+              // aspectRatio above bakes the 0.8333 portrait crop into the
+              // generated file. contain then keeps that framing intact: it
+              // letterboxes rather than trimming if a wrapper ever drifts off
+              // ratio, so the photo can never be cropped a second time.
               img: {
                 objectFit: `contain !important`,
               },
               // The constrained layout pins an inner sizer at max-width 400px
               // via an inline style. Widening only the wrapper leaves the
-              // height behind and the cover-fit image crops, so release both.
+              // height behind and the image crops, so release both and the
+              // portrait ratio scales intact.
               "@media (max-width: 720px)": {
                 width: `100%`,
                 "> div": {
