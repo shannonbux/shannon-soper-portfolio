@@ -7,21 +7,17 @@ import { TagFilter, TagList } from "../../components/tags";
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function Work({ data }) {
-  const [selected, setSelected] = useState([]);
+  const [selected, setSelected] = useState(null);
 
-  const toggleTag = (tag) =>
-    setSelected((current) =>
-      current.includes(tag)
-        ? current.filter((t) => t !== tag)
-        : [...current, tag]
-    );
+  const selectTag = (tag) =>
+    setSelected((current) => (current === tag ? null : tag));
 
   const edges = data.allMarkdownRemark.edges;
   const visible =
-    selected.length === 0
+    selected === null
       ? edges
       : edges.filter(({ node }) =>
-          (node.frontmatter.tags || []).some((tag) => selected.includes(tag))
+          (node.frontmatter.tags || []).includes(selected)
         );
 
   return (
@@ -44,14 +40,14 @@ export default function Work({ data }) {
         </p>
         <TagFilter
           selected={selected}
-          onToggle={toggleTag}
-          onClear={() => setSelected([])}
+          onSelect={selectTag}
+          onClear={() => setSelected(null)}
           css={css`
             margin-bottom: 2.1rem;
           `}
         />
         {visible.length === 0 ? (
-          <p>No case studies match those tags.</p>
+          <p>No case studies match that tag.</p>
         ) : (
           <div
             css={css`

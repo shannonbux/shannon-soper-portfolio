@@ -75,19 +75,23 @@ function FilterChip({ label, active, onClick }) {
   );
 }
 
-export function TagFilter({ tags = TAGS, selected, onToggle, onClear, className }) {
-  // ALL is a control rather than a tag: it is deliberately not part of TAGS, so
-  // it never lands on an article. It reads as active whenever no tag is
-  // selected, which is the state it returns you to.
+// One tag at a time: `selected` is a single tag string, or null for no filter.
+// Choosing a tag replaces whatever was selected before, and choosing the
+// already-selected tag clears it.
+//
+// ALL is a control rather than a tag: it is deliberately not part of TAGS, so
+// it never lands on an article. It reads as active whenever no tag is
+// selected, which is the state it returns you to.
+export function TagFilter({ tags = TAGS, selected, onSelect, onClear, className }) {
   return (
     <div css={row} className={className}>
-      <FilterChip label="ALL" active={selected.length === 0} onClick={onClear} />
+      <FilterChip label="ALL" active={selected === null} onClick={onClear} />
       {tags.map((tag) => (
         <FilterChip
           key={tag}
           label={tag}
-          active={selected.includes(tag)}
-          onClick={() => onToggle(tag)}
+          active={selected === tag}
+          onClick={() => onSelect(tag)}
         />
       ))}
     </div>
