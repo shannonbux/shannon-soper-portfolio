@@ -34,14 +34,21 @@ function Meta({ role, timeline }) {
         >
           <div
             css={css`
-              font-size: 12px;
-              font-weight: 600;
+              font-size: 16px;
+              font-weight: 300;
               color: #767676;
             `}
           >
             {label}
           </div>
-          <div css={{ fontSize: 16 }}>{value}</div>
+          <div
+            css={css`
+              font-size: 16px;
+              color: #333333;
+            `}
+          >
+            {value}
+          </div>
         </div>
       ))}
     </div>
@@ -59,7 +66,7 @@ export default function BlogPost({ data }) {
               font-size: 12px;
               letter-spacing: 0.08em;
               text-transform: uppercase;
-              color: #333333;
+              color: #767676;
               margin-bottom: ${space(1)};
             `}
           >
