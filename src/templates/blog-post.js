@@ -1,9 +1,8 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { graphql } from "gatsby";
-import { CONTENT_MAX_WIDTH } from "../utils/spacing";
 import Layout from "../components/layout";
-import { space } from "../utils/spacing";
+import { space, CONTENT_MAX_WIDTH } from "../utils/spacing";
 import { TagList } from "../components/tags";
 
 export default function BlogPost({ data }) {
