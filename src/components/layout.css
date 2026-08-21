@@ -11,6 +11,19 @@ button {
 .gatsby-resp-image-wrapper {
   margin-bottom: 16px; /* space(2) */
   text-align: center;
+
+  /* Article images run twice the width of the reading column, extending right
+     into the rest of the shell. gatsby-remark-images writes max-width inline,
+     so overriding it needs !important. min() keeps the image inside the page
+     gutters once the viewport is narrower than the breakout width. */
+  max-width: none !important;
+  width: min(200%, calc(100vw - 32px));
+}
+
+@media (min-width: 720px) {
+  .gatsby-resp-image-wrapper {
+    width: min(200%, calc(100vw - 96px));
+  }
 }
 
 video {

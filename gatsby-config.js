@@ -44,10 +44,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 800,
+              // The width images actually render at: twice the 512px reading
+              // column, since article images break out of it. Sources capped
+              // below this would upscale.
+              maxWidth: 1024,
             },
           },
           `gatsby-remark-copy-linked-files`,
