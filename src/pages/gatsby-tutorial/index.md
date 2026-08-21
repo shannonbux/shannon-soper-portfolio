@@ -6,7 +6,7 @@ excerpt: "More users finished the tutorial after my redesign. I broke up the con
 tags: ["DX"]
 company: "Gatsby"
 role: "Product Designer"
-timeline: "3 months (2018)"
+timeline: "2018 (3 months)"
 ---
 
 (_article under construction_)
