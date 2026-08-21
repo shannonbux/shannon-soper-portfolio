@@ -34,10 +34,10 @@ export default function Home({ data }) {
             },
           }}
         >
-          <h1 css={{ fontWeight: 500, fontSize: 36, marginBottom: 48 }}>
+          <h1 css={{ fontWeight: 500, fontSize: 32, marginBottom: 48 }}>
             Hi! I’m Shannon.
           </h1>
-          <h1 css={{ fontWeight: 500, fontSize: 36, marginBottom: 48 }}>
+          <h1 css={{ fontWeight: 500, fontSize: 32, marginBottom: 48 }}>
             I’m a{" "}
             <span
               css={css`
