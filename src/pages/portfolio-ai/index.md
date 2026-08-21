@@ -7,7 +7,6 @@ excerpt: "Claude & I have merged dozens of PRs to update this portfolio website.
 tags: ["AI & AGENTS"]
 role: ""
 months: ""
-year: 2026
 ---
 ## Designing with AI
 I like designing with AI! After trying many, many tools, I've found the most value in using Claude Code to create PRs. I have merged dozens of PRs to update this portfolio website. More to come soon, but for now, here's a link to the GitHub repo that shows how I've been working! 

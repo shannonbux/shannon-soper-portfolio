@@ -5,6 +5,30 @@ import Layout from "../components/layout";
 import { space, CONTENT_MAX_WIDTH } from "../utils/spacing";
 import { TagList } from "../components/tags";
 
+// Work articles carry My Role and Timeline where a blog post carries a date.
+// Either line is skipped when its frontmatter is still empty, so a half-filled
+// article shows what it has rather than a dangling label.
+function Meta({ role, months, year }) {
+  const timeline = [months && `${months} months`, year].filter(Boolean).join(`, `);
+  const rows = [
+    [`My Role`, role],
+    [`Timeline`, timeline],
+  ].filter(([, value]) => value);
+
+  if (!rows.length) {
+    return null;
+  }
+  return (
+    <>
+      {rows.map(([label, value]) => (
+        <div key={label}>
+          <strong>{label}:</strong> {value}
+        </div>
+      ))}
+    </>
+  );
+}
+
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
   return (
@@ -30,7 +54,15 @@ export default function BlogPost({ data }) {
             margin-bottom: ${space(3)};
           `}
         >
-          {post.frontmatter.date}
+          {post.frontmatter.isBlogPost ? (
+            post.frontmatter.date
+          ) : (
+            <Meta
+              role={post.frontmatter.role}
+              months={post.frontmatter.months}
+              year={post.frontmatter.year}
+            />
+          )}
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
@@ -45,7 +77,10 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
+        year: date(formatString: "YYYY")
         isBlogPost
+        role
+        months
         tags
       }
     }

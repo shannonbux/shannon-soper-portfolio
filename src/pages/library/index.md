@@ -6,7 +6,6 @@ excerpt: "Since the launch of the Plugin Library, which I designed, the library 
 tags: ["DX"]
 role: ""
 months: ""
-year: 2018
 ---
 
 Many of Gatsby’s powerful capabilities come from its plugin system and wide array of community contributed plugins. But finding and creating plugins hasn’t always been easy. After hearing these common complaints while interviewing Gatsby users a few years ago, I drew an “empathy map” to put myself in their shoes.

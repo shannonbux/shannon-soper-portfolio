@@ -6,7 +6,6 @@ excerpt: "Successfully helped more users decide Postman was worth purchasing by 
 tags: ["GROWTH"]
 role: ""
 months: ""
-year: 2022
 ---
 
 I redesigned Postman's checkout flow by replacing a card design with a feature comparison table.

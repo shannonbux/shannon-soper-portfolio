@@ -6,7 +6,6 @@ excerpt: "I redesigned the quarantine feature with increased visibility, a simpl
 tags: ["DX"]
 role: "Senior Product Designer"
 months: "2"
-year: 2025
 ---
  
 **Role:** Senior Product Designer (generative research, IA, interaction design, usability testing)

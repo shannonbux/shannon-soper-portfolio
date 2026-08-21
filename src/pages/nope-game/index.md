@@ -7,7 +7,6 @@ excerpt: "This game helps me decide whether to say yes or no when someone asks m
 tags: ["SIDE PROJECTS"]
 role: ""
 months: ""
-year: 2019
 ---
 ## Your dog wants to go on a walk at midnight
 Let’s say your dog wants you to take it on a walk at midnight. If you're not sure whether you want to say yes or no, you could use this game I designed, The Nope Game, to decide on your response.

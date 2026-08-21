@@ -6,7 +6,6 @@ excerpt: "More users finished the tutorial after my redesign. I broke up the con
 tags: ["DX"]
 role: ""
 months: ""
-year: 2018
 ---
 
 (_article under construction_)

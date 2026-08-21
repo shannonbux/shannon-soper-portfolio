@@ -6,7 +6,6 @@ excerpt: "I redesigned Gatsby Cloud onboarding with smart defaults to reduce the
 tags: ["GROWTH"]
 role: ""
 months: ""
-year: 2019
 ---
 
 After Gatsby launched our cloud website hosting product (a developer tool), I reviewed [FullStory](https://www.fullstory.com/) clips and it soon became obvious that some users struggled to finish creating a new site. To learn why, I setup and ran 10 usability tests in which I watched five existing Gatsby users and five new users onboard onto Gatsby Cloud.

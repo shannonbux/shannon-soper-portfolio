@@ -7,7 +7,6 @@ hidden: true
 tags: []
 role: ""
 months: ""
-year: 2020
 ---
 
 Sit back and keep your arms and legs inside the car for a roller-coaster ride through my first years as a product designer at Gatsby. I was the first employee and first designer at the startup and had so much fun doing these design projects! 

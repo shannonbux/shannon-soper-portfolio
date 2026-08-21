@@ -6,7 +6,6 @@ excerpt: "I created and ran a month-long online course to train sales people in 
 tags: ["GROWTH"]
 role: ""
 months: ""
-year: 2015
 ---
 
 Back in 2015, the VP of Sales at Instructure told me that the 250+ sales people in his organization were not using a [_The Challenger Sale_](https://www.challengerinc.com/) methodology he wanted them to use. **He asked me to help them adopt the new methodology**. As the company’s sole instructional designer, I got to work creating a series of learning experiences with effective incentives.
