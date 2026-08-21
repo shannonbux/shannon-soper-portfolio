@@ -16,7 +16,7 @@ import "./typography.css"
 console.log(kirkhamTheme)
 kirkhamTheme.headerFontFamily = [`Merriweather Sans`, `sans-serif`]
 kirkhamTheme.bodyFontFamily = [`Merriweather Sans`, `sans-serif`]
-kirkhamTheme.baseFontSize = `18px`
+kirkhamTheme.baseFontSize = `16px`
 kirkhamTheme.baseLineHeight = 1.4
 kirkhamTheme.headerLineHeight = 1.3
 kirkhamTheme.scaleRatio = 1.8
