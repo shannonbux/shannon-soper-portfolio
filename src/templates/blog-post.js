@@ -39,6 +39,7 @@ function Meta({ company, role, timeline }) {
               font-weight: 300;
               text-transform: uppercase;
               color: #767676;
+              margin-bottom: 2px;
             `}
           >
             {label}
@@ -46,6 +47,7 @@ function Meta({ company, role, timeline }) {
           <div
             css={css`
               font-size: 12px;
+              font-weight: 400;
               color: #333333;
             `}
           >
