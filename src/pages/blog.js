@@ -1,14 +1,14 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { Link, graphql } from "gatsby";
-import { space } from "../utils/spacing";
+import { space, CONTENT_MAX_WIDTH } from "../utils/spacing";
 import Layout from "../components/layout";
 import { rhythm } from "../utils/typography";
 
 export default function Blog({ data }) {
   return (
     <Layout>
-      <div css={{ maxWidth: 800 }}>
+      <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
         <h1
           css={css`
             margin-bottom: ${space(5)};

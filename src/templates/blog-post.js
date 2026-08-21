@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { graphql } from "gatsby";
+import { CONTENT_MAX_WIDTH } from "../utils/spacing";
 import Layout from "../components/layout";
 import { TagList } from "../components/tags";
 
@@ -8,7 +9,7 @@ export default function BlogPost({ data }) {
   const post = data.markdownRemark;
   return (
     <Layout>
-      <div css={{ maxWidth: 800 }}>
+      <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
         <TagList
           tags={post.frontmatter.tags}
           css={css`
