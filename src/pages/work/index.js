@@ -44,7 +44,7 @@ export default function Work({ data }) {
           onSelect={selectTag}
           onClear={() => setSelected(null)}
           css={css`
-            margin-bottom: ${space(5)};
+            margin-bottom: ${space(3)};
           `}
         />
         {visible.length === 0 ? (
