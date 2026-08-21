@@ -40,6 +40,7 @@ export default function Blog({ data }) {
                 <div
                   css={css`
                     display: block;
+                    margin-top: ${space(0.5)};
                     margin-bottom: 8px;
                     font-size: 12px;
                     color: #333333;

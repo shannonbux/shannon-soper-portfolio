@@ -87,16 +87,6 @@ export default function Work({ data }) {
                 >
                   {node.frontmatter.title}
                 </h2>
-                <div
-                  css={css`
-                    display: block;
-                    margin-bottom: 8px;
-                    font-size: 12px;
-                    color: #333333;
-                  `}
-                >
-                  {node.frontmatter.timeline}
-                </div>
                 <p
                   css={css`
                     margin-bottom: 12px;
@@ -128,7 +118,6 @@ export const query = graphql`
           id
           frontmatter {
             title
-            timeline
             tags
             featuredImage {
               childImageSharp {
