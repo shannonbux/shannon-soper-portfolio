@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import { graphql } from "gatsby";
 import { CONTENT_MAX_WIDTH } from "../utils/spacing";
 import Layout from "../components/layout";
+import { space } from "../utils/spacing";
 import { TagList } from "../components/tags";
 
 export default function BlogPost({ data }) {
@@ -13,14 +14,20 @@ export default function BlogPost({ data }) {
         <TagList
           tags={post.frontmatter.tags}
           css={css`
-            margin-bottom: 12px;
+            margin-bottom: ${space(1.5)};
           `}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <h1
+          css={css`
+            margin-bottom: ${space(1)};
+          `}
+        >
+          {post.frontmatter.title}
+        </h1>
         <div
           css={css`
             color: gray;
-            margin-bottom: 8px;
+            margin-bottom: ${space(3)};
           `}
         >
           {post.frontmatter.date}
