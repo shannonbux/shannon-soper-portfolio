@@ -7,7 +7,7 @@ hidden: true
 tags: ["DX"]
 company: "Gatsby"
 role: ""
-months: ""
+timeline: ""
 ---
 
 During the end of 2019, I designed a preview experience for content editors working on Gatsby websites.

@@ -5,8 +5,8 @@ featuredImage: "tutorial-sidebar.png"
 excerpt: "More users finished the tutorial after my redesign. I broke up the content into bite-sized pieces and reduced pesky errors through better code snippet design."
 tags: ["DX"]
 company: "Gatsby"
-role: ""
-months: ""
+role: "Product Designer"
+timeline: "3 months (2018)"
 ---
 
 (_article under construction_)

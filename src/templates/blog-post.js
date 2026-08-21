@@ -7,13 +7,12 @@ import { space, CONTENT_MAX_WIDTH } from "../utils/spacing";
 // Work articles carry My Role and Timeline where a blog post carries a date.
 // Either line is skipped when its frontmatter is still empty, so a half-filled
 // article shows what it has rather than a dangling label.
-function Meta({ role, months, year }) {
-  const timeline = [year, months && `~${months} months`]
-    .filter(Boolean)
-    .join(` `)
-    .replace(/(\d) ~/, `$1 (~`);
+// Timeline is whatever the article's frontmatter says — "2018 (3 months)",
+// "February 2024 - Ongoing", anything. It is printed verbatim rather than
+// composed, so the phrasing stays the author's.
+function Meta({ role, timeline }) {
   const rows = [
-    [`Timeline`, months && year ? `${timeline})` : timeline],
+    [`Timeline`, timeline],
     [`My Role`, role],
   ].filter(([, value]) => value);
 
@@ -100,8 +99,7 @@ export default function BlogPost({ data }) {
             )}
             <Meta
               role={post.frontmatter.role}
-              months={post.frontmatter.months}
-              year={post.frontmatter.year}
+              timeline={post.frontmatter.timeline}
             />
           </>
         )}
@@ -118,12 +116,11 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
-        year: date(formatString: "YYYY")
         isBlogPost
         company
         excerpt
         role
-        months
+        timeline
       }
     }
   }

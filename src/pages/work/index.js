@@ -95,9 +95,7 @@ export default function Work({ data }) {
                     color: #333333;
                   `}
                 >
-                  {[node.frontmatter.months && `${node.frontmatter.months} months`, node.frontmatter.year]
-                    .filter(Boolean)
-                    .join(", ")}
+                  {node.frontmatter.timeline}
                 </div>
                 <p
                   css={css`
@@ -130,8 +128,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            year: date(formatString: "YYYY")
-            months
+            timeline
             tags
             featuredImage {
               childImageSharp {

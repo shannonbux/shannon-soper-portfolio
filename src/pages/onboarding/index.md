@@ -5,8 +5,8 @@ featuredImage: "first-time-user-zoom.png"
 excerpt: "I redesigned Gatsby Cloud onboarding with smart defaults to reduce the user’s cognitive load."
 tags: ["GROWTH"]
 company: "Gatsby"
-role: ""
-months: ""
+role: "Product Designer"
+timeline: "2019 (1 month)"
 ---
 
 After Gatsby launched our cloud website hosting product (a developer tool), I reviewed [FullStory](https://www.fullstory.com/) clips and it soon became obvious that some users struggled to finish creating a new site. To learn why, I setup and ran 10 usability tests in which I watched five existing Gatsby users and five new users onboard onto Gatsby Cloud.

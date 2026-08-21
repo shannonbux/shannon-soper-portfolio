@@ -5,8 +5,8 @@ featuredImage: "./builds-final-thumbnail.png"
 excerpt: "This revised dashboard enabled Gatsby to come out of beta and launch its commercial offering."
 tags: ["DX"]
 company: "Gatsby"
-role: ""
-months: ""
+role: "Product Designer"
+timeline: "4 months (2019)"
 ---
 ## What is Gatsby?
 Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps. Litte Caesar's launched their Gatsby website during the Superbowl; it loaded fast for every user and never went down, despite the huge influx of traffic. Fun! 
