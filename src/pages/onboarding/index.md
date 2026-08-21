@@ -1,6 +1,6 @@
 ---
 title: "Gatsby Cloud Onboarding"
-date: "2019-12-09"
+timeline: "2019-12-09"
 featuredImage: "first-time-user-zoom.png"
 excerpt: "I redesigned Gatsby Cloud onboarding with smart defaults to reduce the user’s cognitive load."
 tags: ["GROWTH"]

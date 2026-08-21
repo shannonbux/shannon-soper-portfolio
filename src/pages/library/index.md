@@ -1,6 +1,6 @@
 ---
 title: "The Gatsby Plugin Library"
-date: "2018-03-07"
+timeline: "2018-03-07"
 featuredImage: "plugin-tweet.png"
 excerpt: "Since the launch of the Plugin Library, which I designed, the library has grown from 51 plugins to 3,000+ plugins."
 tags: ["DX"]

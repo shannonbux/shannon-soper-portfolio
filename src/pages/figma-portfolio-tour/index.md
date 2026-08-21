@@ -1,6 +1,6 @@
 ---
 title: "Gatsby Projects Tour"
-date: "2020-04-27"
+timeline: "2020-04-27"
 featuredImage: "portfolio-tour-first-slide.png"
 excerpt: "A collection of portfolio presentations that showcase most of my Gatsby projects."
 hidden: true

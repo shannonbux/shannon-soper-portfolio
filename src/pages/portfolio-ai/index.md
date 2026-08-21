@@ -1,6 +1,6 @@
 ---
 title: "Claude Code = Design Buddy"
-date: "2026-08-20"
+timeline: "2026-08-20"
 featuredImage: "portfolio-github.png"
 excerpt: "Claude & I have merged dozens of PRs to update this portfolio website."
 

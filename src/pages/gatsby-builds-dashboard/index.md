@@ -1,6 +1,6 @@
 ---
 title: "Gatsby Builds Dashboard"
-date: "2023-01-31"
+timeline: "2023-01-31"
 featuredImage: "./builds-final-thumbnail.png"
 excerpt: "This revised dashboard enabled Gatsby to come out of beta and launch its commercial offering."
 tags: ["DX"]

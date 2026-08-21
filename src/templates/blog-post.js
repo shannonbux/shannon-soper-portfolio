@@ -77,7 +77,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
-        year: date(formatString: "YYYY")
+        year: timeline(formatString: "YYYY")
         isBlogPost
         role
         months

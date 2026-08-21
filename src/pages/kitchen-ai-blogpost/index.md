@@ -1,6 +1,6 @@
 ---
 title: Designing Kitchen.ai v0.1
-date: 2024-03-15
+timeline: 2024-03-15
 featuredImage: "Recipe-detail-page.jpg"
 excerpt: I designed an app that uses AI to make smart grocery shopping lists, organized by store sections and updated according to your kitchen’s contents.
 tags: ["SIDE PROJECTS"]

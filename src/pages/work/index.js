@@ -95,7 +95,9 @@ export default function Work({ data }) {
                     color: #333333;
                   `}
                 >
-                  {node.frontmatter.date}
+                  {[node.frontmatter.months && `${node.frontmatter.months} months`, node.frontmatter.year]
+                    .filter(Boolean)
+                    .join(", ")}
                 </div>
                 <p
                   css={css`
@@ -117,7 +119,7 @@ export default function Work({ data }) {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___timeline], order: DESC }
       filter: {
         frontmatter: { isBlogPost: { ne: true }, hidden: { ne: true } }
       }
@@ -128,7 +130,8 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMMM D, YYYY")
+            year: timeline(formatString: "YYYY")
+            months
             tags
             featuredImage {
               childImageSharp {

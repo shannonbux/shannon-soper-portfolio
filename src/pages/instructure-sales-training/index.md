@@ -1,6 +1,6 @@
 ---
 title: "Instructure Sales Training"
-date: "2015-07-31"
+timeline: "2015-07-31"
 featuredImage: "badges.png"
 excerpt: "I created and ran a month-long online course to train sales people in a new methodology."
 tags: ["GROWTH"]
