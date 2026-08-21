@@ -30,7 +30,7 @@ function Meta({ company, role, timeline }) {
         <div
           key={label}
           css={css`
-            margin-bottom: ${space(1)};
+            margin-bottom: ${space(1.5)};
           `}
         >
           <div
@@ -45,7 +45,7 @@ function Meta({ company, role, timeline }) {
           </div>
           <div
             css={css`
-              font-size: 16px;
+              font-size: 12px;
               color: #333333;
             `}
           >
