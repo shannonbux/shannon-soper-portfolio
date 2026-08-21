@@ -4,6 +4,9 @@ date: "2025-06-17"
 featuredImage: "quarantine-preview.jpg"
 excerpt: "I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way for users to save and view why the status changed."
 tags: ["DX"]
+role: "Senior Product Designer"
+months: "2"
+year: 2025
 ---
  
 **Role:** Senior Product Designer (generative research, IA, interaction design, usability testing)

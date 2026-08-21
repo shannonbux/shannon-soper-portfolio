@@ -5,6 +5,9 @@ date: 2024-02-06
 featuredImage: "thumbnail.jpg"
 excerpt: AI is great at empowering users to analyze video transcripts.
 tags: ["AI & AGENTS"]
+role: ""
+months: ""
+year: 2024
 ---
 From November 2023 to January 2024, I did contract work for [BuildBetter.ai](https://buildbetter.ai/), an early-stage startup whose goal was to empower product teams to use AI to summarize unwieldy UX research and make faster, better product decisions. The features that were novel in 2023 are now common in Claude, ChatGPT, and more.
 

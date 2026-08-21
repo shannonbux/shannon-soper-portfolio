@@ -4,6 +4,9 @@ date: "2018-06-16"
 featuredImage: "tutorial-sidebar.png"
 excerpt: "More users finished the tutorial after my redesign. I broke up the content into bite-sized pieces and reduced pesky errors through better code snippet design."
 tags: ["DX"]
+role: ""
+months: ""
+year: 2018
 ---
 
 (_article under construction_)
