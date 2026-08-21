@@ -10,8 +10,9 @@ import { space, CONTENT_MAX_WIDTH } from "../utils/spacing";
 // Timeline is whatever the article's frontmatter says — "2018 (3 months)",
 // "February 2024 - Ongoing", anything. It is printed verbatim rather than
 // composed, so the phrasing stays the author's.
-function Meta({ role, timeline }) {
+function Meta({ company, role, timeline }) {
   const rows = [
+    [`Company`, company],
     [`Timeline`, timeline],
     [`My Role`, role],
   ].filter(([, value]) => value);
@@ -34,8 +35,9 @@ function Meta({ role, timeline }) {
         >
           <div
             css={css`
-              font-size: 16px;
+              font-size: 12px;
               font-weight: 300;
+              text-transform: uppercase;
               color: #767676;
             `}
           >
@@ -60,19 +62,6 @@ export default function BlogPost({ data }) {
   return (
     <Layout>
       <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
-        {!post.frontmatter.isBlogPost && post.frontmatter.company && (
-          <div
-            css={css`
-              font-size: 12px;
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-              color: #767676;
-              margin-bottom: ${space(1)};
-            `}
-          >
-            {post.frontmatter.company}
-          </div>
-        )}
         <h1
           css={css`
             margin-bottom: ${space(1)};
@@ -105,6 +94,7 @@ export default function BlogPost({ data }) {
               </p>
             )}
             <Meta
+              company={post.frontmatter.company}
               role={post.frontmatter.role}
               timeline={post.frontmatter.timeline}
             />
