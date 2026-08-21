@@ -4,6 +4,9 @@ date: "2018-10-12"
 featuredImage: "hacktoberfest-landing-page.png"
 excerpt: "I partnered with a developer to make it easy for open source folks to contribute to Gatsby. Gatsby appeared in Hacktoberfest’s top projects to contribute to in 2018. "
 tags: ["GROWTH"]
+company: "Gatsby"
+role: "Product Designer"
+timeline: "2018 (1 month)"
 ---
 
 [Hacktoberfest](https://hacktoberfest.digitalocean.com/) is a celebration of open source projects every October. To participate, you sign up at [this website](https://hacktoberfest.digitalocean.com/), get a number of PR’s merged to a participating open source project, and get a t-shirt.

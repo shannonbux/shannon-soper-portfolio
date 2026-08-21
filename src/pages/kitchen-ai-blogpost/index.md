@@ -4,6 +4,9 @@ date: 2024-03-15
 featuredImage: "Recipe-detail-page.jpg"
 excerpt: I designed an app that uses AI to make smart grocery shopping lists, organized by store sections and updated according to your kitchen’s contents.
 tags: ["SIDE PROJECTS"]
+company: "HOME"
+role: "Product Designer"
+timeline: "February 2024 - Ongoing"
 ---
 I’ve been working on a side project called Kitchen.ai. It’s an app that uses AI to make smart grocery shopping lists, organized by store sections and updated according to your kitchen’s contents.
 

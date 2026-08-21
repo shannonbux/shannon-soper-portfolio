@@ -4,6 +4,9 @@ date: "2015-07-31"
 featuredImage: "badges.png"
 excerpt: "I created and ran a month-long online course to train sales people in a new methodology."
 tags: ["GROWTH"]
+company: "Instructure"
+role: "Instructional Designer"
+timeline: "2015 (4 months)"
 ---
 
 Back in 2015, the VP of Sales at Instructure told me that the 250+ sales people in his organization were not using a [_The Challenger Sale_](https://www.challengerinc.com/) methodology he wanted them to use. **He asked me to help them adopt the new methodology**. As the company’s sole instructional designer, I got to work creating a series of learning experiences with effective incentives.

@@ -4,12 +4,10 @@ date: "2025-06-17"
 featuredImage: "quarantine-preview.jpg"
 excerpt: "I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way for users to save and view why the status changed."
 tags: ["DX"]
+company: "Trunk"
+role: "Senior Product Designer"
+timeline: "2025 (3 months)"
 ---
- 
-**Role:** Senior Product Designer (generative research, IA, interaction design, usability testing)
-**Team:** PM, Engineer, Product Designer (me)
-**Timeline:** 8 weeks; shipped Q2 2025
-**Platform:** Trunk Flaky Tests — a CI tool that detects and quarantines unreliable tests
  
 ## TL;DR
  

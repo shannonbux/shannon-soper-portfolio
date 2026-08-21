@@ -5,6 +5,9 @@ featuredImage: "portfolio-tour-first-slide.png"
 excerpt: "A collection of portfolio presentations that showcase most of my Gatsby projects."
 hidden: true
 tags: []
+company: "Gatsby"
+role: ""
+timeline: ""
 ---
 
 Sit back and keep your arms and legs inside the car for a roller-coaster ride through my first years as a product designer at Gatsby. I was the first employee and first designer at the startup and had so much fun doing these design projects! 

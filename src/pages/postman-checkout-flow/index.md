@@ -4,6 +4,9 @@ date: "2022-02-05"
 featuredImage: "feature-comparison-table-hero.png"
 excerpt: "Successfully helped more users decide Postman was worth purchasing by replacing the checkout flow's card design with a feature comparison table."
 tags: ["GROWTH"]
+company: "Postman"
+role: "Product Designer"
+timeline: "2022 (2 months)"
 ---
 
 I redesigned Postman's checkout flow by replacing a card design with a feature comparison table.

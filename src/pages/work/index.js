@@ -95,7 +95,7 @@ export default function Work({ data }) {
                     color: #333333;
                   `}
                 >
-                  {node.frontmatter.date}
+                  {node.frontmatter.timeline}
                 </div>
                 <p
                   css={css`
@@ -128,7 +128,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMMM D, YYYY")
+            timeline
             tags
             featuredImage {
               childImageSharp {
