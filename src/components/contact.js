@@ -56,7 +56,7 @@ const button = css`
   padding: 0 24px;
   border: none;
   border-radius: 20px;
-  background: #ed5800;
+  background: #ec5800;
   color: #ffffff;
   font-family: Merriweather Sans, sans-serif;
   font-size: 12px;
@@ -68,7 +68,7 @@ const button = css`
     background: #d44f00;
   }
   :active {
-    background: #bb4600;
+    background: #bd4600;
   }
 `;
 
