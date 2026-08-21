@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { css } from "@emotion/react";
 import { Link, graphql } from "gatsby";
 import { rhythm } from "../../utils/typography";
-import { space, CONTENT_MAX_WIDTH } from "../../utils/spacing";
+import { space } from "../../utils/spacing";
 import Layout from "../../components/layout";
 import { TagFilter, TagList } from "../../components/tags";
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -23,7 +23,7 @@ export default function Work({ data }) {
 
   return (
     <Layout>
-      <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
+      <div>
         <h1
           css={css`
             margin-bottom: 8px;
@@ -135,7 +135,7 @@ export const query = graphql`
                   layout: CONSTRAINED
                   width: 1100
                   aspectRatio: 1.5
-                  sizes: "(max-width: 544px) 100vw, 512px"
+                  sizes: "(max-width: 813px) 100vw, (max-width: 1253px) 45vw, 510px"
                 )
               }
             }

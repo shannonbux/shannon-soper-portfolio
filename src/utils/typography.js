@@ -21,6 +21,7 @@ kirkhamTheme.baseLineHeight = 1.4
 kirkhamTheme.headerLineHeight = 1.3
 kirkhamTheme.scaleRatio = 1.8
 kirkhamTheme.headerWeight = 500
+kirkhamTheme.bodyWeight = 300
 kirkhamTheme.overrideThemeStyles = ({ rhythm }, options) => ({
     'p *:last-child:not(.gatsby-resp-image-wrapper)': {
       marginBottom: `40px`, // space(5) — see src/utils/spacing.js
