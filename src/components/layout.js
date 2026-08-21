@@ -12,6 +12,7 @@ const HeaderLink = ({ to, children }) => {
       css={{
         fontFamily: `Merriweather Sans, sans-serif`,
         fontSize: 16,
+        fontWeight: 300,
         color: `#333333`,
         textDecoration: `none`,
         padding: 0,
@@ -19,14 +20,14 @@ const HeaderLink = ({ to, children }) => {
         ":hover": {
           textDecoration: `underline`,
           textUnderlineOffset: `3px`,
-          textDecorationThickness: `2px`,
+          textDecorationThickness: `1px`,
           textDecorationColor: `#333333`,
         },
       }}
       activeStyle={{
         textDecoration: `underline`,
         textUnderlineOffset: `3px`,
-        textDecorationThickness: `2px`,
+        textDecorationThickness: `1px`,
         textDecorationColor: `#333333`,
       }}
       to={to}
@@ -89,7 +90,7 @@ export default function Layout({ children }) {
           <h3
             css={css`
               margin: 0;
-              font-weight: 400;
+              font-weight: 300;
               font-style: normal;
               font-size: 16px;
               line-height: 1.2;
