@@ -94,7 +94,7 @@ const button = css`
   padding: 0 24px;
   border: none;
   border-radius: 20px;
-  background: #ec5800;
+  background: #2c46a8;
   color: #ffffff;
   font-family: Merriweather Sans, sans-serif;
   font-size: 16px;
@@ -103,10 +103,10 @@ const button = css`
   text-decoration: none;
   cursor: pointer;
   :hover {
-    background: #d44f00;
+    background: #283f97;
   }
   :active {
-    background: #bd4600;
+    background: #233886;
   }
 `;
 
