@@ -41,7 +41,8 @@ export default function Blog({ data }) {
                   css={css`
                     display: block;
                     margin-bottom: 8px;
-                    color: gray;
+                    font-size: 12px;
+                    color: #333333;
                   `}
                 >
                   {node.frontmatter.date}

@@ -25,7 +25,8 @@ export default function BlogPost({ data }) {
         </h1>
         <div
           css={css`
-            color: gray;
+            font-size: 12px;
+            color: #333333;
             margin-bottom: ${space(3)};
           `}
         >
