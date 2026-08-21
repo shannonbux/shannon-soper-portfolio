@@ -5,7 +5,9 @@ import kirkhamTheme from "typography-theme-kirkham"
 //import "fontsource-league-gothic/latin.css"
 //import "fontsource-roboto/latin.css"
 //import "fontsource-alegreya/latin.css"
-import "fontsource-alegreya-sans/latin.css"
+// Alegreya Sans is no longer referenced anywhere; leaving the import would
+// download a font face nothing renders.
+//import "fontsource-alegreya-sans/latin.css"
 //import "fontsource-merriweather/latin.css"
 import "fontsource-merriweather-sans/latin.css"
 import "fontsource-merriweather-sans/400-italic.css"
@@ -13,12 +15,13 @@ import "./typography.css"
 
 console.log(kirkhamTheme)
 kirkhamTheme.headerFontFamily = [`Merriweather Sans`, `sans-serif`]
-kirkhamTheme.bodyFontFamily = [`Alegreya Sans`, `sans-serif`]
-kirkhamTheme.baseFontSize = `18px`
+kirkhamTheme.bodyFontFamily = [`Merriweather Sans`, `sans-serif`]
+kirkhamTheme.baseFontSize = `16px`
 kirkhamTheme.baseLineHeight = 1.4
 kirkhamTheme.headerLineHeight = 1.3
 kirkhamTheme.scaleRatio = 1.8
 kirkhamTheme.headerWeight = 500
+kirkhamTheme.bodyWeight = 300
 kirkhamTheme.overrideThemeStyles = ({ rhythm }, options) => ({
     'p *:last-child:not(.gatsby-resp-image-wrapper)': {
       marginBottom: `40px`, // space(5) — see src/utils/spacing.js

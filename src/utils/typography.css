@@ -35,9 +35,11 @@ h3 {
 }
 
 p {
-  font-family: Alegreya Sans;
+  font-family: Merriweather Sans;
   font-style: normal;
-  font-weight: normal;
+  /* Merriweather Sans runs heavier than Alegreya Sans did at the same weight.
+     300 is already downloaded — latin.css ships 300 through 800. */
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.45;
 

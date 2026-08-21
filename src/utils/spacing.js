@@ -25,7 +25,10 @@ export const spaceValue = (units) => units * UNIT
 // Page-level widths. Not spacing, but they belong with it: these are the other
 // numbers that decide whether two pages line up.
 export const PAGE_MAX_WIDTH = 1152 // outer shell, includes the gutter
-export const CONTENT_MAX_WIDTH = 800 // prose column: articles, Blog, Work
+// Prose column: one Work tile wide. At full width the shell gives 1051px of
+// content, minus the 32px grid gap, halved — 509.6px, rounded to the grid.
+// Narrow enough to keep article line length in a readable range.
+export const CONTENT_MAX_WIDTH = 512
 
 // Page gutter. The shell padding, which sets the left edge everything aligns to.
 export const GUTTER = {

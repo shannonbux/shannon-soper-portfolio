@@ -2,13 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import { CONTENT_MAX_WIDTH } from "../utils/spacing";
 import Layout from "../components/layout"
 import { rhythm } from "../utils/typography"
 
 export default function About({ data }) {
   return (
     <Layout>
-      <div css={{ maxWidth: 700 }}>
+      <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
         <h1>Nice to meet you :)</h1>
         <p>
           I’m a Product Designer with a passion for solving difficult design

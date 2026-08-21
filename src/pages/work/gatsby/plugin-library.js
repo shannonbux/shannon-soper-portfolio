@@ -1,12 +1,13 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
+import { CONTENT_MAX_WIDTH } from "../../../utils/spacing";
 import Layout from "../../../components/layout"
 
 export default function PluginLibrary() {
   return (
     <Layout>
-      <div css={{ maxWidth: 700, marginBottom: 32 }}>
+      <div css={{ maxWidth: CONTENT_MAX_WIDTH, marginBottom: 32 }}>
         <h1 css={{ marginBottom: 24 }}>Gatsby Plugin Library</h1>
         <StaticImage
           src="../../library/plugin-tweet.png"
