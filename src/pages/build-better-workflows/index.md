@@ -1,10 +1,11 @@
 ---
 title: Analyzing video transcripts with AI
 isBlogPost: false
-timeline: 2024-02-06
+date: 2024-02-06
 featuredImage: "thumbnail.jpg"
 excerpt: AI is great at empowering users to analyze video transcripts.
 tags: ["AI & AGENTS"]
+company: "BuildBetter"
 role: ""
 months: ""
 ---

@@ -1,9 +1,10 @@
 ---
 title: "Postman Checkout Flow"
-timeline: "2022-02-05"
+date: "2022-02-05"
 featuredImage: "feature-comparison-table-hero.png"
 excerpt: "Successfully helped more users decide Postman was worth purchasing by replacing the checkout flow's card design with a feature comparison table."
 tags: ["GROWTH"]
+company: "Postman"
 role: ""
 months: ""
 ---

@@ -119,7 +119,7 @@ export default function Work({ data }) {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___timeline], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: {
         frontmatter: { isBlogPost: { ne: true }, hidden: { ne: true } }
       }
@@ -130,7 +130,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            year: timeline(formatString: "YYYY")
+            year: date(formatString: "YYYY")
             months
             tags
             featuredImage {

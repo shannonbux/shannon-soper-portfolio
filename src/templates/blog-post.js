@@ -3,29 +3,49 @@ import { css } from "@emotion/react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import { space, CONTENT_MAX_WIDTH } from "../utils/spacing";
-import { TagList } from "../components/tags";
 
 // Work articles carry My Role and Timeline where a blog post carries a date.
 // Either line is skipped when its frontmatter is still empty, so a half-filled
 // article shows what it has rather than a dangling label.
 function Meta({ role, months, year }) {
-  const timeline = [months && `${months} months`, year].filter(Boolean).join(`, `);
+  const timeline = [year, months && `~${months} months`]
+    .filter(Boolean)
+    .join(` `)
+    .replace(/(\d) ~/, `$1 (~`);
   const rows = [
+    [`Timeline`, months && year ? `${timeline})` : timeline],
     [`My Role`, role],
-    [`Timeline`, timeline],
   ].filter(([, value]) => value);
 
   if (!rows.length) {
     return null;
   }
   return (
-    <>
+    <div
+      css={css`
+        margin-bottom: ${space(4)};
+      `}
+    >
       {rows.map(([label, value]) => (
-        <div key={label}>
-          <strong>{label}:</strong> {value}
+        <div
+          key={label}
+          css={css`
+            margin-bottom: ${space(1)};
+          `}
+        >
+          <div
+            css={css`
+              font-size: 12px;
+              font-weight: 600;
+              color: #767676;
+            `}
+          >
+            {label}
+          </div>
+          <div css={{ fontSize: 16 }}>{value}</div>
         </div>
       ))}
-    </>
+    </div>
   );
 }
 
@@ -34,12 +54,19 @@ export default function BlogPost({ data }) {
   return (
     <Layout>
       <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
-        <TagList
-          tags={post.frontmatter.tags}
-          css={css`
-            margin-bottom: ${space(1.5)};
-          `}
-        />
+        {!post.frontmatter.isBlogPost && post.frontmatter.company && (
+          <div
+            css={css`
+              font-size: 12px;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: #333333;
+              margin-bottom: ${space(1)};
+            `}
+          >
+            {post.frontmatter.company}
+          </div>
+        )}
         <h1
           css={css`
             margin-bottom: ${space(1)};
@@ -47,23 +74,37 @@ export default function BlogPost({ data }) {
         >
           {post.frontmatter.title}
         </h1>
-        <div
-          css={css`
-            font-size: 12px;
-            color: #333333;
-            margin-bottom: ${space(3)};
-          `}
-        >
-          {post.frontmatter.isBlogPost ? (
-            post.frontmatter.date
-          ) : (
+        {post.frontmatter.isBlogPost ? (
+          <div
+            css={css`
+              font-size: 12px;
+              color: #333333;
+              margin-bottom: ${space(3)};
+            `}
+          >
+            {post.frontmatter.date}
+          </div>
+        ) : (
+          <>
+            {post.frontmatter.excerpt && (
+              <p
+                css={css`
+                  font-size: 20px;
+                  line-height: 1.5;
+                  color: #767676;
+                  margin-bottom: ${space(3)};
+                `}
+              >
+                {post.frontmatter.excerpt}
+              </p>
+            )}
             <Meta
               role={post.frontmatter.role}
               months={post.frontmatter.months}
               year={post.frontmatter.year}
             />
-          )}
-        </div>
+          </>
+        )}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -77,11 +118,12 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
-        year: timeline(formatString: "YYYY")
+        year: date(formatString: "YYYY")
         isBlogPost
+        company
+        excerpt
         role
         months
-        tags
       }
     }
   }

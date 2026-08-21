@@ -1,10 +1,11 @@
 ---
 title: "The Nope Game App"
-timeline: "2019-11-07"
+date: "2019-11-07"
 featuredImage: "./header-image-nope-game.png"
 excerpt: "This game helps me decide whether to say yes or no when someone asks me to do something."
 
 tags: ["SIDE PROJECTS"]
+company: ""
 role: ""
 months: ""
 ---

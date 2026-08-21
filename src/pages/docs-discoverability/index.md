@@ -1,9 +1,10 @@
 ---
 title: "Gatsby Documentation Sidebar"
-timeline: "2018-07-31"
+date: "2018-07-31"
 featuredImage: "expand-all-button.png"
 excerpt: "I revised documentation navigation to match users’ mental models and vocabulary."
 tags: ["DX"]
+company: "Gatsby"
 role: ""
 months: ""
 ---

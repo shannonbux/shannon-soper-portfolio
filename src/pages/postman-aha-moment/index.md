@@ -1,9 +1,10 @@
 ---
 title: "Postman Onboarding"
-timeline: "2021-07-31"
+date: "2021-07-31"
 featuredImage: "./header-image-postman-aha-moment.png"
 excerpt: "This design helped more Postman users experience their first “aha!” moment."
 tags: ["GROWTH"]
+company: "Postman"
 role: ""
 months: ""
 ---

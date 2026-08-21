@@ -1,9 +1,10 @@
 ---
 title: "Trunk Quarantining Feature"
-timeline: "2025-06-17"
+date: "2025-06-17"
 featuredImage: "quarantine-preview.jpg"
 excerpt: "I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way for users to save and view why the status changed."
 tags: ["DX"]
+company: "Trunk"
 role: "Senior Product Designer"
 months: "2"
 ---
