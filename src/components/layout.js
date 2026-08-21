@@ -4,7 +4,7 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 import "./layout.css"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { rhythm } from "../utils/typography"
+import { space, spaceValue, GUTTER, PAGE_MAX_WIDTH } from "../utils/spacing"
 
 const HeaderLink = ({ to, children }) => {
   return (
@@ -15,7 +15,7 @@ const HeaderLink = ({ to, children }) => {
         color: `#333333`,
         textDecoration: `none`,
         padding: 0,
-        marginLeft: 24,
+        marginLeft: spaceValue(3),
         ":hover": {
           textDecoration: `underline`,
           textUnderlineOffset: `3px`,
@@ -51,13 +51,13 @@ export default function Layout({ children }) {
     <div
       css={css`
         margin: 0 auto;
-        max-width: 1152px;
-        padding: ${rhythm(3 / 4)};
-        padding-top: ${rhythm(1 / 2)};
+        max-width: ${PAGE_MAX_WIDTH}px;
+        padding: ${GUTTER.narrow};
+        padding-top: ${space(1.5)};
         position: relative;
         @media (min-width: 720px) {
-          padding: ${rhythm(2)};
-          padding-top: ${rhythm(1.5)};
+          padding: ${GUTTER.wide};
+          padding-top: ${space(5)};
         }
       `}
     >
@@ -83,7 +83,7 @@ export default function Layout({ children }) {
             layout="fixed"
             placeholder="none"
             css={{
-              marginRight: rhythm(1 / 4),
+              marginRight: space(1),
             }}
           />
           <h3
@@ -111,7 +111,7 @@ export default function Layout({ children }) {
         </div>
       </div>
 
-      <div css={{ marginBottom: rhythm(2) }} />
+      <div css={{ marginBottom: space(6) }} />
       {children}
     </div>
   )
