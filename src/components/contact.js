@@ -84,29 +84,50 @@ function GitHubIcon() {
   );
 }
 
-// Material filled button: 40dp tall, fully rounded, 24dp side padding. Hover and
-// press darken the container, standing in for Material's state layers.
-const button = css`
+// Material button pair. Both share the 40dp height, fully rounded shape and
+// 24dp side padding; filled carries the primary action, outlined the rest.
+// Hover and press use translucent overlays of the brand blue, standing in for
+// Material's state layers.
+const BLUE = `#2c46a8`;
+
+const buttonBase = css`
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 40px;
   padding: 0 24px;
-  border: none;
   border-radius: 20px;
-  background: #2c46a8;
-  color: #ffffff;
   font-family: Merriweather Sans, sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
+`;
+
+const filledButton = css`
+  ${buttonBase};
+  border: none;
+  background: ${BLUE};
+  color: #ffffff;
   :hover {
     background: #283f97;
   }
   :active {
     background: #233886;
+  }
+`;
+
+const outlinedButton = css`
+  ${buttonBase};
+  border: 1px solid ${BLUE};
+  background: transparent;
+  color: ${BLUE};
+  :hover {
+    background: rgba(44, 70, 168, 0.08);
+  }
+  :active {
+    background: rgba(44, 70, 168, 0.16);
   }
 `;
 
@@ -140,7 +161,12 @@ export function ContactButtons({ className }) {
       className={className}
     >
       {CONTACTS.map(({ key, label, href, external }) => (
-        <a key={key} href={href} css={button} {...externalProps(external)}>
+        <a
+          key={key}
+          href={href}
+          css={key === "resume" ? filledButton : outlinedButton}
+          {...externalProps(external)}
+        >
           {label}
         </a>
       ))}
