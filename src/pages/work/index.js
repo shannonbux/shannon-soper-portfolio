@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { css } from "@emotion/react";
 import { Link, graphql } from "gatsby";
 import { rhythm } from "../../utils/typography";
+import { space } from "../../utils/spacing";
 import Layout from "../../components/layout";
 import { TagFilter, TagList } from "../../components/tags";
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -43,7 +44,7 @@ export default function Work({ data }) {
           onSelect={selectTag}
           onClear={() => setSelected(null)}
           css={css`
-            margin-bottom: 2.1rem;
+            margin-bottom: ${space(5)};
           `}
         />
         {visible.length === 0 ? (

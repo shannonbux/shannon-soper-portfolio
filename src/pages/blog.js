@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { Link, graphql } from "gatsby";
+import { space } from "../utils/spacing";
 import Layout from "../components/layout";
 import { rhythm } from "../utils/typography";
 
@@ -10,7 +11,7 @@ export default function Blog({ data }) {
       <div css={{ maxWidth: 800 }}>
         <h1
           css={css`
-            margin-bottom: 2.1rem;
+            margin-bottom: ${space(5)};
           `}
         >
           Blog posts

@@ -9,12 +9,12 @@ button {
 }
 
 .gatsby-resp-image-wrapper {
-  margin-bottom: 1.08rem;
+  margin-bottom: 16px; /* space(2) */
   text-align: center;
 }
 
 video {
-  margin-bottom: 1.08rem;
+  margin-bottom: 16px; /* space(2) */
   width: 100%;
 }
 
@@ -33,7 +33,7 @@ a {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
-  margin-bottom: 1.08rem;
+  margin-bottom: 16px; /* space(2) */
 }
 .videoWrapper iframe {
   position: absolute;

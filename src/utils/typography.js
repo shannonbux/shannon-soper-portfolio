@@ -21,7 +21,7 @@ kirkhamTheme.scaleRatio = 1.8
 kirkhamTheme.headerWeight = 500
 kirkhamTheme.overrideThemeStyles = ({ rhythm }, options) => ({
     'p *:last-child:not(.gatsby-resp-image-wrapper)': {
-      marginBottom: rhythm(3/2),
+      marginBottom: `40px`, // space(5) — see src/utils/spacing.js
     }
   })
 
