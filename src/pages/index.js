@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/react"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
-import { ContactLinks, ResumeButton } from "../components/contact"
+import { ContactButtons } from "../components/contact"
 import { StaticImage } from "gatsby-plugin-image"
 
 // Peach block behind the hero. Flip to true to bring it back.
@@ -48,12 +48,7 @@ export default function Home({ data }) {
             </span>{" "}
             with 8 years’ experience designing elegant solutions to complex problems.
           </h1>
-          <ResumeButton
-            css={css`
-              margin-bottom: 24px;
-            `}
-          />
-          <ContactLinks />
+          <ContactButtons />
         </div>
         <div
           css={{

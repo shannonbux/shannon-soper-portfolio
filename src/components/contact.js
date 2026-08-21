@@ -3,6 +3,41 @@ import { css } from "@emotion/react";
 
 export const RESUME_URL = "https://shannon-soper.com/Resume%202026.pdf";
 
+// Destinations live here once, so the button row and the link list below can
+// never drift apart. `handle` is what the link list shows; `label` is what the
+// buttons show. mailto entries deliberately carry no target.
+const CONTACTS = [
+  { key: "resume", label: "Resume", handle: "Resume", href: RESUME_URL, external: true },
+  {
+    key: "linkedin",
+    label: "LinkedIn",
+    handle: "/shannonsoper",
+    href: "https://www.linkedin.com/in/shannonsoper/",
+    external: true,
+  },
+  {
+    key: "github",
+    label: "GitHub",
+    handle: "shannonbux",
+    href: "https://github.com/shannonbux",
+    external: true,
+  },
+  {
+    key: "instagram",
+    label: "Instagram",
+    handle: "@discovered_ux",
+    href: "https://www.instagram.com/discovered_ux/",
+    external: true,
+  },
+  {
+    key: "email",
+    label: "Email",
+    handle: "shannon.soper@gmail.com",
+    href: "mailto:shannon.soper@gmail.com",
+    external: false,
+  },
+];
+
 // Official brand marks, filled single paths, rendered in currentColor so they
 // take the link colour rather than brand colours:
 //   LinkedIn  — Bootstrap Icons (MIT), 16x16 grid
@@ -91,21 +126,38 @@ const link = css`
   }
 `;
 
-export function ResumeButton({ className }) {
+const externalProps = (external) =>
+  external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+
+export function ContactButtons({ className }) {
   return (
-    <a
-      href={RESUME_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      css={button}
+    <div
+      css={css`
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      `}
       className={className}
     >
-      Resume
-    </a>
+      {CONTACTS.map(({ key, label, href, external }) => (
+        <a key={key} href={href} css={button} {...externalProps(external)}>
+          {label}
+        </a>
+      ))}
+    </div>
   );
 }
 
+// Not currently rendered. Kept because it is the alternative treatment we
+// costed out: text links showing the actual handle and address, each with its
+// brand mark. Swap ContactButtons for this in index.js to bring it back.
 export function ContactLinks({ className }) {
+  const ICONS = {
+    linkedin: LinkedInIcon,
+    github: GitHubIcon,
+    email: MailIcon,
+    instagram: InstagramIcon,
+  };
   return (
     <div
       css={css`
@@ -115,37 +167,17 @@ export function ContactLinks({ className }) {
       `}
       className={className}
     >
-      <a
-        href="https://www.linkedin.com/in/shannonsoper/"
-        target="_blank"
-        rel="noopener noreferrer"
-        css={link}
-      >
-        <LinkedInIcon />
-        /shannonsoper
-      </a>
-      <a
-        href="https://github.com/shannonbux"
-        target="_blank"
-        rel="noopener noreferrer"
-        css={link}
-      >
-        <GitHubIcon />
-        shannonbux
-      </a>
-      <a href="mailto:shannon.soper@gmail.com" css={link}>
-        <MailIcon />
-        shannon.soper@gmail.com
-      </a>
-      <a
-        href="https://www.instagram.com/discovered_ux/"
-        target="_blank"
-        rel="noopener noreferrer"
-        css={link}
-      >
-        <InstagramIcon />
-        @discovered_ux
-      </a>
+      {CONTACTS.filter(({ key }) => key !== "resume").map(
+        ({ key, handle, href, external }) => {
+          const Icon = ICONS[key];
+          return (
+            <a key={key} href={href} css={link} {...externalProps(external)}>
+              <Icon />
+              {handle}
+            </a>
+          );
+        }
+      )}
     </div>
   );
 }
