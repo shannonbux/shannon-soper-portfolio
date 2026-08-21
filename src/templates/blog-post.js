@@ -35,9 +35,8 @@ function Meta({ company, role, timeline }) {
         >
           <div
             css={css`
-              font-size: 12px;
+              font-size: 16px;
               font-weight: 300;
-              text-transform: uppercase;
               color: #767676;
               margin-bottom: 2px;
             `}
@@ -46,7 +45,7 @@ function Meta({ company, role, timeline }) {
           </div>
           <div
             css={css`
-              font-size: 12px;
+              font-size: 16px;
               font-weight: 400;
               color: #333333;
             `}
