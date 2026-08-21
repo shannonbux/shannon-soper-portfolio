@@ -11,7 +11,7 @@ export default function Blog({ data }) {
       <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
         <h1
           css={css`
-            margin-bottom: ${space(5)};
+            margin-bottom: ${space(3)};
           `}
         >
           Blog posts
