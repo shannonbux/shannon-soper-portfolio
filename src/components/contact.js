@@ -59,7 +59,7 @@ const button = css`
   background: #ec5800;
   color: #ffffff;
   font-family: Merriweather Sans, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
