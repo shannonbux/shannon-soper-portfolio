@@ -78,12 +78,6 @@ function FilterChip({ label, active, onClick }) {
         :hover {
           background: #FFE8D4;
         }
-        /* Replaces the tap highlight suppressed in layout.css, so a press is
-           still acknowledged before React re-renders. Deeper than hover,
-           because on touch the hover fill sticks after the tap lands. */
-        :active {
-          background: #E5C2A5;
-        }
       `}
     >
       {label}
