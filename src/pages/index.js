@@ -17,6 +17,10 @@ function FeaturedArticle({ to, company, title, excerpt, children }) {
         text-align: left;
         text-decoration: none;
 
+        &:hover {
+          color: #333333;
+        }
+
         :hover h2 {
           text-decoration: underline;
           text-decoration-thickness: 1px;
