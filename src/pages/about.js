@@ -1,98 +1,90 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react";
+import { css } from "@emotion/react";
 
-import { css } from "@emotion/react"
+import Layout from "../components/layout";
 import { CONTENT_MAX_WIDTH, space } from "../utils/spacing";
-import Layout from "../components/layout"
-import { rhythm } from "../utils/typography"
 
-export default function About({ data }) {
+const externalLink = css`
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+`;
+
+export default function About() {
   return (
     <Layout>
-      <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
+      <main
+        css={css`
+          display: flex;
+          flex-direction: column;
+          gap: ${space(3)};
+          max-width: ${CONTENT_MAX_WIDTH}px;
+        `}
+      >
         <h1
           css={css`
-            margin-bottom: ${space(3)};
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 0;
           `}
         >
-          Nice to meet you :)
+          Talks
         </h1>
-        <p>
-          I’m a Product Designer with a passion for solving difficult design
-          problems. I have a background in teaching college-level writing and creating online learning experiences. In 2017, I switched to product design and have loved designing developer tools.
-        </p>
-        <p>
-          Other hobbies: cooking, reading science fiction and classic literature, playing piano and guitar, taking art and improv classes, and hiking with my family.
-        </p>
-        <h2>Talks</h2>
-        <h3>How Gatsby Does High-Impact, Low-Effort UX Research (and You Can Too!)</h3>
-        <div className="videoWrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ohWWW3XLg-s?start=758" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <h2>More Talks</h2>
-        <ul>
+        <ul
+          css={css`
+            list-style: disc outside;
+            margin: 0;
+            padding-left: 1.25em;
+
+            li {
+              font-weight: 400;
+              line-height: 1.5;
+            }
+
+            li + li {
+              margin-top: ${space(1)};
+            }
+          `}
+        >
           <li>
-          <a href="https://www.youtube.com/watch?v=PIhJtTboXZ0&t=1332s">
-              "How do you balance the needs of different user personas?"
-            </a>{" "}  —  <a href="https://evilmartians.com/">Evil Martians</a> roundtable discussion 2023
+            <a
+              css={externalLink}
+              href="https://www.youtube.com/watch?v=ohWWW3XLg-s&t=758s"
+            >
+              How Gatsby Does High-Impact, Low-Effort UX Research (and You Can
+              Too!)
+            </a>{" "}
+            — Gatsby
           </li>
           <li>
-            <a href="https://youtu.be/3VuZvTeXbKQ?list=PLR38WdMdLF9sFCz15rbSQzMQrYYZ-ObiO&t=122">
+            <a
+              css={externalLink}
+              href="https://www.youtube.com/watch?v=PIhJtTboXZ0&t=1332s"
+            >
+              “How do you balance the needs of different user personas?”
+            </a>{" "}
+            — Evil Martians roundtable discussion
+          </li>
+          <li>
+            <a
+              css={externalLink}
+              href="https://youtu.be/3VuZvTeXbKQ?list=PLR38WdMdLF9sFCz15rbSQzMQrYYZ-ObiO&t=122"
+            >
               The Ethics of Product Design
-            </a>{" "} — ENCRYPT Conference 2020
+            </a>{" "}
+            — ENCRYPT Conference
           </li>
           <li>
-            <a href="https://www.youtube.com/watch?v=Hp_cJGwT1Jc&list=PLR38WdMdLF9sFCz15rbSQzMQrYYZ-ObiO&index=4">
+            <a
+              css={externalLink}
+              href="https://www.youtube.com/watch?v=Hp_cJGwT1Jc&list=PLR38WdMdLF9sFCz15rbSQzMQrYYZ-ObiO&index=4"
+            >
               Gatsby Admin Product Design
-            </a>{" "} — Gatsby Conf 2020
+            </a>{" "}
+            — Gatsby Conf
           </li>
         </ul>
-        <br></br>
-        <h2>Side projects</h2>
-        <div>
-          <ul>
-            {/* <li>
-              <a href="https://thenopegame.gatsbyjs.io/">The Nope Game</a>{" "} — play this when you want to decide how strongly to say yes or no to a request
-            </li> */}
-            <li>
-              <a href="https://www.instagram.com/discovered_ux/">
-                Discovered UX
-              </a>{" "} — my Instagram account, chronicling software and physical designs that are delightful, dismal, and everything in between
-            </li>
-            <li>
-              <a href="http://watson.surge.sh/">Guide to Taking Care of Our Dog, Watson</a>
-            </li>
-          </ul>
-        </div>
-        <h2>Background</h2>
-        <div>
-          <ul>
-            <li>
-              <a href="/Resume 2026.pdf">Resume</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>Contact Info</h2>
-          <ul>
-            <li>
-              <a href="https://twitter.com/shannonb_ux">Follow me on Twitter</a>
-            </li>
-            <li>shannon.soper@gmail.com</li>
-          </ul>
-        </div>
-      </div>
+      </main>
     </Layout>
-  )
+  );
 }
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

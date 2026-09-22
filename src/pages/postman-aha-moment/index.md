@@ -30,10 +30,10 @@ I decided help the first group test out the platform as quickly as possible. We 
 The five usability tests I ran led my to this hypothesis: 
 - Low-intent users don’t see an obvious option to send a request during onboarding, even though that's what they want to do. If we increase the visibility of sending a request, more users will try it and become activated.
 
-### Old step 1: homepage
+## Old step 1: homepage
 ![The Postman App homepage showing many activity feeds and links to team information](Homepage-old-comment.jpg)
 
-### Old step 2: send request
+## Old step 2: send request
 Once users clicked on "Create New" and elected to send a new request, they saw this:
 ![A Postman workspace showing an empty API request input field](send-request-old-comment.jpg)
 
@@ -50,13 +50,13 @@ After these interviews, I concluded that an easily removable design would be the
 2. It would be easy to remove if it failed
 3. Because of the previous two reasons, it would cause the least internal resistance and ship quickly
 
-### New step 1: see send request option on homepage
+## New step 1: see send request option on homepage
 ![The Postman App homepage showing a shortcut to sending the first request](Homepage-new-comment.jpg)
 
-### New step 2: send request
+## New step 2: send request
 ![A Postman workspace showing an pre-filled API request input field](send-request-new-comment.jpg)
 
-### New step 3: see response
+## New step 3: see response
 ![The user's first request showing a response](response.jpg)
 
 ## Results
@@ -71,10 +71,10 @@ Increasing the number of users sending a first request did not increase the numb
 
 A colleague and I collaborated to create a followup experiment, based on the hypothesis that strongly and clearly nudging users to create a collection if they have sent X numbers of requests would help increase the number of activated users.
 
-### Old design
+## Old design
 ![A Postman workspace showing an empty state, nudging the user to create a collection](collectionscta-old.jpg)
 
-### New design
+## New design
 ![A Postman workspace showing a new version of the same empty state that includes a preview of collection features](collectionscta-new-comment.jpg)
 
 ## Results
@@ -82,16 +82,15 @@ This followup experiment added to the success of the first one. It strongly corr
 
 From this result, we learned that many users want to create collections once they understand what they are.
 
-### View old user flow in Figma!
+## View old user flow in Figma!
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkztr50mArdY9Gow8eh58bs%2FPortfolio-Website-Image-Files%3Fpage-id%3D23%253A776%26type%3Ddesign%26node-id%3D232-4503%26viewport%3D221%252C538%252C0.06%26t%3D1VzHzIQU3W53caNr-1%26scaling%3Dcontain%26starting-point-node-id%3D232%253A4503" allowfullscreen></iframe>
 
-### View new user flow in Figma!
+## View new user flow in Figma!
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkztr50mArdY9Gow8eh58bs%2FPortfolio-Website-Image-Files%3Fpage-id%3D23%253A776%26type%3Ddesign%26node-id%3D29-1965%26viewport%3D221%252C538%252C0.06%26t%3D1VzHzIQU3W53caNr-1%26scaling%3Dcontain%26starting-point-node-id%3D29%253A1965%26mode%3Ddesign" allowfullscreen></iframe>
 
 ## Final step
 Normally, experiments are only shown to a small percentage of users for a short time period, e.g. 1-2 weeks. If they are successful, we show the feature to all users.
 
 Because these two experiments were successful, they were turned on so **100% of users see them**. It continues to be exciting to see these simple steps make an impact!
-
 
 

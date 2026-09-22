@@ -8,22 +8,57 @@ button {
   touch-action: manipulation;
 }
 
-.gatsby-resp-image-wrapper {
-  margin-bottom: 16px; /* space(2) */
-  text-align: center;
-
-  /* Article images run twice the width of the reading column, extending right
-     into the rest of the shell. gatsby-remark-images writes max-width inline,
-     so overriding it needs !important. min() keeps the image inside the page
-     gutters once the viewport is narrower than the breakout width. */
-  max-width: none !important;
-  width: min(200%, calc(100vw - 32px));
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-@media (min-width: 720px) {
-  .gatsby-resp-image-wrapper {
-    width: min(200%, calc(100vw - 96px));
-  }
+.gatsby-resp-image-wrapper {
+  aspect-ratio: 3 / 2;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px; /* space(2) */
+  max-width: none !important;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gatsby-resp-image-wrapper .gatsby-resp-image-link,
+.gatsby-resp-image-wrapper .gatsby-resp-image-background-image {
+  height: 100% !important;
+  inset: 0 !important;
+  padding-bottom: 0 !important;
+  position: absolute !important;
+  width: 100% !important;
+}
+
+.gatsby-resp-image-wrapper .gatsby-resp-image-image {
+  height: 100% !important;
+  object-fit: cover !important;
+  width: 100% !important;
+}
+
+/*
+ * This side-by-side Uber / VS Code comparison is intentionally wide. Keeping
+ * its native ratio preserves both interfaces; the rest of the article imagery
+ * continues to use the shared 3:2 presentation crop above.
+ */
+.gatsby-resp-image-wrapper:has(img[alt*="Uber's search results screen"]) {
+  aspect-ratio: 4584 / 2160;
+}
+
+.article-content img:not(.gatsby-resp-image-image) {
+  aspect-ratio: 3 / 2;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  margin-bottom: 16px; /* space(2) */
+  object-fit: cover;
+  width: 100%;
 }
 
 video {
@@ -31,15 +66,38 @@ video {
   width: 100%;
 }
 
-@media (min-width: 720px) {
-  .markdown-image {
-    width: 50%;
-    margin: 0 auto;
-  }
+.markdown-image {
+  aspect-ratio: 3 / 2;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px; /* space(2) */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.markdown-image img {
+  border: 0;
+  border-radius: 0;
+  height: 100% !important;
+  inset: 0;
+  margin: 0 !important;
+  object-fit: cover;
+  position: absolute;
+  width: 100% !important;
 }
 
 a {
-  color: #4b44ca;
+  color: #2c46a8;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 150ms ease;
+}
+
+a:hover {
+  color: #5268bd;
 }
 
 .videoWrapper {

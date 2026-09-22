@@ -1,24 +1,18 @@
 import React from "react";
 import { css } from "@emotion/react";
 
-// The tag vocabulary. This array controls which chips appear in the Work
-// page filter bar, and in what order.
-//
-// A tag an article carries must match an entry here exactly — the strings are
-// compared literally, so "dx" will not match "DX". A tag in an article's
-// frontmatter but missing here still renders on tiles and article pages, but
-// gets no filter chip. A tag here that no article carries gets a chip that
-// always filters down to nothing.
+// The tag vocabulary controls the Work overview's sections and anchor links.
+// A tag an article carries must match `key` exactly.
 //
 // Per-article tags live in each src/pages/<slug>/index.md frontmatter:
 //   tags: ["DX", "GROWTH"]   several
 //   tags: ["DX"]             one
-//   tags: []                 none — hidden whenever any filter is active
+//   tags: []                 none — omitted from the categorized overview
 export const TAGS = [
-  "DX",
-  "GROWTH",
-  "AI & AGENTS",
-  "SIDE PROJECTS"
+  { id: "dx", key: "DX", label: "DX" },
+  { id: "growth", key: "GROWTH", label: "Growth" },
+  { id: "ai-agents", key: "AI & AGENTS", label: "AI & Agents" },
+  { id: "side-projects", key: "SIDE PROJECTS", label: "Side Projects" },
 ];
 
 const row = css`
@@ -39,17 +33,17 @@ const chip = (active) => css`
   gap: 8px;
   height: 32px;
   padding: 0 16px;
-  font-family: Merriweather Sans, sans-serif;
-  font-size: 12px;
-  font-weight: normal;
+  font-family: Cabin, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   letter-spacing: 0.06em;
   line-height: 1.3;
+  text-transform: uppercase;
   border-radius: 8px;
-  border: 1px solid #E5C2A5;
-  background: ${active ? `#FEF2E8` : `transparent`};
-  color: #A95207;
+  border: 1px solid #aab7e0;
+  background: ${active ? `#eef1fb` : `transparent`};
+  color: #2c46a8;
 `;
-
 
 export function TagList({ tags, className }) {
   if (!tags || tags.length === 0) {
@@ -66,44 +60,27 @@ export function TagList({ tags, className }) {
   );
 }
 
-function FilterChip({ label, active, onClick }) {
+export function TagNavigation({ tags = TAGS, className }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={active}
-      css={css`
-        ${chip(active)};
-        cursor: pointer;
-        :hover {
-          background: #FFE8D4;
-        }
-      `}
-    >
-      {label}
-    </button>
-  );
-}
+    <nav aria-label="Work categories" css={row} className={className}>
+      {tags.map(({ id, label }) => (
+        <a
+          key={id}
+          href={`#${id}`}
+          css={css`
+            ${chip(false)};
+            cursor: pointer;
+            text-decoration: none;
 
-// One tag at a time: `selected` is a single tag string, or null for no filter.
-// Choosing a tag replaces whatever was selected before, and choosing the
-// already-selected tag clears it.
-//
-// ALL is a control rather than a tag: it is deliberately not part of TAGS, so
-// it never lands on an article. It reads as active whenever no tag is
-// selected, which is the state it returns you to.
-export function TagFilter({ tags = TAGS, selected, onSelect, onClear, className }) {
-  return (
-    <div css={row} className={className}>
-      <FilterChip label="ALL" active={selected === null} onClick={onClear} />
-      {tags.map((tag) => (
-        <FilterChip
-          key={tag}
-          label={tag}
-          active={selected === tag}
-          onClick={() => onSelect(tag)}
-        />
+            :hover {
+              background: #eef1fb;
+              color: #5268bd;
+            }
+          `}
+        >
+          {label}
+        </a>
       ))}
-    </div>
+    </nav>
   );
 }

@@ -24,7 +24,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `src/pages/images/icons/hello.png`, // This path is relative to the root of the site.
+        icon: `src/pages/images/icons/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-image`,
@@ -44,10 +44,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              // The width images actually render at: twice the 512px reading
-              // column, since article images break out of it. Sources capped
-              // below this would upscale.
-              maxWidth: 1024,
+              // Article images now share the full reading container with the
+              // prose. Generate a source wide enough to stay crisp at that
+              // width without enlarging smaller originals.
+              maxWidth: 1600,
             },
           },
           `gatsby-remark-copy-linked-files`,
@@ -62,4 +62,4 @@ module.exports = {
       },
     },
   ],
-}
+};

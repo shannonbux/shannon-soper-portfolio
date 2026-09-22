@@ -1,8 +1,9 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-import { space, CONTENT_MAX_WIDTH } from "../utils/spacing";
+import { space } from "../utils/spacing";
 
 // Work articles carry My Role and Timeline where a blog post carries a date.
 // Either line is skipped when its frontmatter is still empty, so a half-filled
@@ -23,6 +24,7 @@ function Meta({ company, role, timeline }) {
   return (
     <div
       css={css`
+        font-family: Cabin, sans-serif;
         margin-bottom: ${space(4)};
       `}
     >
@@ -35,8 +37,9 @@ function Meta({ company, role, timeline }) {
         >
           <div
             css={css`
+              font-family: Cabin, sans-serif;
               font-size: 16px;
-              font-weight: 300;
+              font-weight: 400;
               color: #767676;
               margin-bottom: 2px;
             `}
@@ -45,12 +48,13 @@ function Meta({ company, role, timeline }) {
           </div>
           <div
             css={css`
+              font-family: Cabin, sans-serif;
               font-size: 16px;
               font-weight: 400;
               color: #333333;
             `}
           >
-            {value}
+            {label === `Company` ? value.toUpperCase() : value}
           </div>
         </div>
       ))}
@@ -60,9 +64,137 @@ function Meta({ company, role, timeline }) {
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
+  const isWorkArticle = !post.frontmatter.isBlogPost;
+  const featuredImage = getImage(post.frontmatter.featuredImage);
+  const heroImage = featuredImage && (
+    <GatsbyImage
+      image={featuredImage}
+      alt={post.frontmatter.title}
+      fetchpriority="high"
+      loading="eager"
+      css={css`
+        display: block;
+        height: 100% !important;
+        inset: 0 !important;
+        position: absolute !important;
+        width: 100%;
+      `}
+    />
+  );
+  const hero = heroImage && (
+    <div
+      css={css`
+        aspect-ratio: 2.04 / 1;
+        border: 1px solid #d3d3d3;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      `}
+    >
+      {heroImage}
+    </div>
+  );
+
+  if (isWorkArticle) {
+    return (
+      <Layout hero={hero} contentTop={featuredImage ? 0 : space(10)}>
+        <header
+          css={css`
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+            column-gap: ${space(8)};
+            margin-top: ${space(6)};
+            row-gap: ${space(2)};
+
+            @media (max-width: 720px) {
+              grid-template-columns: 1fr;
+              row-gap: ${space(4)};
+            }
+          `}
+        >
+          <div
+            css={css`
+              grid-column: 1 / -1;
+            `}
+          >
+            {post.frontmatter.company && (
+              <p
+                css={css`
+                  color: #333333;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 1.4;
+                  margin: 0 0 ${space(1)};
+                `}
+              >
+                {post.frontmatter.company.toUpperCase()}
+              </p>
+            )}
+            <h1
+              css={css`
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 1.2;
+                margin: 0;
+
+                @media (max-width: 720px) {
+                  font-size: 36px;
+                }
+              `}
+            >
+              {post.frontmatter.title}
+            </h1>
+          </div>
+          {post.frontmatter.excerpt && (
+            <p
+              css={css`
+                color: #767676;
+                font-size: 24px;
+                font-weight: 400;
+                grid-column: 1;
+                line-height: 1.45;
+                margin: 0;
+
+                @media (max-width: 720px) {
+                  font-size: 20px;
+                }
+              `}
+            >
+              {post.frontmatter.excerpt}
+            </p>
+          )}
+          <aside
+            css={css`
+              grid-column: 2;
+              grid-row: ${post.frontmatter.excerpt ? 2 : 1};
+
+              @media (max-width: 720px) {
+                grid-column: 1;
+                grid-row: auto;
+              }
+            `}
+          >
+            <Meta
+              role={post.frontmatter.role}
+              timeline={post.frontmatter.timeline}
+            />
+          </aside>
+        </header>
+        <article
+          className="article-content"
+          css={css`
+            margin-top: ${space(6)};
+          `}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </Layout>
+    );
+  }
+
   return (
     <Layout>
-      <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
+      <article className="article-content">
         <h1
           css={css`
             margin-bottom: ${space(1)};
@@ -70,39 +202,18 @@ export default function BlogPost({ data }) {
         >
           {post.frontmatter.title}
         </h1>
-        {post.frontmatter.isBlogPost ? (
-          <div
-            css={css`
-              font-size: 12px;
-              color: #333333;
-              margin-bottom: ${space(3)};
-            `}
-          >
-            {post.frontmatter.date}
-          </div>
-        ) : (
-          <>
-            {post.frontmatter.excerpt && (
-              <p
-                css={css`
-                  font-size: 20px;
-                  line-height: 1.5;
-                  color: #767676;
-                  margin-bottom: ${space(3)};
-                `}
-              >
-                {post.frontmatter.excerpt}
-              </p>
-            )}
-            <Meta
-              company={post.frontmatter.company}
-              role={post.frontmatter.role}
-              timeline={post.frontmatter.timeline}
-            />
-          </>
-        )}
+        <div
+          css={css`
+            font-size: 16px;
+            font-family: Cabin, sans-serif;
+            color: #333333;
+            margin-bottom: ${space(3)};
+          `}
+        >
+          {post.frontmatter.date}
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      </article>
     </Layout>
   );
 }
@@ -119,6 +230,20 @@ export const query = graphql`
         excerpt
         role
         timeline
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              width: 1600
+              aspectRatio: 1.5
+              placeholder: DOMINANT_COLOR
+              formats: [AUTO, WEBP]
+            )
+          }
+        }
+      }
+      fields {
+        slug
       }
     }
   }

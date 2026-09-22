@@ -1,14 +1,13 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { Link, graphql } from "gatsby";
-import { space, CONTENT_MAX_WIDTH } from "../utils/spacing";
+import { space } from "../utils/spacing";
 import Layout from "../components/layout";
-import { rhythm } from "../utils/typography";
 
 export default function Blog({ data }) {
   return (
     <Layout>
-      <div css={{ maxWidth: CONTENT_MAX_WIDTH }}>
+      <div>
         <h1
           css={css`
             margin-bottom: ${space(3)};
@@ -32,7 +31,7 @@ export default function Blog({ data }) {
                 <h2
                   css={css`
                     margin-bottom: 0px;
-                    color: #000000;
+                    color: #333333;
                   `}
                 >
                   {node.frontmatter.title}
@@ -42,7 +41,7 @@ export default function Blog({ data }) {
                     display: block;
                     margin-top: ${space(0.5)};
                     margin-bottom: 8px;
-                    font-size: 12px;
+                    font-size: 16px;
                     color: #333333;
                   `}
                 >

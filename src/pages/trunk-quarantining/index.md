@@ -35,21 +35,21 @@ Customer access at Trunk was tightly gated, so I first ran internal usability te
 ![Original Design](original-design.jpg)
 
 
-### Low visibility
+## Low visibility
  
 - **A buried bridge.** The link from CI logs to the Test Detail Page was so low-visibility that users missed it and either never navigated to Trunk's UI or navigated manually.
 - **Hidden audit trail.** When engineers saw the test's quarantine status in either GitHub or Trunk's UI, the status left them with many unanswered questions, including: "who changed this status and why? Is this supposed to be quarantined?" Each test's status history (e.g. who changed the status last?) lived in a Status History tab. Zero participants ever found it unprompted.
 
-### Lack of a unique visual identity
+## Lack of a unique visual identity
  
 - **Two statuses, one identity.** Every test has a health status (healthy/flaky/broken) and a quarantine status — but only health had an icon and color, so users often missed the quarantine status when scanning the page.
 - **Color collision.** The same yellow meant "flaky" and "quarantined."
 
-### Mismatch with user's mental model
+## Mismatch with user's mental model
  
 The status "Default (Not Quarantined)" was universally confusing. Nearly everyone asked: "Shouldn't there just be two settings — Quarantined or Not Quarantined?" Unanimous confusion isn't an education problem; it's a model problem. The name matched our system, not our users' mental models.
  
-### Requiring trust before proof
+## Requiring trust before proof
  
 Turning on Auto-Quarantining demanded a leap of trust users weren't ready to make. This was an area where, as a designer, I wasn't yet sure if this was a usability or value problem and wanted to solve the previous three problems to see if it solved this fourth problem naturally.
  
@@ -80,7 +80,7 @@ Here is Sentry's UI with annotations. My second iteration imitated their "Workfl
  
 We tested these iterations internally and with customers.
  
-### Iteration 1: Card View
+## Iteration 1: Card View
  
 ![Iteration 1: Card View](iteration-1-card-view.jpg)
  
@@ -93,7 +93,7 @@ We tested these iterations internally and with customers.
 - The actual status names, e.g. "Default (Not Quarantined)," still didn't match users' mental models.
 - Including a timestamp improved trust somewhat since it answered "who changed this status and when?" However, it felt redundant to hover over it for more details that also existed in the Status History tab.  
 
-### Iteration 2: Action Row and Drop-down Modal
+## Iteration 2: Action Row and Drop-down Modal
  
 ![Iteration 2: Action Row and Drop-down Modal](iteration-2-action-row.jpg)
  
@@ -106,7 +106,7 @@ We tested these iterations internally and with customers.
 - A separate row for the Quarantine button, while increasing its importance, also made it look visually unrelated to test status, even though it is closely related (e.g. if a test is flaky, users might want to quarantine it).
 - Preselecting a radio button, while a standard practice, made some users think the selected status was already saved.
 
-### Final Iteration: Compressed Drop-Down 
+## Final Iteration: Compressed Drop-Down
 
 ![Final shipped designs](final-design-closed.jpg)
 
