@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import { ContactButtons } from "../components/contact";
 import { StaticImage } from "gatsby-plugin-image";
@@ -87,7 +87,7 @@ function FeaturedArticle({ to, company, title, excerpt, children }) {
   );
 }
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <Layout>
       <main>
@@ -225,9 +225,7 @@ export default function Home() {
           >
             <FeaturedArticle
               to="/trunk-quarantining/"
-              company="TRUNK.IO"
-              title="Quarantine Status Model"
-              excerpt="I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way to save why the status changed."
+              {...data.trunk.frontmatter}
             >
               <StaticImage
                 src="./trunk-quarantining/quarantine-preview.jpg"
@@ -243,9 +241,7 @@ export default function Home() {
             </FeaturedArticle>
             <FeaturedArticle
               to="/postman-aha-moment/"
-              company="POSTMAN"
-              title="New-User Onboarding Flow"
-              excerpt="This design helped more Postman users experience their first “aha!” moment."
+              {...data.postmanOnboarding.frontmatter}
             >
               <StaticImage
                 src="./postman-aha-moment/header-image-postman-aha-moment.png"
@@ -261,9 +257,7 @@ export default function Home() {
             </FeaturedArticle>
             <FeaturedArticle
               to="/gatsby-builds-dashboard/"
-              company="GATSBY"
-              title="Builds Dashboard"
-              excerpt="This revised dashboard enabled Gatsby to come out of beta and launch its commercial offering."
+              {...data.buildsDashboard.frontmatter}
             >
               <StaticImage
                 src="./gatsby-builds-dashboard/builds-final-thumbnail.png"
@@ -279,9 +273,7 @@ export default function Home() {
             </FeaturedArticle>
             <FeaturedArticle
               to="/onboarding/"
-              company="GATSBY"
-              title="Cloud Onboarding Flow"
-              excerpt="I redesigned Gatsby Cloud onboarding with smart defaults to reduce the user’s cognitive load."
+              {...data.cloudOnboarding.frontmatter}
             >
               <StaticImage
                 src="./onboarding/first-time-user-zoom.png"
@@ -295,12 +287,7 @@ export default function Home() {
                 `}
               />
             </FeaturedArticle>
-            <FeaturedArticle
-              to="/library/"
-              company="GATSBY"
-              title="Plugin Library"
-              excerpt="The library I designed has grown from 51 plugins to more than 3,000."
-            >
+            <FeaturedArticle to="/library/" {...data.pluginLibrary.frontmatter}>
               <StaticImage
                 src="./library/plugin-tweet.png"
                 aspectRatio={1.5}
@@ -333,3 +320,47 @@ export default function Home() {
     </Layout>
   );
 }
+
+export const query = graphql`
+  query HomeFeaturedWork {
+    trunk: markdownRemark(fields: { slug: { eq: "/trunk-quarantining/" } }) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+    postmanOnboarding: markdownRemark(
+      fields: { slug: { eq: "/postman-aha-moment/" } }
+    ) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+    buildsDashboard: markdownRemark(
+      fields: { slug: { eq: "/gatsby-builds-dashboard/" } }
+    ) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+    cloudOnboarding: markdownRemark(fields: { slug: { eq: "/onboarding/" } }) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+    pluginLibrary: markdownRemark(fields: { slug: { eq: "/library/" } }) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+  }
+`;
