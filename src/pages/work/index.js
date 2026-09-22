@@ -83,6 +83,10 @@ export default function Work({ data }) {
                         color: inherit;
                         display: block;
                         text-decoration: none;
+
+                        &:hover {
+                          color: #333333;
+                        }
                       `}
                     >
                       <GatsbyImage

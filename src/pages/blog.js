@@ -25,6 +25,10 @@ export default function Blog({ data }) {
                 align-items: flex-start;
                 color: inherit;
                 margin-bottom: 32px;
+
+                &:hover {
+                  color: #333333;
+                }
               `}
             >
               <div css={{ flex: 1 }}>
