@@ -1,5 +1,5 @@
 ---
-title: "The Nope Game App"
+title: "Decision-Making Game"
 date: "2019-11-07"
 featuredImage: "./header-image-nope-game.png"
 excerpt: "This game helps me decide whether to say yes or no when someone asks me to do something."
@@ -79,7 +79,7 @@ In my brainstorm, saying yes, no, and maybe conjured memories of Magic 8 Balls a
 
 ## Reducing cognitive load
 
-### Doing math for the user
+## Doing math for the user
 
 At the heart of The Nope Game are a series of yes or no questions. If you look at an example of the worksheet after someone has used it, they scribble “yes” or “no” or checks and x’s in the margin because the worksheet doesn’t have an official place to write answers.
 
@@ -89,7 +89,7 @@ In addition, there’s some tricky math involved in adding up the responses. To 
 
 ![A survey makes yes or no answers easier for the user to mark](can-i-give.png)
 
-### Creating a visual reminder
+## Creating a visual reminder
 
 One of the last questions on the worksheet is a sticking point for many people and blocks them from finishing the game. “Do I know what I am saying no to? (Is the other person clear about what is being asked for?)”. A text input box had advantages over a yes or no survey question.
 

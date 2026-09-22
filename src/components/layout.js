@@ -1,119 +1,177 @@
-import React from "react"
-import { css } from "@emotion/react"
-import { useStaticQuery, Link, graphql } from "gatsby"
-import "./layout.css"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react";
+import { css } from "@emotion/react";
+import { Link } from "gatsby";
+import "./layout.css";
 
-import { space, spaceValue, GUTTER, PAGE_MAX_WIDTH } from "../utils/spacing"
+import { space, spaceValue, GUTTER, PAGE_MAX_WIDTH } from "../utils/spacing";
+import logo from "../pages/images/icons/logo.png";
 
-const HeaderLink = ({ to, children }) => {
+const HeaderLink = ({ to, children, trimActiveUnderline = false }) => {
   return (
     <Link
-      css={{
-        fontFamily: `Merriweather Sans, sans-serif`,
-        fontSize: 16,
-        fontWeight: 300,
-        color: `#333333`,
-        textDecoration: `none`,
-        padding: 0,
-        marginLeft: spaceValue(3),
-        ":hover": {
-          textDecoration: `underline`,
-          textUnderlineOffset: `3px`,
-          textDecorationThickness: `1px`,
-          textDecorationColor: `#333333`,
-        },
-      }}
-      activeStyle={{
-        textDecoration: `underline`,
-        textUnderlineOffset: `3px`,
-        textDecorationThickness: `1px`,
-        textDecorationColor: `#333333`,
-      }}
+      css={css`
+        color: #333333;
+        font-family: Cabin, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: ${spaceValue(3)}px;
+        padding: 0;
+        text-decoration: none;
+
+        &:hover {
+          color: #333333;
+          text-decoration: none;
+        }
+
+        position: relative;
+
+        &::after {
+          background: #333333;
+          bottom: 2px;
+          content: "";
+          height: 1px;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          transition: opacity 150ms ease;
+          width: ${trimActiveUnderline ? `calc(100% - 9px)` : `100%`};
+        }
+
+        &:hover::after,
+        &.active-nav-link::after {
+          opacity: 1;
+        }
+      `}
+      activeClassName="active-nav-link"
+      activeStyle={{ textDecoration: `none` }}
       to={to}
     >
       {children}
     </Link>
-  )
-}
-export default function Layout({ children }) {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
+  );
+};
+
+const shell = css`
+  margin: 0 auto;
+  max-width: ${PAGE_MAX_WIDTH}px;
+  padding: ${GUTTER.narrow};
+  padding-top: ${space(1.5)};
+  position: relative;
+
+  @media (min-width: 720px) {
+    padding: ${GUTTER.wide};
+    padding-top: ${space(5)};
+  }
+`;
+
+const horizontalShell = css`
+  margin: 0 auto;
+  max-width: ${PAGE_MAX_WIDTH}px;
+  padding: 0 ${GUTTER.narrow};
+  position: relative;
+
+  @media (min-width: 720px) {
+    padding: 0 ${GUTTER.wide};
+  }
+`;
+
+function Navigation() {
   return (
     <div
       css={css`
-        margin: 0 auto;
-        max-width: ${PAGE_MAX_WIDTH}px;
-        padding: ${GUTTER.narrow};
-        padding-top: ${space(1.5)};
-        position: relative;
-        @media (min-width: 720px) {
-          padding: ${GUTTER.wide};
-          padding-top: ${space(5)};
-        }
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
       `}
     >
-      <div
+      <Link
+        to={`/`}
+        aria-label="Shannon Bryn Soper home"
         css={css`
-          display: flex;
           align-items: center;
-          justify-content: space-between;
+          display: flex;
+          text-decoration: none;
         `}
       >
-        <Link
-          to={`/`}
+        <span
+          aria-hidden="true"
           css={css`
-            display: flex;
-            align-items: center;
-            text-decoration: none;
+            background: #333333;
+            display: block;
+            height: 22px;
+            mask: url(${logo}) center / contain no-repeat;
+            -webkit-mask: url(${logo}) center / contain no-repeat;
+            width: 27px;
           `}
-        >
-          <StaticImage
-            src="../pages/images/icons/hello.png"
-            width={16}
-            height={16}
-            layout="fixed"
-            placeholder="none"
-            css={{
-              marginRight: space(1),
-            }}
-          />
-          <h3
+        />
+      </Link>
+      <div
+        css={css`
+          align-items: center;
+          display: flex;
+        `}
+      >
+        <HeaderLink to="/work/">Work</HeaderLink>
+        <HeaderLink to="/blog/" trimActiveUnderline>
+          Blog
+        </HeaderLink>
+        <HeaderLink to="/about/">Talks</HeaderLink>
+      </div>
+    </div>
+  );
+}
+
+export default function Layout({
+  children,
+  contentTop = space(10),
+  hero,
+  heroBackground = `rgba(44, 70, 168, 0.08)`,
+  heroTop = space(10),
+}) {
+  if (hero) {
+    return (
+      <div>
+        <div css={{ background: heroBackground }}>
+          <div
             css={css`
-              margin: 0;
-              font-weight: 300;
-              font-style: normal;
-              font-size: 16px;
-              line-height: 1.2;
-              color: #333333;
+              ${shell};
+              padding-bottom: 0;
+
+              @media (min-width: 720px) {
+                padding-bottom: 0;
+              }
             `}
           >
-            {data.site.siteMetadata.title}
-          </h3>
-        </Link>
-        <div
-          css={css`
-            display: flex;
-            align-items: center;
-          `}
-        >
-          <HeaderLink to="/work/">Work</HeaderLink>
-          <HeaderLink to="/blog/">Blog</HeaderLink>
-          <HeaderLink to="/about/">About</HeaderLink>
+            <Navigation />
+            <div style={{ paddingTop: heroTop }}>{hero}</div>
+          </div>
+        </div>
+        <div css={horizontalShell}>
+          <div
+            className="page-content"
+            data-layout-content="true"
+            style={{ paddingTop: contentTop }}
+          >
+            {children}
+          </div>
         </div>
       </div>
+    );
+  }
 
-      <div css={{ marginBottom: space(6) }} />
-      {children}
+  return (
+    <div>
+      <div css={shell}>
+        <Navigation />
+
+        <div
+          className="page-content"
+          data-layout-content="true"
+          style={{ paddingTop: contentTop }}
+        >
+          {children}
+        </div>
+      </div>
     </div>
-  )
+  );
 }

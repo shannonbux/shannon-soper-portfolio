@@ -1,104 +1,138 @@
-import React, { useState } from "react";
+import React from "react";
 import { css } from "@emotion/react";
 import { Link, graphql } from "gatsby";
-import { rhythm } from "../../utils/typography";
 import { space } from "../../utils/spacing";
 import Layout from "../../components/layout";
-import { TagFilter, TagList } from "../../components/tags";
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
+import { TAGS, TagNavigation } from "../../components/tags";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function Work({ data }) {
-  const [selected, setSelected] = useState(null);
-
-  const selectTag = (tag) =>
-    setSelected((current) => (current === tag ? null : tag));
-
   const edges = data.allMarkdownRemark.edges;
-  const visible =
-    selected === null
-      ? edges
-      : edges.filter(({ node }) =>
-          (node.frontmatter.tags || []).includes(selected)
-        );
 
   return (
     <Layout>
       <div>
         <h1
           css={css`
-            margin-bottom: 8px;
+            margin-bottom: ${space(3)};
           `}
         >
           Work
         </h1>
         <p
           css={css`
-            margin-bottom: 24px;
+            margin-bottom: 0;
           `}
         >
           Curated case studies spanning developer experience, growth
           experiments, and AI &amp; agents.
         </p>
-        <TagFilter
-          selected={selected}
-          onSelect={selectTag}
-          onClear={() => setSelected(null)}
+        <div
           css={css`
-            margin-bottom: ${space(3)};
+            margin: ${space(5)} 0;
           `}
-        />
-        {visible.length === 0 ? (
-          <p>No case studies match that tag.</p>
-        ) : (
-          <div
-            css={css`
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
-              column-gap: 32px;
-              row-gap: 48px;
-            `}
-          >
-            {visible.map(({ node }) => (
-              <Link
-                key={node.id}
-                to={node.fields.slug}
+        >
+          <TagNavigation />
+        </div>
+        <div
+          css={css`
+            display: grid;
+          `}
+        >
+          {TAGS.map(({ id, key, label }) => {
+            const articles = edges.filter(({ node }) =>
+              (node.frontmatter.tags || []).includes(key)
+            );
+
+            return (
+              <section
+                key={id}
+                id={id}
                 css={css`
-                  text-decoration: none;
-                  color: inherit;
-                  display: block;
+                  scroll-margin-top: 0;
+
+                  &:not(:first-of-type) {
+                    padding-top: ${space(8)};
+                  }
                 `}
               >
-                <GatsbyImage
-                  css={css`
-                    display: block;
-                    width: 100%;
-                    margin-bottom: 16px;
-                    border: 1px solid #d3d3d3;
-                    border-radius: 4px;
-                    overflow: hidden;
-                  `}
-                  image={getImage(node.frontmatter.featuredImage)}
-                />
                 <h2
                   css={css`
-                    margin-bottom: 4px;
-                    color: #000000;
+                    font-size: 32px;
+                    margin: 0 0 ${space(3)};
                   `}
                 >
-                  {node.frontmatter.title}
+                  {label}
                 </h2>
-                <p
+                <div
                   css={css`
-                    margin-bottom: 12px;
+                    display: grid;
+                    grid-template-columns: repeat(
+                      auto-fit,
+                      minmax(min(100%, 340px), 1fr)
+                    );
+                    column-gap: 32px;
+                    row-gap: 48px;
                   `}
                 >
-                  {node.frontmatter.excerpt}
-                </p>
-                <TagList tags={node.frontmatter.tags} />
-              </Link>
-            ))}
-          </div>
-        )}
+                  {articles.map(({ node }) => (
+                    <Link
+                      key={node.id}
+                      to={node.fields.slug}
+                      css={css`
+                        color: inherit;
+                        display: block;
+                        text-decoration: none;
+                      `}
+                    >
+                      <GatsbyImage
+                        css={css`
+                          border: 1px solid #d3d3d3;
+                          border-radius: 4px;
+                          display: block;
+                          margin-bottom: 16px;
+                          overflow: hidden;
+                          width: 100%;
+                        `}
+                        image={getImage(node.frontmatter.featuredImage)}
+                      />
+                      {node.frontmatter.company && (
+                        <p
+                          css={css`
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 1.2;
+                            margin: 0;
+                            text-transform: uppercase;
+                          `}
+                        >
+                          {node.frontmatter.company}
+                        </p>
+                      )}
+                      <h2
+                        css={css`
+                          color: #333333;
+                          margin: ${node.frontmatter.company
+                            ? `12px 0 8px`
+                            : `0 0 8px`};
+                        `}
+                      >
+                        {node.frontmatter.title}
+                      </h2>
+                      <p
+                        css={css`
+                          margin-bottom: 12px;
+                        `}
+                      >
+                        {node.frontmatter.excerpt}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+        </div>
       </div>
     </Layout>
   );
@@ -118,6 +152,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            company
             tags
             featuredImage {
               childImageSharp {

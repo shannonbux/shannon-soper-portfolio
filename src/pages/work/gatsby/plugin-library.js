@@ -1,20 +1,25 @@
-import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react";
+import { css } from "@emotion/react";
+import { StaticImage } from "gatsby-plugin-image";
 
-import { CONTENT_MAX_WIDTH } from "../../../utils/spacing";
-import Layout from "../../../components/layout"
+import Layout from "../../../components/layout";
 
 export default function PluginLibrary() {
   return (
     <Layout>
-      <div css={{ maxWidth: CONTENT_MAX_WIDTH, marginBottom: 32 }}>
+      <article className="article-content" css={{ marginBottom: 32 }}>
         <h1 css={{ marginBottom: 24 }}>Gatsby Plugin Library</h1>
         <StaticImage
           src="../../library/plugin-tweet.png"
           aspectRatio={3 / 2}
-          width={700}
+          layout="fullWidth"
           alt="work stuff"
-          css={{ marginBottom: 16 }}
+          css={css`
+            border: 1px solid #d3d3d3;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            overflow: hidden;
+          `}
         />
         <h2>Background & Impact</h2>
         <div css={{ marginBottom: 24 }}>
@@ -35,7 +40,7 @@ export default function PluginLibrary() {
         </div>
         <div css={{ display: `flex`, justifyContent: `space-between` }}>
           <div>
-            <h3 css={{ marginBottom: 8 }}>MY ROLES</h3>
+            <h2 css={{ marginBottom: 8 }}>MY ROLES</h2>
             <ul css={{ listStyleType: `none`, marginLeft: 0 }}>
               <li css={{ marginBottom: 4 }}>UX Research</li>
               <li css={{ marginBottom: 4 }}>MVP Definition</li>
@@ -44,26 +49,26 @@ export default function PluginLibrary() {
             </ul>
           </div>
           <div>
-            <h3 css={{ marginBottom: 8 }}>LENGTH</h3>
+            <h2 css={{ marginBottom: 8 }}>LENGTH</h2>
             <ul css={{ listStyleType: `none`, marginLeft: 0 }}>
               <li css={{ marginBottom: 4 }}>4 months</li>
             </ul>
           </div>
           <div>
-            <h3 css={{ marginBottom: 8 }}>SCOPE</h3>
+            <h2 css={{ marginBottom: 8 }}>SCOPE</h2>
             <ul css={{ listStyleType: `none`, marginLeft: 0 }}>
               <li css={{ marginBottom: 4 }}>Dynamic page, static tutorial</li>
             </ul>
           </div>
           <div>
-            <h3 css={{ marginBottom: 8 }}>TEAM</h3>
+            <h2 css={{ marginBottom: 8 }}>TEAM</h2>
             <ul css={{ listStyleType: `none`, marginLeft: 0 }}>
               <li css={{ marginBottom: 4 }}>Visual Designer, Flo</li>
               <li css={{ marginBottom: 4 }}>Developer, Cassie</li>
             </ul>
           </div>
         </div>
-      </div>
+      </article>
     </Layout>
-  )
+  );
 }

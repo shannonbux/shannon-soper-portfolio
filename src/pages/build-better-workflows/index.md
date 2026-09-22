@@ -1,5 +1,5 @@
 ---
-title: Analyzing video transcripts with AI
+title: AI Conversation Interface
 isBlogPost: false
 date: 2024-02-06
 featuredImage: "thumbnail.jpg"
@@ -18,10 +18,10 @@ In conversations with coworkers and through doing UX Research, it became clear t
 
 ## Objective
 
-### User Goal
+## User Goal
 Members of product teams are often overwhelmed with video recordings of user interviews, usability tests, team calls, and collaborative work sessions. Sometimes they rely on what they remember from the calls or from scattered notes rather than rewatching them to extract all valuable information. In the end, they want to organize calls and generate insights based on the real data without needing to rewatch every call or take furious notes during calls.
 
-### Business Goal
+## Business Goal
 Help users get valuable and shareable insights from groups of calls.
 
 ## Success Metrics

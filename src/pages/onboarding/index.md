@@ -1,5 +1,5 @@
 ---
-title: "Gatsby Cloud Onboarding"
+title: "Cloud Onboarding Flow"
 date: "2019-12-09"
 featuredImage: "first-time-user-zoom.png"
 excerpt: "I redesigned Gatsby Cloud onboarding with smart defaults to reduce the user’s cognitive load."
@@ -37,7 +37,7 @@ How did I make these decisions?
 ## (Unnecessary) interaction is negative
 Anything software can do to reduce the amount of unnecessary interaction it takes to reach a goal is good.
 
-### Reduce interaction by inferring from history and the environment
+## Reduce interaction by inferring from history and the environment
 To reduce interaction, infer “as much as possible from history and the environment.”
 
 > If the software properly infers as much as possible from history and the environment, it should be able to produce at least a reasonable starting point for the context model. Most of the user’s interaction will then consist of correcting (or confirming) the software’s predictions. This is generally less stressful [for the user] than constructing the entire context from scratch.
@@ -47,14 +47,14 @@ The ideal situation: a product makes a mostly accurate guess about what the user
 
 So what could we infer from “history” and the “environment” to solve the problem we had in Gatsby Cloud? We could make a default selection that was more likely to be right.
 
-### First-time visitor
+## First-time visitor
 The wireframe below shows my redesign, in which the user does not have to interact with the software to tell us where to save their site, though they can correct the default (their personal GitHub account) if it’s wrong.
 
 I visually de-emphasized the “where do you want to save this project?” choice so users could focus on the fun part: naming their project.
 
 ![First time user](first-time-user-zoom.png)
 
-### Returning user
+## Returning user
 If there is a returning user that has already connected their personal account plus at least one more organization, their personal account will be the first item in a list and will always be pre-selected, with any work organizations as the second, third, etc. choices. This makes sure that, again, they do not have to interact with the software except to correct it, if it’s wrong.
 
 See wireframe on the next page.

@@ -37,7 +37,7 @@ There are many ways to answer these questions about users, not just interviews. 
 ## The checklist I used at Postman (a developer tools company)
 Here’s the checklist I used to make sure I thoroughly used existing sources of user feedback at my last job at Postman before reaching out to users myself.
 ---
-### Check existing research
+## Check existing research
 - Document the current user journey
 - Check with squad PM, other designers and researchers, and leaders to see if they have any research on the topic already
 - Ask PM "Can I hop on any calls you already have set up?
@@ -49,12 +49,12 @@ Here’s the checklist I used to make sure I thoroughly used existing sources of
 - Ask for data from data analysts
 - Look at other products with similar features and problems
 
-### Things that didn’t work:
+## Things that didn’t work:
 - Contacting CSM’s directly was hit or miss
 - UX Research Team was too busy
 - Twitter - couldn’t find many ppl posting abt Postman
 
-### Things I haven’t tried that look promising:
+## Things I haven’t tried that look promising:
 - Reddit
 - Internal testing w/ another squad
 
@@ -81,10 +81,10 @@ When I worked at Postman, I created this 1 page summary using existing UX Resear
 ---
 ## What makes some Postman API collections go viral?
 
-### 1. They are foundational APIs that people need to build on top of
+## 1. They are foundational APIs that people need to build on top of
 > “#1 thing that makes collection go viral is it’s a foundational API that everyone needs to build on top of or use. Look at ppl who have productized this, like Stripe.” —Numaan
 
-### 2. They are easy to use & easy to find
+## 2. They are easy to use & easy to find
 > “My favourite workspaces are ones that have good documentation and guides on how to get started with using the APIs they have. Eg. Twilio” —Avinash
 
 What makes an API easy to use and find?
@@ -92,14 +92,14 @@ What makes an API easy to use and find?
 - clear guidelines on how to create an account / get a key to use their APIs
 - marketing the API outside of Postman
 
-### 3. Their structure and documentation fits a need
+## 3. Their structure and documentation fits a need
 There are 4 types of collections with corresponding documentation patterns (often 1 API will have all 4 types, exact same API but diff documentation and folder structure)
 - How-to (Example of a how-to style collection)
 - tutorial
 - reference (like a table of contents)
 - discussion
 
-### Design idea resulting from this research
+## Design idea resulting from this research
 If we introduce tagging as a way to organize project folders, API authors will use tagging to make their folders and folder contents, and more newcomers will use the API because they will find it easy to scan
 
 ---

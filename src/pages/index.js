@@ -1,111 +1,366 @@
-import React from "react"
-import { css } from "@emotion/react"
-import { rhythm } from "../utils/typography"
-import Layout from "../components/layout"
-import { ContactButtons } from "../components/contact"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react";
+import { css } from "@emotion/react";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
+import { ContactButtons } from "../components/contact";
+import { StaticImage } from "gatsby-plugin-image";
 
-// Peach block behind the hero. Flip to true to bring it back.
-const showAccentBlock = false
+function FeaturedArticle({ to, company, title, excerpt, children }) {
+  return (
+    <Link
+      to={to}
+      css={css`
+        color: inherit;
+        display: grid;
+        grid-template-columns: 448px minmax(0, 1fr);
+        gap: 32px;
+        text-align: left;
+        text-decoration: none;
+
+        :hover h2 {
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 4px;
+        }
+
+        @media (max-width: 900px) {
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        }
+
+        @media (max-width: 720px) {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+
+        > [data-gatsby-image-wrapper] {
+          border: 1px solid #d3d3d3;
+          border-radius: 4px;
+          box-sizing: border-box;
+          overflow: hidden;
+        }
+      `}
+    >
+      {children}
+      <div
+        css={css`
+          align-self: start;
+          padding-top: 24px;
+
+          @media (max-width: 720px) {
+            padding-top: 0;
+          }
+        `}
+      >
+        <p
+          css={css`
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 0;
+            text-transform: uppercase;
+          `}
+        >
+          {company}
+        </p>
+        <h2
+          css={css`
+            color: #333333;
+            font-family: BioRhyme, Georgia, serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 12px 0 8px;
+          `}
+        >
+          {title}
+        </h2>
+        <p
+          css={css`
+            font-weight: 400;
+            margin: 0;
+          `}
+        >
+          {excerpt}
+        </p>
+      </div>
+    </Link>
+  );
+}
 
 export default function Home({ data }) {
   return (
     <Layout>
-      <div
-        css={{
-          display: `flex`,
-          position: `relative`,
-          marginTop: 128,
-          // Children are [text, photo]; column-reverse lifts the photo above
-          // the text without changing reading order.
-          "@media (max-width: 720px)": {
-            flexDirection: `column-reverse`,
-            marginTop: 48,
-          },
-        }}
-      >
-        <div
-          css={{
-            flex: 1,
-            paddingRight: 32,
-            "@media (max-width: 720px)": {
-              paddingRight: 0,
-              marginTop: 32,
-            },
-          }}
+      <main>
+        <section
+          css={css`
+            display: grid;
+            grid-template-columns: 512px 1fr 400px;
+            align-items: start;
+            margin-top: 0;
+
+            @media (max-width: 900px) {
+              grid-template-columns: minmax(0, 1fr) 320px;
+              gap: 48px;
+            }
+
+            @media (max-width: 720px) {
+              grid-template-columns: 1fr;
+              gap: 32px;
+              margin-top: 0;
+            }
+          `}
         >
-          <h1 css={{ fontWeight: 500, fontSize: 32, marginBottom: 48 }}>
-            Hi! I’m Shannon.
-          </h1>
-          <h1 css={{ fontWeight: 500, fontSize: 32, marginBottom: 48 }}>
-            I’m a{" "}
-            <span
+          <div
+            css={css`
+              grid-column: 1;
+
+              @media (max-width: 720px) {
+                grid-row: 2;
+              }
+            `}
+          >
+            <h1
               css={css`
-                color: #ec5800;
+                color: #333333;
+                font-family: BioRhyme, Georgia, serif;
+                font-size: 32px;
+                font-weight: 400;
+                letter-spacing: -0.01em;
+                line-height: 1.2;
+                margin: 0;
               `}
             >
-              Product Designer
-            </span>{" "}
-            with 8 years’ experience designing elegant solutions to complex problems.
-          </h1>
-          <ContactButtons />
-        </div>
-        <div
-          css={{
-            flex: 1,
-            display: `flex`,
-            justifyContent: `flex-end`,
-          }}
-        >
-          <StaticImage
-            src="./images/profile-2019.JPG"
-            // 4:5 — gatsby-image takes aspectRatio as width / height
-            aspectRatio={4 / 5}
-            width={400}
-            placeholder="blurred"
-            formats={["auto", "webp", "avif"]}
-            layout="constrained"
-            alt="a photo of me in an orange jacket in front of stone buildings in Blockley, England."
-            css={{
-              borderRadius: 8,
-              overflow: `hidden`,
-              // aspectRatio above bakes the 4:5 portrait crop into the
-              // generated file. contain then keeps that framing intact: it
-              // letterboxes rather than trimming if a wrapper ever drifts off
-              // ratio, so the photo can never be cropped a second time.
-              img: {
-                objectFit: `contain !important`,
-              },
-              // The constrained layout pins an inner sizer at max-width 400px
-              // via an inline style. Widening only the wrapper leaves the
-              // height behind and the image crops, so release both and the
-              // portrait ratio scales intact.
-              "@media (max-width: 720px)": {
-                width: `100%`,
-                "> div": {
-                  maxWidth: `100% !important`,
-                },
-              },
-            }}
-          />
-        </div>
-        {showAccentBlock && (
+              I design products that work for real users &amp; businesses.
+            </h1>
+            <p
+              css={css`
+                margin: 24px 0 0;
+                font-weight: 400;
+              `}
+            >
+              I’m Shannon Bryn Soper, a Product Designer with 8 years’
+              experience designing durable solutions to users’ problems at
+              devtools companies: Gatsby, Postman, and Trunk.io.
+            </p>
+            <p
+              css={css`
+                margin: 24px 0 0;
+                font-weight: 400;
+              `}
+            >
+              I currently live in Salt Lake City, Utah with my husband and two
+              kids. I enjoy cooking and reading science fiction and classic
+              literature.
+            </p>
+            <div
+              css={css`
+                padding-top: 24px;
+              `}
+            >
+              <ContactButtons compact />
+            </div>
+          </div>
           <div
-            css={{
-              width: `66.6666%`,
-              height: 264,
-              position: `absolute`,
-              background: `#FFF1E9`,
-              top: 88,
-              "z-index": -1,
-              right: 0,
-              "@media (min-width: 1280px)": {
-                right: 64,
-              },
-            }}
-          />
-        )}
-      </div>
+            css={css`
+              grid-column: 3;
+
+              @media (max-width: 900px) {
+                grid-column: 2;
+              }
+
+              @media (max-width: 720px) {
+                grid-column: 1;
+                grid-row: 1;
+              }
+            `}
+          >
+            <StaticImage
+              src="./images/profile-2019.JPG"
+              aspectRatio={4 / 5}
+              width={400}
+              placeholder="blurred"
+              formats={["auto", "webp", "avif"]}
+              layout="constrained"
+              alt="a photo of me in an orange jacket in front of stone buildings in Blockley, England."
+              css={css`
+                border-radius: 8px;
+                overflow: hidden;
+
+                img {
+                  object-fit: contain !important;
+                }
+
+                @media (max-width: 720px) {
+                  width: min(400px, 100%);
+                }
+              `}
+            />
+          </div>
+        </section>
+
+        <section
+          css={css`
+            margin-top: 72px;
+            padding-bottom: 72px;
+            text-align: left;
+          `}
+        >
+          <h2
+            css={css`
+              color: #333333;
+              font-family: BioRhyme, Georgia, serif;
+              font-size: 32px;
+              font-weight: 400;
+              line-height: 1.2;
+              margin: 0 0 20px;
+            `}
+          >
+            Featured Design Work
+          </h2>
+          <div
+            css={css`
+              display: grid;
+              gap: 48px;
+            `}
+          >
+            <FeaturedArticle
+              to="/trunk-quarantining/"
+              {...data.trunk.frontmatter}
+            >
+              <StaticImage
+                src="./trunk-quarantining/quarantine-preview.jpg"
+                aspectRatio={1.5}
+                placeholder="dominantColor"
+                formats={["auto", "webp", "avif"]}
+                layout="fullWidth"
+                alt="Trunk's quarantine status interface"
+                css={css`
+                  border: 1px solid #d2d2d2;
+                `}
+              />
+            </FeaturedArticle>
+            <FeaturedArticle
+              to="/postman-aha-moment/"
+              {...data.postmanOnboarding.frontmatter}
+            >
+              <StaticImage
+                src="./postman-aha-moment/header-image-postman-aha-moment.png"
+                aspectRatio={1.5}
+                placeholder="dominantColor"
+                formats={["auto", "webp", "avif"]}
+                layout="fullWidth"
+                alt="Postman onboarding flow"
+                css={css`
+                  border: 1px solid #d2d2d2;
+                `}
+              />
+            </FeaturedArticle>
+            <FeaturedArticle
+              to="/gatsby-builds-dashboard/"
+              {...data.buildsDashboard.frontmatter}
+            >
+              <StaticImage
+                src="./gatsby-builds-dashboard/builds-final-thumbnail.png"
+                aspectRatio={1.5}
+                placeholder="dominantColor"
+                formats={["auto", "webp", "avif"]}
+                layout="fullWidth"
+                alt="Gatsby Builds dashboard"
+                css={css`
+                  border: 1px solid #d2d2d2;
+                `}
+              />
+            </FeaturedArticle>
+            <FeaturedArticle
+              to="/onboarding/"
+              {...data.cloudOnboarding.frontmatter}
+            >
+              <StaticImage
+                src="./onboarding/first-time-user-zoom.png"
+                aspectRatio={1.5}
+                placeholder="dominantColor"
+                formats={["auto", "webp", "avif"]}
+                layout="fullWidth"
+                alt="Gatsby Cloud onboarding flow"
+                css={css`
+                  border: 1px solid #d2d2d2;
+                `}
+              />
+            </FeaturedArticle>
+            <FeaturedArticle to="/library/" {...data.pluginLibrary.frontmatter}>
+              <StaticImage
+                src="./library/plugin-tweet.png"
+                aspectRatio={1.5}
+                placeholder="dominantColor"
+                formats={["auto", "webp", "avif"]}
+                layout="fullWidth"
+                alt="Gatsby Plugin Library announcement"
+                css={css`
+                  border: 1px solid #d2d2d2;
+                `}
+              />
+            </FeaturedArticle>
+            <Link
+              to="/work/"
+              css={css`
+                color: #2c46a8;
+                font-size: 16px;
+                font-weight: 400;
+                justify-self: start;
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 4px;
+              `}
+            >
+              See more
+            </Link>
+          </div>
+        </section>
+      </main>
     </Layout>
-  )
+  );
 }
+
+export const query = graphql`
+  query HomeFeaturedWork {
+    trunk: markdownRemark(fields: { slug: { eq: "/trunk-quarantining/" } }) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+    postmanOnboarding: markdownRemark(
+      fields: { slug: { eq: "/postman-aha-moment/" } }
+    ) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+    buildsDashboard: markdownRemark(
+      fields: { slug: { eq: "/gatsby-builds-dashboard/" } }
+    ) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+    cloudOnboarding: markdownRemark(fields: { slug: { eq: "/onboarding/" } }) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+    pluginLibrary: markdownRemark(fields: { slug: { eq: "/library/" } }) {
+      frontmatter {
+        company
+        excerpt
+        title
+      }
+    }
+  }
+`;

@@ -7,7 +7,13 @@ export const RESUME_URL = "https://shannon-soper.com/Resume%202026.pdf";
 // never drift apart. `handle` is what the link list shows; `label` is what the
 // buttons show. mailto entries deliberately carry no target.
 const CONTACTS = [
-  { key: "resume", label: "Resume", handle: "Resume", href: RESUME_URL, external: true },
+  {
+    key: "resume",
+    label: "Resume",
+    handle: "Resume",
+    href: RESUME_URL,
+    external: true,
+  },
   {
     key: "linkedin",
     label: "LinkedIn",
@@ -61,7 +67,6 @@ function MailIcon() {
   );
 }
 
-
 function GitHubIcon() {
   return (
     <svg css={icon} viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -72,8 +77,8 @@ function GitHubIcon() {
 
 // Material button pair. Both share the 40dp height, fully rounded shape and
 // 24dp side padding; filled carries the primary action, outlined the rest.
-// Hover and press use translucent overlays of the brand blue, standing in for
-// Material's state layers.
+// The filled button keeps its blue fill; a translucent white state layer marks
+// hover and press without making the action appear darker or disabled.
 const BLUE = `#2c46a8`;
 
 const buttonBase = css`
@@ -83,12 +88,20 @@ const buttonBase = css`
   height: 40px;
   padding: 0 24px;
   border-radius: 20px;
-  font-family: Merriweather Sans, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: Cabin, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1;
+  isolation: isolate;
+  overflow: hidden;
+  position: relative;
   text-decoration: none;
   cursor: pointer;
+`;
+
+const buttonLabel = css`
+  position: relative;
+  z-index: 1;
 `;
 
 const filledButton = css`
@@ -96,11 +109,35 @@ const filledButton = css`
   border: none;
   background: ${BLUE};
   color: #ffffff;
-  :hover {
-    background: #283f97;
+
+  &::after {
+    background: #ffffff;
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity 150ms ease;
+    z-index: 0;
   }
-  :active {
-    background: #233886;
+
+  &:hover,
+  &:active {
+    color: #ffffff;
+  }
+
+  &:hover::after {
+    opacity: 0.08;
+  }
+
+  &:active::after {
+    opacity: 0.12;
+  }
+
+  &:focus-visible {
+    outline: 2px solid ${BLUE};
+    outline-offset: 3px;
   }
 `;
 
@@ -123,20 +160,21 @@ const link = css`
   align-items: center;
   gap: 8px;
   padding: 8px 0;
-  color: #333333;
+  color: ${BLUE};
   text-decoration: none;
   :hover {
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
-    text-decoration-color: #333333;
+    color: #5268bd;
+    text-decoration-color: currentColor;
   }
 `;
 
 const externalProps = (external) =>
   external ? { target: "_blank", rel: "noopener noreferrer" } : {};
 
-export function ContactButtons({ className }) {
+export function ContactButtons({ className, compact = false }) {
   return (
     <div
       css={css`
@@ -150,10 +188,17 @@ export function ContactButtons({ className }) {
         <a
           key={key}
           href={href}
-          css={key === "resume" ? filledButton : outlinedButton}
+          css={[
+            key === "resume" ? filledButton : outlinedButton,
+            compact &&
+              css`
+                padding: 0 18px;
+                font-weight: 400;
+              `,
+          ]}
           {...externalProps(external)}
         >
-          {label}
+          <span css={buttonLabel}>{label}</span>
         </a>
       ))}
     </div>
