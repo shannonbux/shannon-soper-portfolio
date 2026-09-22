@@ -226,7 +226,7 @@ export default function Home() {
             <FeaturedArticle
               to="/trunk-quarantining/"
               company="TRUNK.IO"
-              title="Improving Quarantine Feature"
+              title="Quarantine Status Model"
               excerpt="I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way to save why the status changed."
             >
               <StaticImage
@@ -244,7 +244,7 @@ export default function Home() {
             <FeaturedArticle
               to="/postman-aha-moment/"
               company="POSTMAN"
-              title="Postman Onboarding"
+              title="New-User Onboarding Flow"
               excerpt="This design helped more Postman users experience their first “aha!” moment."
             >
               <StaticImage
@@ -262,7 +262,7 @@ export default function Home() {
             <FeaturedArticle
               to="/gatsby-builds-dashboard/"
               company="GATSBY"
-              title="Gatsby Builds Dashboard"
+              title="Builds Dashboard"
               excerpt="This revised dashboard enabled Gatsby to come out of beta and launch its commercial offering."
             >
               <StaticImage
@@ -280,7 +280,7 @@ export default function Home() {
             <FeaturedArticle
               to="/onboarding/"
               company="GATSBY"
-              title="Gatsby Onboarding"
+              title="Cloud Onboarding Flow"
               excerpt="I redesigned Gatsby Cloud onboarding with smart defaults to reduce the user’s cognitive load."
             >
               <StaticImage
@@ -298,7 +298,7 @@ export default function Home() {
             <FeaturedArticle
               to="/library/"
               company="GATSBY"
-              title="Gatsby Plugin Library"
+              title="Plugin Library"
               excerpt="The library I designed has grown from 51 plugins to more than 3,000."
             >
               <StaticImage
