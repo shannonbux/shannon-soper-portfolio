@@ -1,5 +1,5 @@
 ---
-title: "Gatsby Tutorial"
+title: "First-Time User Tutorial"
 date: "2018-06-16"
 featuredImage: "tutorial-sidebar.png"
 excerpt: "More users finished the tutorial after my redesign. I broke up the content into bite-sized pieces and reduced pesky errors through better code snippet design."

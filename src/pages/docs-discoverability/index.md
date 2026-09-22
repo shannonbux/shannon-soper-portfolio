@@ -1,5 +1,5 @@
 ---
-title: "Gatsby Documentation Sidebar"
+title: "Developer Documentation Experience"
 date: "2018-07-31"
 featuredImage: "expand-all-button.png"
 excerpt: "I revised documentation navigation to match users’ mental models and vocabulary."

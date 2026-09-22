@@ -1,5 +1,5 @@
 ---
-title: "Postman Checkout Flow"
+title: "Upgrade Flow"
 date: "2022-02-05"
 featuredImage: "feature-comparison-table-hero.png"
 excerpt: "Successfully helped more users decide Postman was worth purchasing by replacing the checkout flow's card design with a feature comparison table."

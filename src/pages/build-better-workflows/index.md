@@ -1,5 +1,5 @@
 ---
-title: Analyzing video transcripts with AI
+title: AI Conversation Interface
 isBlogPost: false
 date: 2024-02-06
 featuredImage: "thumbnail.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "Claude Code = Design Buddy"
+title: "AI-Assisted Design Workflow"
 date: "2026-08-20"
 featuredImage: "portfolio-github.png"
 excerpt: "Claude & I have merged dozens of PRs to update this portfolio website."

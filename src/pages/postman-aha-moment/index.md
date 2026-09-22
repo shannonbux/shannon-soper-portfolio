@@ -1,5 +1,5 @@
 ---
-title: "Postman Onboarding"
+title: "First-Time User Onboarding for APIs"
 date: "2021-07-31"
 featuredImage: "./header-image-postman-aha-moment.png"
 excerpt: "This design helped more Postman users experience their first “aha!” moment."
@@ -92,5 +92,4 @@ From this result, we learned that many users want to create collections once the
 Normally, experiments are only shown to a small percentage of users for a short time period, e.g. 1-2 weeks. If they are successful, we show the feature to all users.
 
 Because these two experiments were successful, they were turned on so **100% of users see them**. It continues to be exciting to see these simple steps make an impact!
-
 

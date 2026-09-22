@@ -1,5 +1,5 @@
 ---
-title: "Doubled New Contributors"
+title: "Hacktoberfest Onboarding"
 date: "2018-10-12"
 featuredImage: "hacktoberfest-landing-page.png"
 excerpt: "I partnered with a developer to make it easy for open source folks to contribute to Gatsby. Gatsby appeared in Hacktoberfest’s top projects to contribute to in 2018. "
