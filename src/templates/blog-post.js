@@ -65,24 +65,39 @@ function Meta({ company, role, timeline }) {
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
   const isWorkArticle = !post.frontmatter.isBlogPost;
+  const isTutorial = post.fields.slug === `/gatsby-tutorial/`;
   const preserveFullImages =
     post.fields.slug === `/docs-discoverability/` ||
     post.fields.slug === `/gatsby-tutorial/` ||
     post.frontmatter.company === `HOME`;
   const featuredImage = getImage(post.frontmatter.featuredImage);
-  const heroImage = featuredImage && (
-    <GatsbyImage
-      image={featuredImage}
-      alt={post.frontmatter.title}
-      fetchpriority="high"
-      loading="eager"
-      objectPosition="left top"
-      css={css`
-        display: block;
-        width: 100%;
-      `}
-    />
-  );
+  const heroImage =
+    featuredImage &&
+    (isTutorial ? (
+      <img
+        src={featuredImage.images.fallback.src}
+        alt={post.frontmatter.title}
+        fetchPriority="high"
+        loading="eager"
+        css={css`
+          display: block;
+          height: auto;
+          width: 100%;
+        `}
+      />
+    ) : (
+      <GatsbyImage
+        image={featuredImage}
+        alt={post.frontmatter.title}
+        fetchPriority="high"
+        loading="eager"
+        objectPosition="left top"
+        css={css`
+          display: block;
+          width: 100%;
+        `}
+      />
+    ));
   const hero = heroImage && (
     <div
       css={css`
@@ -124,7 +139,7 @@ export default function BlogPost({ data }) {
                   font-size: 14px;
                   font-weight: 400;
                   line-height: 1.4;
-                  margin: 0 0 1rem;
+                  margin: 0 0 0.5rem;
                 `}
               >
                 {post.frontmatter.company.toUpperCase()}
