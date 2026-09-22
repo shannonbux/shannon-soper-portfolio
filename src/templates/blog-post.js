@@ -65,30 +65,44 @@ function Meta({ company, role, timeline }) {
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
   const isWorkArticle = !post.frontmatter.isBlogPost;
+  const isTutorial = post.fields.slug === `/gatsby-tutorial/`;
+  const preserveFullImages =
+    post.fields.slug === `/docs-discoverability/` ||
+    post.fields.slug === `/gatsby-tutorial/` ||
+    post.frontmatter.company === `HOME`;
   const featuredImage = getImage(post.frontmatter.featuredImage);
-  const heroImage = featuredImage && (
-    <GatsbyImage
-      image={featuredImage}
-      alt={post.frontmatter.title}
-      fetchpriority="high"
-      loading="eager"
-      css={css`
-        display: block;
-        height: 100% !important;
-        inset: 0 !important;
-        position: absolute !important;
-        width: 100%;
-      `}
-    />
-  );
+  const heroImage =
+    featuredImage &&
+    (isTutorial ? (
+      <img
+        src={featuredImage.images.fallback.src}
+        alt={post.frontmatter.title}
+        fetchPriority="high"
+        loading="eager"
+        css={css`
+          display: block;
+          height: auto;
+          width: 100%;
+        `}
+      />
+    ) : (
+      <GatsbyImage
+        image={featuredImage}
+        alt={post.frontmatter.title}
+        fetchPriority="high"
+        loading="eager"
+        objectPosition="left top"
+        css={css`
+          display: block;
+          width: 100%;
+        `}
+      />
+    ));
   const hero = heroImage && (
     <div
       css={css`
-        aspect-ratio: 2.04 / 1;
-        border: 1px solid #d3d3d3;
-        border-radius: 4px;
+        max-height: 560px;
         overflow: hidden;
-        position: relative;
         width: 100%;
       `}
     >
@@ -105,7 +119,7 @@ export default function BlogPost({ data }) {
             grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
             column-gap: ${space(8)};
             margin-top: ${space(6)};
-            row-gap: ${space(2)};
+            row-gap: 1rem;
 
             @media (max-width: 720px) {
               grid-template-columns: 1fr;
@@ -125,7 +139,7 @@ export default function BlogPost({ data }) {
                   font-size: 14px;
                   font-weight: 400;
                   line-height: 1.4;
-                  margin: 0 0 ${space(1)};
+                  margin: 0 0 0.5rem;
                 `}
               >
                 {post.frontmatter.company.toUpperCase()}
@@ -182,7 +196,9 @@ export default function BlogPost({ data }) {
           </aside>
         </header>
         <article
-          className="article-content"
+          className={`article-content${
+            preserveFullImages ? ` article-content--full-images` : ``
+          }`}
           css={css`
             margin-top: ${space(6)};
           `}
@@ -194,7 +210,11 @@ export default function BlogPost({ data }) {
 
   return (
     <Layout>
-      <article className="article-content">
+      <article
+        className={`article-content${
+          preserveFullImages ? ` article-content--full-images` : ``
+        }`}
+      >
         <h1
           css={css`
             margin-bottom: ${space(1)};
@@ -235,7 +255,6 @@ export const query = graphql`
             gatsbyImageData(
               layout: CONSTRAINED
               width: 1600
-              aspectRatio: 1.5
               placeholder: DOMINANT_COLOR
               formats: [AUTO, WEBP]
             )

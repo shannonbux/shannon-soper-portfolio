@@ -86,7 +86,7 @@ From this result, we learned that many users want to create collections once the
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkztr50mArdY9Gow8eh58bs%2FPortfolio-Website-Image-Files%3Fpage-id%3D23%253A776%26type%3Ddesign%26node-id%3D232-4503%26viewport%3D221%252C538%252C0.06%26t%3D1VzHzIQU3W53caNr-1%26scaling%3Dcontain%26starting-point-node-id%3D232%253A4503" allowfullscreen></iframe>
 
 ## View new user flow in Figma!
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkztr50mArdY9Gow8eh58bs%2FPortfolio-Website-Image-Files%3Fpage-id%3D23%253A776%26type%3Ddesign%26node-id%3D29-1965%26viewport%3D221%252C538%252C0.06%26t%3D1VzHzIQU3W53caNr-1%26scaling%3Dcontain%26starting-point-node-id%3D29%253A1965%26mode%3Ddesign" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkztr50mArdY9Gow8eh58bs%2FPortfolio-Website-Image-Files%3Fpage-id%3D23%253A776%26type%3Ddesign%26node-id%3D29-1965%26viewport%3D221%252C538%252C0.06%26t%3D1VzHzIQU3W53caNr-1%26scaling%3Dcontain%26starting-point-node-id%3D29%253A1965%26mode%3Ddesign" allowfullscreen></iframe>
 
 ## Final step
 Normally, experiments are only shown to a small percentage of users for a short time period, e.g. 1-2 weeks. If they are successful, we show the feature to all users.

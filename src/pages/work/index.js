@@ -122,6 +122,10 @@ export default function Work({ data }) {
                       <h2
                         css={css`
                           color: #333333;
+                          font-family: BioRhyme, Georgia, serif;
+                          font-size: 24px;
+                          font-weight: 400;
+                          line-height: 1.2;
                           margin: ${node.frontmatter.company
                             ? `12px 0 8px`
                             : `0 0 8px`};
@@ -131,7 +135,8 @@ export default function Work({ data }) {
                       </h2>
                       <p
                         css={css`
-                          margin-bottom: 12px;
+                          font-weight: 400;
+                          margin: 0;
                         `}
                       >
                         {node.frontmatter.excerpt}
