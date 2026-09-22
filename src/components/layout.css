@@ -14,51 +14,65 @@ button {
   }
 }
 
-.gatsby-resp-image-wrapper {
-  aspect-ratio: 3 / 2;
+.article-content .gatsby-resp-image-wrapper,
+.article-content .markdown-image {
   border: 1px solid #d3d3d3;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 16px; /* space(2) */
+  margin: 1rem 0 3rem;
   max-width: none !important;
+  max-height: 560px;
   overflow: hidden;
   width: 100%;
 }
 
-.gatsby-resp-image-wrapper .gatsby-resp-image-link,
-.gatsby-resp-image-wrapper .gatsby-resp-image-background-image {
-  height: 100% !important;
-  inset: 0 !important;
-  padding-bottom: 0 !important;
-  position: absolute !important;
+.article-content .gatsby-resp-image-wrapper .gatsby-resp-image-link {
+  display: block;
+  height: auto !important;
+  position: static !important;
+}
+
+.article-content
+  .gatsby-resp-image-wrapper
+  .gatsby-resp-image-background-image {
+  display: none !important;
+}
+
+.article-content .gatsby-resp-image-wrapper .gatsby-resp-image-image,
+.article-content .markdown-image img {
+  display: block;
+  height: auto !important;
+  inset: auto !important;
+  margin: 0 !important;
+  object-fit: initial !important;
+  object-position: left top !important;
+  position: static !important;
   width: 100% !important;
 }
 
-.gatsby-resp-image-wrapper .gatsby-resp-image-image {
-  height: 100% !important;
-  object-fit: cover !important;
-  width: 100% !important;
-}
-
-/*
- * This side-by-side Uber / VS Code comparison is intentionally wide. Keeping
- * its native ratio preserves both interfaces; the rest of the article imagery
- * continues to use the shared 3:2 presentation crop above.
- */
-.gatsby-resp-image-wrapper:has(img[alt*="Uber's search results screen"]) {
-  aspect-ratio: 4584 / 2160;
+.article-content--full-images .gatsby-resp-image-wrapper,
+.article-content--full-images .markdown-image {
+  max-height: none;
+  overflow: visible;
 }
 
 .article-content img:not(.gatsby-resp-image-image) {
-  aspect-ratio: 3 / 2;
   border: 1px solid #d3d3d3;
   border-radius: 4px;
   box-sizing: border-box;
   display: block;
   height: auto;
-  margin-bottom: 16px; /* space(2) */
-  object-fit: cover;
+  margin: 1rem 0 3rem;
+  max-height: 560px;
+  object-fit: initial;
+  object-position: left top;
   width: 100%;
+}
+
+.article-content .markdown-image img {
+  border: 0;
+  border-radius: 0;
+  max-height: none;
 }
 
 video {
@@ -66,26 +80,8 @@ video {
   width: 100%;
 }
 
-.markdown-image {
-  aspect-ratio: 3 / 2;
-  border: 1px solid #d3d3d3;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 16px; /* space(2) */
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.markdown-image img {
-  border: 0;
-  border-radius: 0;
-  height: 100% !important;
-  inset: 0;
-  margin: 0 !important;
-  object-fit: cover;
-  position: absolute;
-  width: 100% !important;
+.article-content--full-images img:not(.gatsby-resp-image-image) {
+  max-height: none;
 }
 
 a {
