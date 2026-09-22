@@ -89,8 +89,8 @@ export default function BlogPost({ data }) {
         border: 1px solid #d3d3d3;
         border-radius: 4px;
         box-sizing: border-box;
-        max-height: ${preserveFullImages ? `none` : `560px`};
-        overflow: ${preserveFullImages ? `visible` : `hidden`};
+        max-height: 560px;
+        overflow: hidden;
         width: 100%;
       `}
     >

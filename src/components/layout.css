@@ -20,10 +20,13 @@ button {
   border-radius: 4px;
   box-sizing: border-box;
   margin: 1rem 0 3rem;
-  max-width: none !important;
   max-height: 560px;
   overflow: hidden;
-  width: 100%;
+}
+
+.article-content .markdown-image {
+  display: table;
+  max-width: 100%;
 }
 
 .article-content .gatsby-resp-image-wrapper .gatsby-resp-image-link {
@@ -38,8 +41,7 @@ button {
   display: none !important;
 }
 
-.article-content .gatsby-resp-image-wrapper .gatsby-resp-image-image,
-.article-content .markdown-image img {
+.article-content .gatsby-resp-image-wrapper .gatsby-resp-image-image {
   display: block;
   height: auto !important;
   inset: auto !important;
@@ -48,6 +50,18 @@ button {
   object-position: left top !important;
   position: static !important;
   width: 100% !important;
+}
+
+.article-content .markdown-image img {
+  display: block;
+  height: auto !important;
+  inset: auto !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  object-fit: initial !important;
+  object-position: left top !important;
+  position: static !important;
+  width: auto !important;
 }
 
 .article-content--full-images .gatsby-resp-image-wrapper,
@@ -66,7 +80,8 @@ button {
   max-height: 560px;
   object-fit: initial;
   object-position: left top;
-  width: 100%;
+  max-width: 100%;
+  width: auto;
 }
 
 .article-content .markdown-image img {
