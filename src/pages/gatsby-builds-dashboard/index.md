@@ -76,7 +76,7 @@ The design still provided raw logs so we could see what additional data processe
 ![The user's first request showing a response](postman-response.png) -->
 
 ## From GitHub to Gatsby Cloud
-When a user saw a problem reported by the GitHub bot (called Gatsbot, very cute :), they could drill into the details by navigating to Gatsby Cloud to figure out why a certain PR was throwing an error or reducing the site's performance.
+When a user saw a problem reported by the Gatsby Cloud GitHub bot, they could drill into the details by navigating to Gatsby Cloud to figure out why a certain PR was throwing an error or reducing the site's performance.
 
 ## Final design
 The final design answered users' questions so they could fix any website errors, and enabled Gatsby to come out of beta and launch its commercial offering.
