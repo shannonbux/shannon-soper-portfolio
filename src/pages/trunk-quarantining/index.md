@@ -11,7 +11,7 @@ timeline: "2025 (3 months)"
  
 ## TL;DR
  
-At Trunk, we introduced a paid feature called Quarantining, and usage numbers weren't as high as we predicted. To investigate the reason, I conducted user interviews, competitive analysis, and three rounds of usability testing and discovered several critical usability issues.
+At Trunk, we introduced a paid feature called Quarantining, and usage numbers weren't as high as we predicted. To investigate the reason, I conducted user interviews, competitive analysis, and three rounds of usability testing. I discovered four critical usability issues.
  
 I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way for users to save and view why the status changed. My designs shipped to production and passed customer usability tests, ensuring that usability issues were no longer a barrier to feature usage.
 
@@ -123,7 +123,7 @@ We tested these iterations internally and with customers.
 
 ## Stakeholder Pressure Resisted
 
-Stakeholders asked to re-add the "Default" statuses. I wrote up the options with explicit trade-offs taken from interviews and our own reasoning, and under the Pros for including "Default", we listed *"can't think of any."* Having it written down helped reassure everyone we'd done the right thing by renaming it. 
+Stakeholders asked to re-add the "Default" status names. I wrote up our options with explicit trade-offs taken from interviews and invited people to add their own pros and cons. Under the Pros for including the word "Default", we listed *"can't think of any."* Having it written down helped reassure everyone we'd done the right thing by renaming the statuses.
  
 ## Outcome
  
