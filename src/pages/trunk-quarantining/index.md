@@ -11,9 +11,9 @@ timeline: "2025 (3 months)"
  
 ## TL;DR
  
-At Trunk, we introduced a paid feature called Quarantining, and usage numbers weren't as high as we predicted. To investigate the reason, I conducted user interviews, competitive analysis, and three rounds of usability testing. I discovered four critical usability issues.
+At Trunk, we introduced a paid feature called Quarantining, and it had low adoption. To investigate the reason, I conducted 5 user interviews, competitive analysis, and 8 usability tests. I discovered three critical issues: low visibility, weak visual distinction, and a mismatched mental model.
  
-I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way for users to save and view why the status changed. My designs shipped to production and passed customer usability tests, ensuring that usability issues were no longer a barrier to feature usage.
+I redesigned the quarantine feature with increased visibility, a simplified mental model, and a way for users to save and view why the status changed. My designs shipped to production and passed customer usability tests.
 
 [New Design Prototype](https://www.figma.com/proto/83LQuuuuvAgFsw9J2yU0xa/Quarantining?page-id=1%3A302581&node-id=7-293319&viewport=989%2C307%2C0.03&t=NwHraBw9j9vPPnB3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=7%3A293319&show-proto-sidebar=1)
 
@@ -29,7 +29,7 @@ Trunk's Flaky Test product's business model included Quarantining as a paid feat
  
 ## Problems with the Original Design
 
-Customer access at Trunk was tightly gated, so I first ran internal usability testing before spending our limited customer access. Sessions with participants surfaced clear insights. The Quarantining feature suffered from low visibility, a lack of a unique visual identity, mismatch with the user's mental model, and requiring a leap of trust before proof. 
+Customer access at Trunk was tightly gated, so I first ran internal usability testing before spending our limited customer access. Sessions with participants surfaced clear insights. The Quarantining feature suffered from low visibility, weak visual distinction, a mismatched mental model, and an unproven trust proposition.
 
 
 ![Original Design](original-design.jpg)
@@ -40,22 +40,22 @@ Customer access at Trunk was tightly gated, so I first ran internal usability te
 - **A buried bridge.** The link from CI logs to the Test Detail Page was so low-visibility that users missed it and either never navigated to Trunk's UI or navigated manually.
 - **Hidden audit trail.** When engineers saw the test's quarantine status in either GitHub or Trunk's UI, the status left them with many unanswered questions, including: "who changed this status and why? Is this supposed to be quarantined?" Each test's status history (e.g. who changed the status last?) lived in a Status History tab. Zero participants ever found it unprompted.
 
-## Lack of a unique visual identity
+## Weak visual distinction
  
 - **Two statuses, one identity.** Every test has a health status (healthy/flaky/broken) and a quarantine status — but only health had an icon and color, so users often missed the quarantine status when scanning the page.
 - **Color collision.** The same yellow meant "flaky" and "quarantined."
 
-## Mismatch with user's mental model
+## A mismatched mental model
  
 The status "Default (Not Quarantined)" was universally confusing. Nearly everyone asked: "Shouldn't there just be two settings — Quarantined or Not Quarantined?" Unanimous confusion isn't an education problem; it's a model problem. The name matched our system, not our users' mental models.
  
-## Requiring trust before proof
+## Note: unproven trust proposition
  
 Turning on Auto-Quarantining demanded a leap of trust users weren't ready to make. This was an area where, as a designer, I wasn't yet sure if this was a usability or value problem and wanted to solve the previous three problems to see if it solved this fourth problem naturally.
  
 ## Defining Success
  
-To test usability of my design iterations, I defined success as task completion where testers completed a task list covering every system state. As they attempted each task, I asked them to:
+To test usability of my design iterations, I asked testers to complete a task list covering every system state. For example, I asked them to:
  
 - Explain why auto-quarantining changed a test's status
 - Set, override, and revert test statuses and save reasons
@@ -119,22 +119,18 @@ We tested these iterations internally and with customers.
 - Bringing the Status History onto the page rather than behind a tab makes it more visible.
 
 **What didn't work well enough:**
-- No downsides were uncovered.  
+- Usability tests didn't surface any problems.
 
-## Stakeholder Pressure Resisted
+## Facilitating Stakeholder Alignment
 
-Stakeholders asked to re-add the "Default" status names. I wrote up our options with explicit trade-offs taken from interviews and invited people to add their own pros and cons. Under the Pros for including the word "Default", we listed *"can't think of any."* Having it written down helped reassure everyone we'd done the right thing by renaming the statuses.
+Later in the design process, some stakeholders asked to re-add the "Default" status names. I wrote up our options for status names with explicit trade-offs taken from interviews and invited people to add their own pros and cons. Under the Pros for including the word "Default", we listed *"can't think of any."* Having it written down helped reassure everyone we'd done the right thing by renaming the statuses.
  
 ## Outcome
  
 Our final customer validation came back clean: no task failures, no comprehension issues. Every contested element from earlier rounds — the hidden status history, the confusing status names, the preselection trap — was resolved.
  
 The designs shipped to production. I left the company after launch but before usage data came in. What the design work established: usability issues were no longer a barrier to usage.
- 
-![Final shipped designs](final-design-open.jpg) 
 
-
- 
 ## What I'd Prioritize Next
  
 - **Granular overrides and expirations** — there was demand for PR- or branch-scoped quarantines with end dates
