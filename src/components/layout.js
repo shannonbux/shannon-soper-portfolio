@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
 import "./layout.css";
 
 import { space, spaceValue, GUTTER, PAGE_MAX_WIDTH } from "../utils/spacing";
@@ -75,6 +76,25 @@ const horizontalShell = css`
   }
 `;
 
+function GoogleAnalytics() {
+  return (
+    <Helmet>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-HSD62XM8NG"
+      />
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HSD62XM8NG');
+        `}
+      </script>
+    </Helmet>
+  );
+}
+
 function Navigation() {
   return (
     <div
@@ -131,6 +151,7 @@ export default function Layout({
   if (hero) {
     return (
       <div>
+        <GoogleAnalytics />
         <div css={{ background: heroBackground }}>
           <div
             css={css`
@@ -161,6 +182,7 @@ export default function Layout({
 
   return (
     <div>
+      <GoogleAnalytics />
       <div css={shell}>
         <Navigation />
 
