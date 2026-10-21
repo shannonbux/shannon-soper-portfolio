@@ -3,3 +3,8 @@
 
 [build.environment]
   NODE_VERSION = "16"
+
+[[redirects]]
+  from = "/virtualitics"
+  to = "/?utm_source=lever&utm_medium=job_application&utm_campaign=2026-10-virtualitics-sr-product-designer"
+  status = 302
