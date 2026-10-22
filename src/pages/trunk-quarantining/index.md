@@ -34,7 +34,7 @@ My first proposal was the closest to the original design; I prioritized ease of 
 
 ## Iteration 2: Action Row and Drop-down Modal
 
-This idea came from another similar product and I wanted to see if imitating it worked for us.
+As I was iterating on the Quarantining feature, another designer finished a dashboard redesign, which unblocked me in a big way; I didn't need to keep the three tiles on the top right of the page anymore, so I decided it was worth experimenting with no tiles at all to save space. With so much more freedom, I could use an idea I'd saved from another similar product and I wanted to see if imitating it worked for us.
  
 ![Iteration 2: Action Row and Drop-down Modal](iteration-2-action-row.jpg)
 
